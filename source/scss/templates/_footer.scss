@@ -1,0 +1,57 @@
+
+/*=================================================================
+  Footer section
+==================================================================*/
+.top-footer {
+  background-color: #181A20;
+  border-top: none;
+  padding: 40px 0 20px;
+  h3, h4 {
+    font-size: 15px;
+    line-height: 1.4;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+  }
+  p, li, li a {
+    font-size: 13px;
+    line-height: 22px;
+    color: #d1d5db;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    padding-right: 0;
+    margin-bottom: 6px;
+  }
+  li a {
+    transition: color .3s;
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+  .widget {
+    margin-bottom: 10px;
+  }
+}
+
+.footer-bottom {
+  text-align: center;
+  background-color: #111217;
+  border-top: none;
+  padding: 12px 0 8px 0;
+  h5, h6 {
+    font-size: 12px;
+    line-height: 1.2;
+    color: #bdbdbd;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 1px;
+    margin: 0 0 2px 0;
+  }
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+}

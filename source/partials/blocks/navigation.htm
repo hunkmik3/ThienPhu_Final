@@ -1,0 +1,50 @@
+<!--
+Fixed Navigation
+==================================== -->
+<header class="navigation fixed-top">
+  <div class="container">
+    <!-- main nav -->
+    <nav class="navbar navbar-expand-lg navbar-light px-0">
+      <!-- logo -->
+      <a class="navbar-brand logo" href="index.html">
+        <img loading="lazy" class="logo-default" src="images/logo.png" alt="logo" />
+        <img loading="lazy" class="logo-white" src="images/logo-white.png" alt="logo" />
+      </a>
+      <!-- /logo -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navigation">
+        <ul class="navbar-nav ml-auto text-center">
+          <li class="nav-item @@if( active === 'home' ){active}">
+            <a class="nav-link" href="index.html">Trang Chủ</a>
+          </li>
+          <li class="nav-item @@if( active==='capabilities' ){ active }">
+            <a class="nav-link" href="capabilities.html">Năng Lực & Công Nghệ</a>
+          </li>
+          <li class="nav-item @@if( active==='laboratory' ){ active }">
+            <a class="nav-link" href="laboratory.html">Phòng LAB</a>
+          </li>
+          <li class="nav-item @@if( active==='projects' ){ active }">
+            <a class="nav-link" href="projects.html">Dự Án</a>
+          </li>
+          <li class="nav-item @@if( active==='products' ){ active }">
+            <a class="nav-link" href="products.html">Sản Phẩm</a>
+          </li>
+          <li class="nav-item @@if( active==='partners' ){ active }">
+            <a class="nav-link" href="partners.html">Đối Tác</a>
+          </li>
+          <li class="nav-item @@if( active==='contact' ){ active }">
+            <a class="nav-link" href="contact.html">Liên Hệ</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /main nav -->
+  </div>
+</header>
+<!--
+End Fixed Navigation
+==================================== -->
