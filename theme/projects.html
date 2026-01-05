@@ -68,14 +68,14 @@
 <!--
 Fixed Navigation
 ==================================== -->
-<header class="navigation fixed-top">
+<header class="navigation fixed-top sticky-header">
   <div class="container">
     <!-- main nav -->
-    <nav class="navbar navbar-expand-lg navbar-light px-0">
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-between justify-content-lg-center px-0">
       <!-- logo -->
-      <a class="navbar-brand logo" href="index.html">
-        <img loading="lazy" class="logo-default" src="images/logo.png" alt="logo" />
-        <img loading="lazy" class="logo-white" src="images/logo-white.png" alt="logo" />
+      <a class="navbar-brand logo mr-lg-4" href="index.html">
+        <img loading="lazy" class="logo-default" src="images/logo-white.jpg" alt="logo" />
+        <img loading="lazy" class="logo-white" src="images/logo-white.jpg" alt="logo" />
       </a>
       <!-- /logo -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
@@ -83,17 +83,15 @@ Fixed Navigation
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navigation">
-        <ul class="navbar-nav ml-auto text-center">
+      <div class="collapse navbar-collapse flex-grow-0" id="navigation">
+        <ul class="navbar-nav mr-lg-4 text-center">
           <li class="nav-item ">
             <a class="nav-link" href="index.html">Trang Chủ</a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="capabilities.html">Năng Lực & Công Nghệ</a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="laboratory.html">Phòng LAB</a>
-          </li>
+
           <li class="nav-item  active ">
             <a class="nav-link" href="projects.html">Dự Án</a>
           </li>
@@ -104,9 +102,20 @@ Fixed Navigation
             <a class="nav-link" href="partners.html">Đối Tác</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="contact.html">Liên Hệ</a>
+            <a class="nav-link" href="news.html">Tin Tức</a>
           </li>
         </ul>
+        <div class="d-flex align-items-center justify-content-center mt-2 mt-lg-0 flex-nowrap">
+          <a href="contact.html" class="btn btn-main btn-small-nav mr-2 mr-lg-3 text-nowrap">Liên Hệ</a>
+          <ul class="navbar-nav d-flex flex-row flex-nowrap">
+            <li class="nav-item active">
+              <a class="nav-link px-2" href="#">VI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2" href="en/index.html" style="opacity: 0.6;">EN</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <!-- /main nav -->
@@ -126,7 +135,8 @@ Start Projects Section
 			<div class="col-xl-8 col-lg-10">
 				<div class="title text-center">
 					<h2>Dự Án</h2>
-					<p>Những dự án thành công của chúng tôi trong việc cung cấp giải pháp kính chất lượng cao cho các công trình lớn.</p>
+					<p>Những dự án thành công của chúng tôi trong việc cung cấp giải pháp kính chất lượng cao cho các
+						công trình lớn.</p>
 					<div class="border"></div>
 				</div>
 			</div>
@@ -137,7 +147,8 @@ Start Projects Section
 		<div class="row mb-4">
 			<div class="col-lg-8 offset-lg-2">
 				<div class="search-box d-flex">
-					<input type="text" id="project-search-input" class="form-control mr-2" placeholder="Tìm kiếm dự án hoặc sản phẩm...">
+					<input type="text" id="project-search-input" class="form-control mr-2"
+						placeholder="Tìm kiếm dự án hoặc sản phẩm...">
 					<button type="button" id="project-search-btn" class="btn btn-main">Tìm Kiếm</button>
 				</div>
 				<div id="search-results" class="mt-4"></div>
@@ -164,169 +175,237 @@ Start Projects Section
 					<!-- Project 1: KHÁCH SẠN CARAVELLE -->
 					<div class="filtr-item" data-category="mix, hospitality" data-project-id="khach-san-caravelle">
 						<div class="portfolio-block">
-							<img class="img-fluid" src="images/portfolio/portfolio-1.png" alt="Khách Sạn Caravelle">
-							<div class="caption">
-								<a class="search-icon" href="images/portfolio/portfolio-1.png" data-lightbox="project-gallery">
-									<i class="tf-ion-ios-search-strong"></i>
-								</a>
-								<h4><a href="project-detail.html">KHÁCH SẠN CARAVELLE</a></h4>
-								<p>Bến Nghé, Quận 1, TPHCM • 335 phòng, 24 tầng • 2019</p>
+							<div class="portfolio-image">
+								<img loading="lazy" src="images/portfolio/portfolio-1.png" alt="Khách Sạn Caravelle">
+								<div class="portfolio-overlay">
+									<a class="search-icon" href="projects/khach-san-caravelle.html">
+										<i class="tf-ion-ios-search-strong"></i>
+									</a>
+								</div>
+							</div>
+							<div class="portfolio-content">
+								<h4><a href="projects/khach-san-caravelle.html">KHÁCH SẠN CARAVELLE</a></h4>
+								<p><i class="tf-ion-ios-location"></i> Bến Nghé, Quận 1, TPHCM • 335 phòng, 24 tầng •
+									2019</p>
 							</div>
 						</div>
 					</div>
 					<!-- Project 2: CHUNG CƯ SAFIRA KHANG ĐIỀN -->
-					<div class="filtr-item" data-category="mix, residential" data-project-id="chung-cu-safira-khang-dien">
+					<div class="filtr-item" data-category="mix, residential"
+						data-project-id="chung-cu-safira-khang-dien">
 						<div class="portfolio-block">
-							<img class="img-fluid" src="images/portfolio/portfolio-2.png" alt="Chung Cư Safira Khang Điền">
-							<div class="caption">
-								<a class="search-icon" href="images/portfolio/portfolio-2.png" data-lightbox="project-gallery">
-									<i class="tf-ion-ios-search-strong"></i>
-								</a>
-								<h4><a href="project-detail.html">CHUNG CƯ SAFIRA KHANG ĐIỀN</a></h4>
-								<p>Quận 9, TPHCM • 2.7 ha, 4 tháp - 22 tầng, 1570 căn • 2019</p>
+							<div class="portfolio-image">
+								<img loading="lazy" src="images/portfolio/portfolio-2.png"
+									alt="Chung Cư Safira Khang Điền">
+								<div class="portfolio-overlay">
+									<a class="search-icon" href="projects/chung-cu-safira-khang-dien.html">
+										<i class="tf-ion-ios-search-strong"></i>
+									</a>
+								</div>
+							</div>
+							<div class="portfolio-content">
+								<h4><a href="projects/chung-cu-safira-khang-dien.html">CHUNG CƯ SAFIRA KHANG ĐIỀN</a></h4>
+								<p><i class="tf-ion-ios-location"></i> Quận 9, TPHCM • 2.7 ha, 4 tháp - 22 tầng, 1570
+									căn • 2019</p>
 							</div>
 						</div>
 					</div>
 					<!-- Project 3: KHU ĐÔ THỊ FLORA MIZUKI -->
 					<div class="filtr-item" data-category="mix, residential" data-project-id="khu-do-thi-flora-mizuki">
 						<div class="portfolio-block">
-							<img class="img-fluid" src="images/portfolio/portfolio-3.png" alt="Khu Đô Thị Flora Mizuki">
-							<div class="caption">
-								<a class="search-icon" href="images/portfolio/portfolio-3.png" data-lightbox="project-gallery">
-									<i class="tf-ion-ios-search-strong"></i>
-								</a>
-								<h4><a href="project-detail.html">KHU ĐÔ THỊ FLORA MIZUKI</a></h4>
-								<p>Bình Chánh, TP HCM • 5 block, 1 tầng hầm và 20 tầng cao • 2019</p>
+							<div class="portfolio-image">
+								<img loading="lazy" src="images/portfolio/portfolio-3.png"
+									alt="Khu Đô Thị Flora Mizuki">
+								<div class="portfolio-overlay">
+									<a class="search-icon" href="projects/khu-do-thi-flora-mizuki.html">
+										<i class="tf-ion-ios-search-strong"></i>
+									</a>
+								</div>
+							</div>
+							<div class="portfolio-content">
+								<h4><a href="projects/khu-do-thi-flora-mizuki.html">KHU ĐÔ THỊ FLORA MIZUKI</a></h4>
+								<p><i class="tf-ion-ios-location"></i> Bình Chánh, TP HCM • 5 block, 1 tầng hầm và 20
+									tầng cao • 2019</p>
 							</div>
 						</div>
 					</div>
 					<!-- Project 4: CHUNG CƯ H9A BÌNH DƯƠNG -->
 					<div class="filtr-item" data-category="mix, residential" data-project-id="chung-cu-h9a-binh-duong">
 						<div class="portfolio-block">
-							<img class="img-fluid" src="images/portfolio/portfolio-4.png" alt="Chung Cư H9A Bình Dương">
-							<div class="caption">
-								<a class="search-icon" href="images/portfolio/portfolio-4.png" data-lightbox="project-gallery">
-									<i class="tf-ion-ios-search-strong"></i>
-								</a>
-								<h4><a href="project-detail.html">CHUNG CƯ H9A BÌNH DƯƠNG</a></h4>
-								<p>Tỉnh Bình Dương • 16,000m², 4 block 25 tầng, 667 căn • 2019</p>
+							<div class="portfolio-image">
+								<img loading="lazy" src="images/portfolio/portfolio-4.png"
+									alt="Chung Cư H9A Bình Dương">
+								<div class="portfolio-overlay">
+									<a class="search-icon" href="projects/chung-cu-h9a-binh-duong.html">
+										<i class="tf-ion-ios-search-strong"></i>
+									</a>
+								</div>
+							</div>
+							<div class="portfolio-content">
+								<h4><a href="projects/chung-cu-h9a-binh-duong.html">CHUNG CƯ H9A BÌNH DƯƠNG</a></h4>
+								<p><i class="tf-ion-ios-location"></i> Tỉnh Bình Dương • 16,000m², 4 block 25 tầng, 667
+									căn • 2019</p>
 							</div>
 						</div>
 					</div>
 					<!-- Project 5: TÒA THÁP BITEXCO -->
 					<div class="filtr-item" data-category="mix, commercial" data-project-id="toa-thap-bitexco">
 						<div class="portfolio-block">
-							<img class="img-fluid" src="images/portfolio/portfolio-5.png" alt="Tòa Tháp Bitexco">
-							<div class="caption">
-								<a class="search-icon" href="images/portfolio/portfolio-5.png" data-lightbox="project-gallery">
-									<i class="tf-ion-ios-search-strong"></i>
-								</a>
-								<h4><a href="project-detail.html">TÒA THÁP BITEXCO</a></h4>
-								<p>Hồ Tùng Mậu, Quận 1, TPHCM • 68 tầng • 2011</p>
+							<div class="portfolio-image">
+								<img loading="lazy" src="images/portfolio/portfolio-5.png" alt="Tòa Tháp Bitexco">
+								<div class="portfolio-overlay">
+									<a class="search-icon" href="projects/toa-thap-bitexco.html">
+										<i class="tf-ion-ios-search-strong"></i>
+									</a>
+								</div>
+							</div>
+							<div class="portfolio-content">
+								<h4><a href="projects/toa-thap-bitexco.html">TÒA THÁP BITEXCO</a></h4>
+								<p><i class="tf-ion-ios-location"></i> Hồ Tùng Mậu, Quận 1, TPHCM • 68 tầng • 2011</p>
 							</div>
 						</div>
 					</div>
 					<!-- Project 6: BỆNH VIỆN NHI ĐỒNG 1 -->
 					<div class="filtr-item" data-category="mix, industrial" data-project-id="benh-vien-nhi-dong-1">
 						<div class="portfolio-block">
-							<img class="img-fluid" src="images/portfolio/portfolio-6.png" alt="Bệnh Viện Nhi Đồng 1">
-							<div class="caption">
-								<a class="search-icon" href="images/portfolio/portfolio-6.png" data-lightbox="project-gallery">
-									<i class="tf-ion-ios-search-strong"></i>
-								</a>
-								<h4><a href="project-detail.html">BỆNH VIỆN NHI ĐỒNG 1</a></h4>
-								<p>Sư Vạn Hạnh, Quận 10, TPHCM • 3 tòa nhà, 60,000m² • 2021-2022</p>
+							<div class="portfolio-image">
+								<img loading="lazy" src="images/portfolio/portfolio-6.png" alt="Bệnh Viện Nhi Đồng 1">
+								<div class="portfolio-overlay">
+									<a class="search-icon" href="projects/benh-vien-nhi-dong-1.html">
+										<i class="tf-ion-ios-search-strong"></i>
+									</a>
+								</div>
+							</div>
+							<div class="portfolio-content">
+								<h4><a href="projects/benh-vien-nhi-dong-1.html">BỆNH VIỆN NHI ĐỒNG 1</a></h4>
+								<p><i class="tf-ion-ios-location"></i> Sư Vạn Hạnh, Quận 10, TPHCM • 3 tòa nhà, 60,000m²
+									• 2021-2022</p>
 							</div>
 						</div>
 					</div>
 					<!-- Project 7: QUẢNG TRƯỜNG LÂM VIÊN - ĐÀ LẠT -->
-					<div class="filtr-item" data-category="mix, commercial" data-project-id="quang-truong-lam-vien-da-lat">
+					<div class="filtr-item" data-category="mix, commercial"
+						data-project-id="quang-truong-lam-vien-da-lat">
 						<div class="portfolio-block">
-							<img class="img-fluid" src="images/portfolio/portfolio-7.png" alt="Quảng Trường Lâm Viên - Đà Lạt">
-							<div class="caption">
-								<a class="search-icon" href="images/portfolio/portfolio-7.png" data-lightbox="project-gallery">
-									<i class="tf-ion-ios-search-strong"></i>
-								</a>
-								<h4><a href="project-detail.html">QUẢNG TRƯỜNG LÂM VIÊN - ĐÀ LẠT</a></h4>
-								<p>Đà Lạt, Lâm Đồng • Tổng diện tích hơn 70,000m² • 2015</p>
+							<div class="portfolio-image">
+								<img loading="lazy" src="images/portfolio/portfolio-7.png"
+									alt="Quảng Trường Lâm Viên - Đà Lạt">
+								<div class="portfolio-overlay">
+									<a class="search-icon" href="projects/quang-truong-lam-vien-da-lat.html">
+										<i class="tf-ion-ios-search-strong"></i>
+									</a>
+								</div>
+							</div>
+							<div class="portfolio-content">
+								<h4><a href="projects/quang-truong-lam-vien-da-lat.html">QUẢNG TRƯỜNG LÂM VIÊN - ĐÀ LẠT</a></h4>
+								<p><i class="tf-ion-ios-location"></i> Đà Lạt, Lâm Đồng • Tổng diện tích hơn 70,000m² •
+									2015</p>
 							</div>
 						</div>
 					</div>
 					<!-- Project 8: TRƯỜNG QUỐC TẾ NAM SÀI GÒN -->
-					<div class="filtr-item" data-category="mix, industrial" data-project-id="truong-quoc-te-nam-sai-gon">
+					<div class="filtr-item" data-category="mix, industrial"
+						data-project-id="truong-quoc-te-nam-sai-gon">
 						<div class="portfolio-block">
-							<img class="img-fluid" src="images/portfolio/portfolio-8.png" alt="Trường Quốc Tế Nam Sài Gòn">
-							<div class="caption">
-								<a class="search-icon" href="images/portfolio/portfolio-8.png" data-lightbox="project-gallery">
-									<i class="tf-ion-ios-search-strong"></i>
-								</a>
-								<h4><a href="project-detail.html">TRƯỜNG QUỐC TẾ NAM SÀI GÒN</a></h4>
-								<p>Phú Mỹ Hưng, Q 7, TPHCM • 2 tòa nhà, 17,700m² • 2024</p>
+							<div class="portfolio-image">
+								<img loading="lazy" src="images/portfolio/portfolio-8.png"
+									alt="Trường Quốc Tế Nam Sài Gòn">
+								<div class="portfolio-overlay">
+									<a class="search-icon" href="projects/truong-quoc-te-nam-sai-gon.html">
+										<i class="tf-ion-ios-search-strong"></i>
+									</a>
+								</div>
+							</div>
+							<div class="portfolio-content">
+								<h4><a href="projects/truong-quoc-te-nam-sai-gon.html">TRƯỜNG QUỐC TẾ NAM SÀI GÒN</a></h4>
+								<p><i class="tf-ion-ios-location"></i> Phú Mỹ Hưng, Q 7, TPHCM • 2 tòa nhà, 17,700m² •
+									2024</p>
 							</div>
 						</div>
 					</div>
 					<!-- Project 9: TRUNG TÂM PHỨC HỢP BÁO TUỔI TRẺ -->
-					<div class="filtr-item" data-category="mix, commercial" data-project-id="trung-tam-phuc-hop-bao-tuoi-tre">
+					<div class="filtr-item" data-category="mix, commercial"
+						data-project-id="trung-tam-phuc-hop-bao-tuoi-tre">
 						<div class="portfolio-block">
-							<img class="img-fluid" src="images/portfolio/portfolio-9.png" alt="Trung Tâm Phức Hợp Báo Tuổi Trẻ">
-							<div class="caption">
-								<a class="search-icon" href="images/portfolio/portfolio-9.png" data-lightbox="project-gallery">
-									<i class="tf-ion-ios-search-strong"></i>
-								</a>
-								<h4><a href="project-detail.html">TRUNG TÂM PHỨC HỢP BÁO TUỔI TRẺ</a></h4>
-								<p>Gò Vấp, TPHCM • 2 khối công trình, 20,000m² • 2024</p>
+							<div class="portfolio-image">
+								<img loading="lazy" src="images/portfolio/portfolio-9.png"
+									alt="Trung Tâm Phức Hợp Báo Tuổi Trẻ">
+								<div class="portfolio-overlay">
+									<a class="search-icon" href="projects/trung-tam-phuc-hop-bao-tuoi-tre.html">
+										<i class="tf-ion-ios-search-strong"></i>
+									</a>
+								</div>
+							</div>
+							<div class="portfolio-content">
+								<h4><a href="projects/trung-tam-phuc-hop-bao-tuoi-tre.html">TRUNG TÂM PHỨC HỢP BÁO TUỔI TRẺ</a></h4>
+								<p><i class="tf-ion-ios-location"></i> Gò Vấp, TPHCM • 2 khối công trình, 20,000m² •
+									2024</p>
 							</div>
 						</div>
 					</div>
 					<!-- Project 10: KHU ĐÔ THỊ CELADON -->
 					<div class="filtr-item" data-category="mix, residential" data-project-id="khu-do-thi-celadon">
 						<div class="portfolio-block">
-							<img class="img-fluid" src="images/portfolio/portfolio-10.png" alt="Khu Đô Thị Celadon">
-							<div class="caption">
-								<a class="search-icon" href="images/portfolio/portfolio-10.png" data-lightbox="project-gallery">
-									<i class="tf-ion-ios-search-strong"></i>
-								</a>
-								<h4><a href="project-detail.html">KHU ĐÔ THỊ CELADON</a></h4>
-								<p>Tân Phú, TPHCM • 82.5 hecta • 2022</p>
+							<div class="portfolio-image">
+								<img loading="lazy" src="images/portfolio/portfolio-10.png" alt="Khu Đô Thị Celadon">
+								<div class="portfolio-overlay">
+									<a class="search-icon" href="projects/khu-do-thi-celadon.html">
+										<i class="tf-ion-ios-search-strong"></i>
+									</a>
+								</div>
+							</div>
+							<div class="portfolio-content">
+								<h4><a href="projects/khu-do-thi-celadon.html">KHU ĐÔ THỊ CELADON</a></h4>
+								<p><i class="tf-ion-ios-location"></i> Tân Phú, TPHCM • 82.5 hecta • 2022</p>
 							</div>
 						</div>
 					</div>
 					<!-- Project 11: RESORT & SPA HYATT ĐÀ NẴNG -->
 					<div class="filtr-item" data-category="mix, hospitality" data-project-id="resort-spa-hyatt-da-nang">
 						<div class="portfolio-block">
-							<img class="img-fluid" src="images/portfolio/portfolio-11.png" alt="Resort & Spa Hyatt Đà Nẵng">
-							<div class="caption">
-								<a class="search-icon" href="images/portfolio/portfolio-11.png" data-lightbox="project-gallery">
-									<i class="tf-ion-ios-search-strong"></i>
-								</a>
-								<h4><a href="project-detail.html">RESORT & SPA HYATT ĐÀ NẴNG</a></h4>
-								<p>Đà Nẵng • 20 hecta • 2011</p>
+							<div class="portfolio-image">
+								<img loading="lazy" src="images/portfolio/portfolio-11.png"
+									alt="Resort & Spa Hyatt Đà Nẵng">
+								<div class="portfolio-overlay">
+									<a class="search-icon" href="projects/resort-spa-hyatt-da-nang.html">
+										<i class="tf-ion-ios-search-strong"></i>
+									</a>
+								</div>
+							</div>
+							<div class="portfolio-content">
+								<h4><a href="projects/resort-spa-hyatt-da-nang.html">RESORT & SPA HYATT ĐÀ NẴNG</a></h4>
+								<p><i class="tf-ion-ios-location"></i> Đà Nẵng • 20 hecta • 2011</p>
 							</div>
 						</div>
 					</div>
 					<!-- Project 12: CHUNG CƯ WEST GATE BÌNH CHÁNH -->
-					<div class="filtr-item" data-category="mix, residential" data-project-id="chung-cu-west-gate-binh-chanh">
+					<div class="filtr-item" data-category="mix, residential"
+						data-project-id="chung-cu-west-gate-binh-chanh">
 						<div class="portfolio-block">
-							<img class="img-fluid" src="images/portfolio/portfolio-12.png" alt="Chung Cư West Gate Bình Chánh">
-							<div class="caption">
-								<a class="search-icon" href="images/portfolio/portfolio-12.png" data-lightbox="project-gallery">
-									<i class="tf-ion-ios-search-strong"></i>
-								</a>
-								<h4><a href="project-detail.html">CHUNG CƯ WEST GATE BÌNH CHÁNH</a></h4>
-								<p>Bình Chánh, TPHCM • 4 tòa tháp, 20 tầng, 2000+ căn hộ, 3.1 hecta • 2022</p>
+							<div class="portfolio-image">
+								<img loading="lazy" src="images/portfolio/portfolio-12.png"
+									alt="Chung Cư West Gate Bình Chánh">
+								<div class="portfolio-overlay">
+									<a class="search-icon" href="projects/chung-cu-west-gate-binh-chanh.html">
+										<i class="tf-ion-ios-search-strong"></i>
+									</a>
+								</div>
+							</div>
+							<div class="portfolio-content">
+								<h4><a href="projects/chung-cu-west-gate-binh-chanh.html">CHUNG CƯ WEST GATE BÌNH CHÁNH</a></h4>
+								<p><i class="tf-ion-ios-location"></i> Bình Chánh, TPHCM • 4 tòa tháp, 20 tầng, 2000+
+									căn hộ, 3.1 hecta • 2022</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div> <!-- End row -->
-		
+
 		<!-- Phần hiển thị sản phẩm sau khi tìm kiếm -->
 		<div id="project-products-section" class="row"></div>
 	</div> <!-- End container -->
 </section> <!-- End section -->
-
-
 
 <footer id="footer" class="bg-one">
   <div class="top-footer">

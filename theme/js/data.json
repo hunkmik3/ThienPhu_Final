@@ -4,70 +4,70 @@
       "id": "kinh-cuong-luc",
       "name": "Kính Cường Lực",
       "description": "Kính cường lực được xử lý nhiệt ở nhiệt độ cao (khoảng 650-700°C) và làm nguội nhanh bằng khí nén, tạo ra ứng suất bề mặt cao. Sản phẩm có độ bền gấp 4-5 lần kính thường, chịu lực tốt, chống va đập và sốc nhiệt. Khi vỡ, kính vỡ thành các hạt nhỏ không sắc cạnh, đảm bảo an toàn tuyệt đối cho người sử dụng.",
-      "image": "images/portfolio/portfolio-1.jpg",
+      "image": "images/products/kinhcuongluc.jpg",
       "link": "products/kinh-cuong-luc.html"
     },
     {
       "id": "kinh-dan-an-toan",
       "name": "Kính Dán An Toàn",
       "description": "Kính dán an toàn được tạo thành từ hai hay nhiều lớp kính, kết dính với nhau bằng lớp màng PVB (Polyvinyl Butyral) hoặc EVA (Ethylene Vinyl Acetate) dưới tác dụng của nhiệt và áp suất cao. Sản phẩm có khả năng chống đâm xuyên, chống vỡ vụn. Ngay cả khi vỡ, các mảnh kính vẫn bám chặt vào lớp màng, không gây thương tích.",
-      "image": "images/portfolio/portfolio-2.jpg",
+      "image": "images/products/kinh-hop-an-toan.jpg",
       "link": "products/kinh-dan-an-toan.html"
     },
     {
       "id": "kinh-hop",
       "name": "Kính Hộp",
       "description": "Kính hộp (IGU - Insulated Glass Unit) là sản phẩm được tạo thành từ hai hoặc nhiều lớp kính, cách nhau bởi khoảng không khí hoặc khí trơ (Argon, Krypton) được niêm phong kín bằng keo chuyên dụng và thanh cữ nhôm. Sản phẩm có khả năng cách nhiệt, cách âm vượt trội, tiết kiệm năng lượng điều hòa, giảm tiếng ồn từ bên ngoài.",
-      "image": "images/portfolio/portfolio-3.jpg",
+      "image": "images/products/kinhuongcong.jpg",
       "link": "products/kinh-hop.html"
     },
     {
       "id": "kinh-uon-cong",
       "name": "Kính Uốn Cong",
       "description": "Kính uốn cong được sản xuất bằng công nghệ uốn nhiệt chuyên biệt, tạo ra các tấm kính có độ cong theo thiết kế. Sản phẩm có thể uốn cong một chiều hoặc hai chiều, phù hợp cho các công trình kiến trúc hiện đại, tạo điểm nhấn thẩm mỹ độc đáo. Kính uốn cong có thể kết hợp với các công nghệ khác như cường lực, dán an toàn, phủ nano.",
-      "image": "images/portfolio/portfolio-4.jpg",
+      "image": "images/products/kinhuongcong.jpg",
       "link": "products/kinh-uon-cong.html"
     },
     {
       "id": "kinh-nhung-mo-axit",
       "name": "Kính Nhúng Mờ Axit",
       "description": "Kính nhúng mờ axit được xử lý bằng axit hydrofluoric để tạo bề mặt mờ đẹp, mịn màng và đồng đều. Quy trình nhúng axit tạo ra hiệu ứng mờ tự nhiên, không phản chiếu ánh sáng, phù hợp cho các ứng dụng cần độ riêng tư như cửa phòng tắm, vách ngăn văn phòng, cửa tủ. Sản phẩm dễ vệ sinh, bền màu và không bị phai theo thời gian.",
-      "image": "images/portfolio/portfolio-5.jpg",
+      "image": "images/products/kinh-mo-nhung-axit.jpg",
       "link": "products/kinh-nhung-mo-axit.html"
     },
     {
       "id": "kinh-phun-cat-mo",
       "name": "Kính Phun Cát Mờ",
       "description": "Kính phun cát mờ được xử lý bằng công nghệ phun cát áp lực cao, tạo ra bề mặt mờ với độ mịn và độ sâu có thể điều chỉnh. Sản phẩm có thể tạo hoa văn, logo, chữ theo thiết kế riêng. Kính phun cát có độ bền cao, chống trầy xước, dễ vệ sinh và phù hợp cho nhiều ứng dụng trang trí nội ngoại thất.",
-      "image": "images/portfolio/portfolio-6.jpg",
+      "image": "images/products/kinh-moi-phun-cat.jpg",
       "link": "products/kinh-phun-cat-mo.html"
     },
     {
       "id": "kinh-in-men",
       "name": "Kính In Men",
       "description": "Kính in men được in trực tiếp lên bề mặt kính bằng mực men ceramic, sau đó nung ở nhiệt độ cao để mực kết dính vĩnh viễn với kính. Sản phẩm có thể in đa màu, tạo hoa văn, hình ảnh phức tạp với độ bền màu cao, không phai theo thời gian. Kính in men chống UV, chống trầy xước và có thể kết hợp với các công nghệ khác như cường lực, dán an toàn.",
-      "image": "images/portfolio/portfolio-7.jpg",
+      "image": "images/products/kinh-in-men.jpg",
       "link": "products/kinh-in-men.html"
     },
     {
       "id": "kinh-phu-nano",
       "name": "Kính Phủ Nano",
       "description": "Kính phủ nano được phủ một lớp màng nano siêu mỏng trên bề mặt, tạo ra các tính năng đặc biệt như tự làm sạch, chống bám nước, chống bám bụi, chống phản quang. Lớp phủ nano giúp kính luôn trong suốt, dễ vệ sinh, giảm chi phí bảo trì. Sản phẩm phù hợp cho các ứng dụng yêu cầu độ trong suốt cao và tính thẩm mỹ lâu dài.",
-      "image": "images/portfolio/portfolio-8.jpg",
+      "image": "images/products/kinh-phu-nano.jpg",
       "link": "products/kinh-phu-nano.html"
     },
     {
       "id": "kinh-hoa-van",
       "name": "Kính Hoa Văn",
       "description": "Kính hoa văn được sản xuất bằng phương pháp cán nóng hoặc in, tạo ra các hoa văn, họa tiết trang trí trên bề mặt kính. Sản phẩm có nhiều mẫu mã đa dạng từ hoa văn cổ điển đến hiện đại, phù hợp cho các ứng dụng trang trí nội thất như cửa, vách ngăn, lan can cầu thang. Kính hoa văn vừa đảm bảo độ riêng tư vừa tạo điểm nhấn thẩm mỹ cho không gian.",
-      "image": "images/portfolio/portfolio-9.jpg",
+      "image": "images/products/kinh-in-hoa-van-mo-3.jpg",
       "link": "products/kinh-hoa-van.html"
     },
     {
       "id": "kinh-sieu-trong",
       "name": "Kính Siêu Trong",
       "description": "Kính siêu trong (Low-Iron Glass) được sản xuất từ nguyên liệu có hàm lượng sắt thấp, loại bỏ màu xanh lá cây tự nhiên của kính thông thường. Sản phẩm có độ trong suốt cao (truyền sáng >91%), màu sắc trung thực, không bị biến dạng màu. Kính siêu trong phù hợp cho các ứng dụng yêu cầu độ trong suốt tối đa như tủ trưng bày, cửa kính lớn, mặt dựng tòa nhà cao cấp.",
-      "image": "images/portfolio/portfolio-10.jpg",
+      "image": "images/products/kinh-low-e.jpg",
       "link": "products/kinh-sieu-trong.html"
     }
   ],
@@ -77,97 +77,190 @@
       "name": "KHÁCH SẠN CARAVELLE",
       "description": "Bến Nghé, Quận 1, TPHCM • 335 phòng, 24 tầng • 2019",
       "image": "images/portfolio/portfolio-1.png",
-      "category": ["hospitality"],
-      "products": ["kinh-cuong-luc", "kinh-hop", "kinh-phu-nano", "kinh-sieu-trong"]
+      "link": "projects/khach-san-caravelle.html",
+      "category": [
+        "hospitality"
+      ],
+      "products": [
+        "kinh-cuong-luc",
+        "kinh-hop",
+        "kinh-phu-nano",
+        "kinh-sieu-trong"
+      ]
     },
     {
       "id": "chung-cu-safira-khang-dien",
       "name": "CHUNG CƯ SAFIRA KHANG ĐIỀN",
       "description": "Quận 9, TPHCM • 2.7 ha, 4 tháp - 22 tầng, 1570 căn • 2019",
       "image": "images/portfolio/portfolio-2.png",
-      "category": ["residential"],
-      "products": ["kinh-cuong-luc", "kinh-hop", "kinh-sieu-trong", "kinh-nhung-mo-axit"]
+      "link": "projects/chung-cu-safira-khang-dien.html",
+      "category": [
+        "residential"
+      ],
+      "products": [
+        "kinh-cuong-luc",
+        "kinh-hop",
+        "kinh-sieu-trong",
+        "kinh-nhung-mo-axit"
+      ]
     },
     {
       "id": "khu-do-thi-flora-mizuki",
       "name": "KHU ĐÔ THỊ FLORA MIZUKI",
       "description": "Bình Chánh, TP HCM • 5 block, 1 tầng hầm và 20 tầng cao • 2019",
       "image": "images/portfolio/portfolio-3.png",
-      "category": ["residential"],
-      "products": ["kinh-cuong-luc", "kinh-hop", "kinh-dan-an-toan"]
+      "link": "projects/khu-do-thi-flora-mizuki.html",
+      "category": [
+        "residential"
+      ],
+      "products": [
+        "kinh-cuong-luc",
+        "kinh-hop",
+        "kinh-dan-an-toan"
+      ]
     },
     {
       "id": "chung-cu-h9a-binh-duong",
       "name": "CHUNG CƯ H9A BÌNH DƯƠNG",
       "description": "Tỉnh Bình Dương • 16,000m², 4 block 25 tầng, 667 căn • 2019",
       "image": "images/portfolio/portfolio-4.png",
-      "category": ["residential"],
-      "products": ["kinh-cuong-luc", "kinh-dan-an-toan", "kinh-hop", "kinh-nhung-mo-axit"]
+      "link": "projects/chung-cu-h9a-binh-duong.html",
+      "category": [
+        "residential"
+      ],
+      "products": [
+        "kinh-cuong-luc",
+        "kinh-dan-an-toan",
+        "kinh-hop",
+        "kinh-nhung-mo-axit"
+      ]
     },
     {
       "id": "toa-thap-bitexco",
       "name": "TÒA THÁP BITEXCO",
       "description": "Hồ Tùng Mậu, Quận 1, TPHCM • 68 tầng • 2011",
       "image": "images/portfolio/portfolio-5.png",
-      "category": ["commercial"],
-      "products": ["kinh-cuong-luc", "kinh-uon-cong", "kinh-sieu-trong", "kinh-phu-nano"]
+      "link": "projects/toa-thap-bitexco.html",
+      "category": [
+        "commercial"
+      ],
+      "products": [
+        "kinh-cuong-luc",
+        "kinh-uon-cong",
+        "kinh-sieu-trong",
+        "kinh-phu-nano"
+      ]
     },
     {
       "id": "benh-vien-nhi-dong-1",
       "name": "BỆNH VIỆN NHI ĐỒNG 1",
       "description": "Sư Vạn Hạnh, Quận 10, TPHCM • 3 tòa nhà, 60,000m² • 2021-2022",
       "image": "images/portfolio/portfolio-6.png",
-      "category": ["industrial"],
-      "products": ["kinh-dan-an-toan", "kinh-cuong-luc", "kinh-hop", "kinh-phun-cat-mo"]
+      "link": "projects/benh-vien-nhi-dong-1.html",
+      "category": [
+        "industrial"
+      ],
+      "products": [
+        "kinh-dan-an-toan",
+        "kinh-cuong-luc",
+        "kinh-hop",
+        "kinh-phun-cat-mo"
+      ]
     },
     {
       "id": "quang-truong-lam-vien-da-lat",
       "name": "QUẢNG TRƯỜNG LÂM VIÊN - ĐÀ LẠT",
       "description": "Đà Lạt, Lâm Đồng • Tổng diện tích hơn 70,000m² • 2015",
       "image": "images/portfolio/portfolio-7.png",
-      "category": ["commercial"],
-      "products": ["kinh-cuong-luc", "kinh-hoa-van", "kinh-in-men"]
+      "link": "projects/quang-truong-lam-vien-da-lat.html",
+      "category": [
+        "commercial"
+      ],
+      "products": [
+        "kinh-cuong-luc",
+        "kinh-hoa-van",
+        "kinh-in-men"
+      ]
     },
     {
       "id": "truong-quoc-te-nam-sai-gon",
       "name": "TRƯỜNG QUỐC TẾ NAM SÀI GÒN",
       "description": "Phú Mỹ Hưng, Q 7, TPHCM • 2 tòa nhà, 17,700m² • 2024",
       "image": "images/portfolio/portfolio-8.png",
-      "category": ["industrial"],
-      "products": ["kinh-cuong-luc", "kinh-dan-an-toan", "kinh-hop", "kinh-sieu-trong"]
+      "link": "projects/truong-quoc-te-nam-sai-gon.html",
+      "category": [
+        "industrial"
+      ],
+      "products": [
+        "kinh-cuong-luc",
+        "kinh-dan-an-toan",
+        "kinh-hop",
+        "kinh-sieu-trong"
+      ]
     },
     {
       "id": "trung-tam-phuc-hop-bao-tuoi-tre",
       "name": "TRUNG TÂM PHỨC HỢP BÁO TUỔI TRẺ",
       "description": "Gò Vấp, TPHCM • 2 khối công trình, 20,000m² • 2024",
       "image": "images/portfolio/portfolio-9.png",
-      "category": ["commercial"],
-      "products": ["kinh-cuong-luc", "kinh-in-men", "kinh-sieu-trong", "kinh-phu-nano"]
+      "link": "projects/trung-tam-phuc-hop-bao-tuoi-tre.html",
+      "category": [
+        "commercial"
+      ],
+      "products": [
+        "kinh-cuong-luc",
+        "kinh-in-men",
+        "kinh-sieu-trong",
+        "kinh-phu-nano"
+      ]
     },
     {
       "id": "khu-do-thi-celadon",
       "name": "KHU ĐÔ THỊ CELADON",
       "description": "Tân Phú, TPHCM • 82.5 hecta • 2022",
       "image": "images/portfolio/portfolio-10.png",
-      "category": ["residential"],
-      "products": ["kinh-cuong-luc", "kinh-hop", "kinh-sieu-trong", "kinh-nhung-mo-axit"]
+      "link": "projects/khu-do-thi-celadon.html",
+      "category": [
+        "residential"
+      ],
+      "products": [
+        "kinh-cuong-luc",
+        "kinh-hop",
+        "kinh-sieu-trong",
+        "kinh-nhung-mo-axit"
+      ]
     },
     {
       "id": "resort-spa-hyatt-da-nang",
       "name": "RESORT & SPA HYATT ĐÀ NẴNG",
       "description": "Đà Nẵng • 20 hecta • 2011",
       "image": "images/portfolio/portfolio-11.png",
-      "category": ["hospitality"],
-      "products": ["kinh-cuong-luc", "kinh-hop", "kinh-hoa-van", "kinh-phu-nano"]
+      "link": "projects/resort-spa-hyatt-da-nang.html",
+      "category": [
+        "hospitality"
+      ],
+      "products": [
+        "kinh-cuong-luc",
+        "kinh-hop",
+        "kinh-hoa-van",
+        "kinh-phu-nano"
+      ]
     },
     {
       "id": "chung-cu-west-gate-binh-chanh",
       "name": "CHUNG CƯ WEST GATE BÌNH CHÁNH",
       "description": "Bình Chánh, TPHCM • 4 tòa tháp, 20 tầng, 2000+ căn hộ, 3.1 hecta • 2022",
       "image": "images/portfolio/portfolio-12.png",
-      "category": ["residential"],
-      "products": ["kinh-cuong-luc", "kinh-hop", "kinh-dan-an-toan", "kinh-nhung-mo-axit"]
+      "link": "projects/chung-cu-west-gate-binh-chanh.html",
+      "category": [
+        "residential"
+      ],
+      "products": [
+        "kinh-cuong-luc",
+        "kinh-hop",
+        "kinh-dan-an-toan",
+        "kinh-nhung-mo-axit"
+      ]
     }
   ]
 }
-

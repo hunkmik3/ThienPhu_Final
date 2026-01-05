@@ -68,14 +68,14 @@
 <!--
 Fixed Navigation
 ==================================== -->
-<header class="navigation fixed-top">
+<header class="navigation fixed-top sticky-header">
   <div class="container">
     <!-- main nav -->
-    <nav class="navbar navbar-expand-lg navbar-light px-0">
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-between justify-content-lg-center px-0">
       <!-- logo -->
-      <a class="navbar-brand logo" href="index.html">
-        <img loading="lazy" class="logo-default" src="images/logo.png" alt="logo" />
-        <img loading="lazy" class="logo-white" src="images/logo-white.png" alt="logo" />
+      <a class="navbar-brand logo mr-lg-4" href="index.html">
+        <img loading="lazy" class="logo-default" src="images/logo-white.jpg" alt="logo" />
+        <img loading="lazy" class="logo-white" src="images/logo-white.jpg" alt="logo" />
       </a>
       <!-- /logo -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
@@ -83,17 +83,15 @@ Fixed Navigation
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navigation">
-        <ul class="navbar-nav ml-auto text-center">
+      <div class="collapse navbar-collapse flex-grow-0" id="navigation">
+        <ul class="navbar-nav mr-lg-4 text-center">
           <li class="nav-item ">
             <a class="nav-link" href="index.html">Trang Chủ</a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="capabilities.html">Năng Lực & Công Nghệ</a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="laboratory.html">Phòng LAB</a>
-          </li>
+
           <li class="nav-item ">
             <a class="nav-link" href="projects.html">Dự Án</a>
           </li>
@@ -103,10 +101,21 @@ Fixed Navigation
           <li class="nav-item ">
             <a class="nav-link" href="partners.html">Đối Tác</a>
           </li>
-          <li class="nav-item  active ">
-            <a class="nav-link" href="contact.html">Liên Hệ</a>
+          <li class="nav-item ">
+            <a class="nav-link" href="news.html">Tin Tức</a>
           </li>
         </ul>
+        <div class="d-flex align-items-center justify-content-center mt-2 mt-lg-0 flex-nowrap">
+          <a href="contact.html" class="btn btn-main btn-small-nav mr-2 mr-lg-3 text-nowrap">Liên Hệ</a>
+          <ul class="navbar-nav d-flex flex-row flex-nowrap">
+            <li class="nav-item active">
+              <a class="nav-link px-2" href="#">VI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2" href="en/index.html" style="opacity: 0.6;">EN</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <!-- /main nav -->

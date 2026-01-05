@@ -1,10 +1,3 @@
-/**
- * WEBSITE: https://themefisher.com
- * TWITTER: https://twitter.com/themefisher
- * FACEBOOK: https://www.facebook.com/themefisher
- * GITHUB: https://github.com/themefisher/
- */
-
 (function ($) {
   'use strict';
 
@@ -19,14 +12,14 @@
 
 
   // navbarDropdown
-	if ($(window).width() < 992) {
-		$('#navigation .dropdown-toggle').on('click', function () {
-			$(this).siblings('.dropdown-menu').animate({
-				height: 'toggle'
-			}, 300);
-		});
+  if ($(window).width() < 992) {
+    $('#navigation .dropdown-toggle').on('click', function () {
+      $(this).siblings('.dropdown-menu').animate({
+        height: 'toggle'
+      }, 300);
+    });
   }
-  
+
   //Hero Slider
   $('.hero-slider').slick({
     autoplay: true,
@@ -45,7 +38,7 @@
   /*	Portfolio Filtering Hook
   /* =========================================================================  */
   // filter - only initialize if container exists
-  setTimeout(function(){
+  setTimeout(function () {
     var containerEl = document.querySelector('.filtr-container');
     var filterizd;
     if (containerEl && containerEl.children.length > 0) {
@@ -55,7 +48,7 @@
           delay: 0,
           delayMode: 'progressive'
         });
-      } catch(e) {
+      } catch (e) {
         console.log('Filterizr initialization error:', e);
       }
     }
@@ -175,7 +168,7 @@
         updateURL: false,
         popstate: false
       });
-    } catch(e) {
+    } catch (e) {
       console.log('SmoothScroll initialization error:', e);
     }
   }
@@ -215,12 +208,42 @@
   $(window).scroll(function () {
     counter();
 
-    var scroll = $(window).scrollTop();
-    if (scroll > 50) {
-      $('.navigation').addClass('sticky-header');
-    } else {
-      $('.navigation').removeClass('sticky-header');
-    }
+    // var scroll = $(window).scrollTop();
+    // if (scroll > 50) {
+    //   $('.navigation').addClass('sticky-header');
+    // } else {
+    //   $('.navigation').removeClass('sticky-header');
+    // }
   });
+
+  // -----------------------------
+  //  Scroll Reveal Animation
+  // -----------------------------
+  // Auto-add scroll-reveal class to major sections and elements that look good revealing
+  $('.section, .feature-box, .service-item, .post, .project-item, .team-member, .cta-box').addClass('scroll-reveal');
+
+  if ('IntersectionObserver' in window) {
+    var observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.15
+    };
+
+    var observer = new IntersectionObserver(function (entries, Observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          $(entry.target).addClass('visible');
+          Observer.unobserve(entry.target); // Only animate once
+        }
+      });
+    }, observerOptions);
+
+    $('.scroll-reveal').each(function () {
+      observer.observe(this);
+    });
+  } else {
+    // Fallback for older browsers
+    $('.scroll-reveal').addClass('visible');
+  }
 
 })(jQuery);

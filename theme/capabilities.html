@@ -68,14 +68,14 @@
 <!--
 Fixed Navigation
 ==================================== -->
-<header class="navigation fixed-top">
+<header class="navigation fixed-top sticky-header">
   <div class="container">
     <!-- main nav -->
-    <nav class="navbar navbar-expand-lg navbar-light px-0">
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-between justify-content-lg-center px-0">
       <!-- logo -->
-      <a class="navbar-brand logo" href="index.html">
-        <img loading="lazy" class="logo-default" src="images/logo.png" alt="logo" />
-        <img loading="lazy" class="logo-white" src="images/logo-white.png" alt="logo" />
+      <a class="navbar-brand logo mr-lg-4" href="index.html">
+        <img loading="lazy" class="logo-default" src="images/logo-white.jpg" alt="logo" />
+        <img loading="lazy" class="logo-white" src="images/logo-white.jpg" alt="logo" />
       </a>
       <!-- /logo -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
@@ -83,17 +83,15 @@ Fixed Navigation
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navigation">
-        <ul class="navbar-nav ml-auto text-center">
+      <div class="collapse navbar-collapse flex-grow-0" id="navigation">
+        <ul class="navbar-nav mr-lg-4 text-center">
           <li class="nav-item ">
             <a class="nav-link" href="index.html">Trang Chủ</a>
           </li>
           <li class="nav-item  active ">
             <a class="nav-link" href="capabilities.html">Năng Lực & Công Nghệ</a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="laboratory.html">Phòng LAB</a>
-          </li>
+
           <li class="nav-item ">
             <a class="nav-link" href="projects.html">Dự Án</a>
           </li>
@@ -104,9 +102,20 @@ Fixed Navigation
             <a class="nav-link" href="partners.html">Đối Tác</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="contact.html">Liên Hệ</a>
+            <a class="nav-link" href="news.html">Tin Tức</a>
           </li>
         </ul>
+        <div class="d-flex align-items-center justify-content-center mt-2 mt-lg-0 flex-nowrap">
+          <a href="contact.html" class="btn btn-main btn-small-nav mr-2 mr-lg-3 text-nowrap">Liên Hệ</a>
+          <ul class="navbar-nav d-flex flex-row flex-nowrap">
+            <li class="nav-item active">
+              <a class="nav-link px-2" href="#">VI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2" href="en/index.html" style="opacity: 0.6;">EN</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <!-- /main nav -->
@@ -122,7 +131,6 @@ Start Capabilities & Technology Section
 
 
 
-
 <section class="capabilities section" id="capabilities">
 	<div class="container">
 		<div class="row justify-content-center">
@@ -130,92 +138,493 @@ Start Capabilities & Technology Section
 			<div class="col-xl-8 col-lg-10">
 				<div class="title text-center">
 					<h2>Tổ Hợp Sản Xuất</h2>
-					<p>Với hệ thống máy móc hiện đại và quy trình sản xuất tiên tiến, chúng tôi đảm bảo chất lượng sản phẩm đạt tiêu chuẩn quốc tế.</p>
+					<p>Với hệ thống máy móc hiện đại và quy trình sản xuất tiên tiến, chúng tôi đảm bảo chất lượng sản
+						phẩm đạt tiêu chuẩn quốc tế.</p>
 					<div class="border"></div>
 				</div>
 			</div>
 			<!-- /section title -->
 		</div>
 
+
 		<!-- Video nhà máy -->
 		<div class="row mb-5">
 			<div class="col-12">
 				<div class="video-wrapper text-center">
 					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID"
+							allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!-- Danh sách máy móc / thiết bị -->
-		<div class="row">
-			<div class="col-lg-4 col-md-6 mb-4">
-				<div class="capability-item text-center p-4">
-					<div class="capability-icon mb-3">
-						<i class="tf-ion-ios-cog" style="font-size: 48px; color: #28ABE3;"></i>
-					</div>
-					<h4>Máy móc hiện đại</h4>
-					<p>Hệ thống máy móc được nhập khẩu từ các nước phát triển, đảm bảo độ chính xác và hiệu quả cao.</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 mb-4">
-				<div class="capability-item text-center p-4">
-					<div class="capability-icon mb-3">
-						<i class="tf-ion-ios-settings" style="font-size: 48px; color: #28ABE3;"></i>
-					</div>
-					<h4>Thiết bị tự động hóa</h4>
-					<p>Công nghệ tự động hóa giúp tối ưu quy trình sản xuất, giảm thiểu sai sót và nâng cao năng suất.</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 mb-4">
-				<div class="capability-item text-center p-4">
-					<div class="capability-icon mb-3">
-						<i class="tf-ion-ios-flask" style="font-size: 48px; color: #28ABE3;"></i>
-					</div>
-					<h4>Hệ thống kiểm tra chất lượng</h4>
-					<p>Quy trình kiểm tra nghiêm ngặt đảm bảo mọi sản phẩm đều đạt tiêu chuẩn chất lượng cao nhất.</p>
-				</div>
-			</div>
-		</div>
 
-		<!-- Quy trình & công nghệ -->
-		<div class="row mt-5">
-			<div class="col-12">
-				<div class="title text-center mb-4">
-					<h2>Quy Trình & Công Nghệ</h2>
-					<div class="border"></div>
-				</div>
-			</div>
-			<div class="col-md-6 mb-4">
-				<div class="process-item">
-					<h4>1. Thiết kế & Lập kế hoạch</h4>
-					<p>Phân tích yêu cầu, thiết kế sản phẩm và lập kế hoạch sản xuất chi tiết.</p>
-				</div>
-			</div>
-			<div class="col-md-6 mb-4">
-				<div class="process-item">
-					<h4>2. Sản xuất</h4>
-					<p>Quy trình sản xuất được kiểm soát chặt chẽ với công nghệ hiện đại.</p>
-				</div>
-			</div>
-			<div class="col-md-6 mb-4">
-				<div class="process-item">
-					<h4>3. Kiểm tra chất lượng</h4>
-					<p>Mọi sản phẩm đều được kiểm tra kỹ lưỡng trước khi xuất xưởng.</p>
-				</div>
-			</div>
-			<div class="col-md-6 mb-4">
-				<div class="process-item">
-					<h4>4. Đóng gói & Giao hàng</h4>
-					<p>Đóng gói an toàn và giao hàng đúng tiến độ đến khách hàng.</p>
-				</div>
-			</div>
-		</div>
+		<!-- Dây chuyền sản xuất -->
+		<div class="production-lines mt-5">
+    <!-- Item 1: Cutting (First step in process usually) -->
+    <div class="row align-items-center mb-5">
+        <div class="col-lg-6 order-lg-1">
+            <div class="image-box item-shadow">
+                <img src="images/production/napcatkinhtudong.png" alt="Dây chuyền nạp kính & cắt kính tự động"
+                    class="img-fluid rounded">
+            </div>
+        </div>
+        <div class="col-lg-6 order-lg-2">
+            <div class="content-box pl-lg-4">
+                <h3 class="font-weight-bold text-uppercase mb-3 mt-3 mt-lg-0" style="color: #FF5722;">Dây chuyền nạp
+                    kính & cắt kính tự động</h3>
+                <p style="color: #002060;">Đây là khâu khởi đầu quan trọng, quyết định độ chính xác tuyệt đối cho mọi
+                    sản phẩm của Thiên Phú.
+                </p>
+                <p style="color: #002060;">Quy trình tự động hóa hoàn toàn việc nạp các tấm phôi kính khổ lớn và cắt
+                    theo bản vẽ lập trình CNC.
+                    Dây chuyền đảm bảo các đường cắt chính xác tuyệt đối, tối ưu hóa vật tư và giảm thiểu sai sót, sẵn
+                    sàng cho các công đoạn gia công tiếp theo.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Item 2: Tempered -->
+    <div class="row align-items-center mb-5">
+        <div class="col-lg-6 order-lg-2">
+            <div class="image-box item-shadow">
+                <img src="images/production/tempered-glass-line.png" alt="Dây chuyền sản xuất kính cường lực"
+                    class="img-fluid rounded">
+            </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+            <div class="content-box pr-lg-4">
+                <h3 class="font-weight-bold text-uppercase mb-3 mt-3 mt-lg-0" style="color: #FF5722;">Dây chuyền sản
+                    xuất kính cường lực</h3>
+                <p style="color: #002060;">Vận hành quy trình tôi luyện nhiệt tự động, dây chuyền của Thiên Phú tạo ra
+                    các sản phẩm kính an toàn
+                    với khả năng chịu lực, chống va đập và chịu sốc nhiệt cao.</p>
+                <p style="color: #002060;">Quy trình này đảm bảo cơ chế vỡ an toàn (vỡ hạt lựu) tuyệt đối cho người sử
+                    dụng. Với độ trong suốt
+                    tối ưu và khả năng truyền sáng, đây là vật liệu lý tưởng cho các ứng dụng đòi hỏi sự sang trọng và
+                    bền bỉ.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Item 3: Laminated -->
+    <div class="row align-items-center mb-5">
+        <div class="col-lg-6 order-lg-1">
+            <div class="image-box item-shadow">
+                <img src="images/production/daychuyenkinhghepfilm.png" alt="Dây chuyền sản xuất kính ghép film"
+                    class="img-fluid rounded">
+            </div>
+        </div>
+        <div class="col-lg-6 order-lg-2">
+            <div class="content-box pl-lg-4">
+                <h3 class="font-weight-bold text-uppercase mb-3 mt-3 mt-lg-0" style="color: #FF5722;">Dây chuyền sản
+                    xuất kính ghép film</h3>
+                <p style="color: #002060;">Dây chuyền của Thiên Phú sản xuất dòng kính ghép film (kính dán an toàn) —
+                    giải pháp an toàn và chống
+                    đột nhập vượt trội cho các công trình.</p>
+                <p style="color: #002060;">Quy trình tự động hóa việc kết dính hai hay nhiều lớp kính bằng các lớp màng
+                    film (PVB/EVA) đặc biệt,
+                    thông qua xử lý nhiệt và áp suất cao. Sản phẩm đầu ra có khả năng chống đâm xuyên; ngay cả khi vỡ,
+                    các mảnh kính vẫn bám chặt vào lớp film, đảm bảo an toàn tuyệt đối.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Item 4: Insulated -->
+    <div class="row align-items-center mb-5">
+        <div class="col-lg-6 order-lg-2">
+            <div class="image-box item-shadow">
+                <img src="images/production/daychuyenkinhhop.png" alt="Dây chuyền sản xuất kính hộp"
+                    class="img-fluid rounded">
+            </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+            <div class="content-box pr-lg-4">
+                <h3 class="font-weight-bold text-uppercase mb-3 mt-3 mt-lg-0" style="color: #FF5722;">Dây chuyền sản
+                    xuất kính hộp</h3>
+                <p style="color: #002060;">Thiên Phú sản xuất dòng kính cách âm, cách nhiệt (kính hộp) — giải pháp tối
+                    ưu cho các công trình đòi
+                    hỏi hiệu suất năng lượng cao và sự yên tĩnh.</p>
+                <p style="color: #002060;">Quy trình tự động hóa việc ghép các lớp kính, niêm phong kín một lớp khí trơ
+                    ở giữa bằng keo chuyên
+                    dụng và thanh cữ nhôm. Sản phẩm đầu ra ngăn chặn hiệu quả sự truyền nhiệt và tiếng ồn, mang lại sự
+                    yên tĩnh và thoải mái vượt trội.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+		<!-- Danh sách máy móc -->
+		<section class="machine-list section-sm">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="row align-items-center mb-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <div class="title">
+                    <span class="text-color text-uppercase font-weight-bold d-block mb-2">Nền Tảng</span>
+                    <h2 class="mb-4">MÁY MÓC & THIẾT BỊ</h2>
+                    <p>Thiên Phú sở hữu hệ thống máy móc hiện đại, nhập khẩu từ các thương hiệu hàng đầu thế giới, đảm
+                        bảo năng lực sản xuất lớn và chất lượng vượt trội.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Placeholders (Top) -->
+        <div class="row mb-5 justify-content-center">
+            <div class="col-lg-10">
+                <div class="image-box item-shadow">
+                    <img src="images/company/maymocthietbi.png" alt="Hệ thống máy móc Thiên Phú"
+                        class="img-fluid rounded w-100">
+                </div>
+            </div>
+        </div>
+
+        <!-- Table -->
+        <div class="row">
+            <div class="col-12">
+                <div class="table-responsive shadow-sm bg-white rounded">
+                    <table class="table table-bordered table-hover mb-0">
+                        <thead class="thead-light">
+                            <tr class="text-center bg-primary text-white">
+                                <th scope="col" class="align-middle" style="width: 5%">STT</th>
+                                <th scope="col" class="align-middle text-left" style="width: 45%">Mô tả thiết bị (Loại,
+                                    nhãn hiệu)</th>
+                                <th scope="col" class="align-middle" style="width: 20%">Công suất</th>
+                                <th scope="col" class="align-middle" style="width: 10%">Số lượng</th>
+                                <th scope="col" class="align-middle" style="width: 20%">Năm sản xuất</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- 1 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">1</td>
+                                <td>Dây chuyền cường lực phẳng - Mingte Glass, size 3300x7000</td>
+                                <td class="text-center">2000m²/ngày</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">2010</td>
+                            </tr>
+                            <!-- 2 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">2</td>
+                                <td>Dây chuyền cường lực phẳng & cong - North Glass, size 2440x5200</td>
+                                <td class="text-center">700m²/ngày</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">2008</td>
+                            </tr>
+                            <!-- 3 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">3</td>
+                                <td>Dây chuyền cắt kính CNC – Intermac Italy, size 2440x3800</td>
+                                <td class="text-center">1500m²/ngày</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">2007</td>
+                            </tr>
+                            <!-- 4 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">4</td>
+                                <td>Dây chuyền cắt kính CNC – Intermac Italy, size 3300x6000</td>
+                                <td class="text-center">2000m²/ngày</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">2009</td>
+                            </tr>
+                            <!-- 5 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">5</td>
+                                <td>Máy gia công cắt kính bằng tia nước</td>
+                                <td class="text-center">1200m/ngày</td>
+                                <td class="text-center">2</td>
+                                <td class="text-center">2011-2012</td>
+                            </tr>
+                            <!-- 6 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">6</td>
+                                <td>Dây chuyền in men UV trang trí</td>
+                                <td class="text-center">200m²/ngày</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">2011</td>
+                            </tr>
+                            <!-- 7 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">7</td>
+                                <td>Máy gia công CNC đa năng (mài, khoan, cắt, ...) Master 43 – Intermac Italy, size
+                                    2440x4200</td>
+                                <td class="text-center">1000m/ngày</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">2008</td>
+                            </tr>
+                            <!-- 8 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">8</td>
+                                <td>Trạm gia công CNC đa năng (mài, khoan, cắt, ...) Master 33 – Intermac Italy, size
+                                    2440x3200</td>
+                                <td class="text-center">1000m/ngày</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">2010</td>
+                            </tr>
+                            <!-- 9 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">9</td>
+                                <td>Dây chuyền sản xuất kính ghép film PVB - Mingte glass, size 2440x3800</td>
+                                <td class="text-center">1200m²/ngày</td>
+                                <td class="text-center">2</td>
+                                <td class="text-center">2006-2012</td>
+                            </tr>
+                            <!-- 10 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">10</td>
+                                <td>Dây chuyền SX kính hộp IG, size 2000x3000mm</td>
+                                <td class="text-center">400m²/ngày</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">2010</td>
+                            </tr>
+                            <!-- 11 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">11</td>
+                                <td>Máy mài song cạnh-Suntec Size 2500 m</td>
+                                <td class="text-center">1600m/ngày</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center">2006</td>
+                            </tr>
+                            <!-- 12 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">12</td>
+                                <td>Máy mài song cạnh-Suntec Size 4500 m</td>
+                                <td class="text-center">1600m/ngày</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center">2006-2011</td>
+                            </tr>
+                            <!-- 13 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">13</td>
+                                <td>Lò ngâm nhiệt Heat Soak EK 6000/6200 x 2500mm</td>
+                                <td class="text-center">Khoảng 6 ton/mẻ ngâm</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">2015</td>
+                            </tr>
+                            <!-- 14 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">14</td>
+                                <td>Dây chuyền cường lực công nghiệp đối lưu hai buồng nóng (BC-1G50II)-Standard
+                                    ANSIZ-97.1</td>
+                                <td class="text-center">800m²/ngày</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">2016</td>
+                            </tr>
+                            <!-- 15 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">15</td>
+                                <td>Máy mài vát cạnh</td>
+                                <td class="text-center">1600m/ngày</td>
+                                <td class="text-center">2</td>
+                                <td class="text-center">2007</td>
+                            </tr>
+                            <!-- 16 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">16</td>
+                                <td>Máy mài cạnh đứng</td>
+                                <td class="text-center">1000m/ngày</td>
+                                <td class="text-center">6</td>
+                                <td class="text-center">2006</td>
+                            </tr>
+                            <!-- 17 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">17</td>
+                                <td>Máy rửa</td>
+                                <td class="text-center">2000m²/ngày</td>
+                                <td class="text-center">4</td>
+                                <td class="text-center">2006</td>
+                            </tr>
+                            <!-- 18 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">18</td>
+                                <td>Máy mài dị hình</td>
+                                <td class="text-center">700m/ngày</td>
+                                <td class="text-center">4</td>
+                                <td class="text-center">2006</td>
+                            </tr>
+                            <!-- 19 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">19</td>
+                                <td>Xe nâng</td>
+                                <td class="text-center">2.5 ton</td>
+                                <td class="text-center">4</td>
+                                <td class="text-center">2010</td>
+                            </tr>
+                            <!-- 20 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">20</td>
+                                <td>Cầu trục EOT</td>
+                                <td class="text-center">5 ton</td>
+                                <td class="text-center">4</td>
+                                <td class="text-center">2006</td>
+                            </tr>
+                            <!-- 21 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">21</td>
+                                <td>Cầu trục EOT</td>
+                                <td class="text-center">3 ton</td>
+                                <td class="text-center">6</td>
+                                <td class="text-center">2008</td>
+                            </tr>
+                            <!-- 22 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">22</td>
+                                <td>Máy khoan kính</td>
+                                <td class="text-center">500 lỗ/ngày</td>
+                                <td class="text-center">2</td>
+                                <td class="text-center">2006</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+		<!-- Danh sách vận tải -->
+		<section class="transport-list section-sm">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="row align-items-center mb-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <div class="title">
+                    <span class="text-color text-uppercase font-weight-bold d-block mb-2">Danh mục</span>
+                    <h2 class="mb-4">VẬN TẢI</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Placeholder (After Header) -->
+        <div class="row mb-5 justify-content-center">
+            <div class="col-lg-10">
+                <div class="image-box item-shadow">
+                    <img src="images/company/vantai.png" alt="Kho bãi Thiên Phú" class="img-fluid rounded w-100">
+                </div>
+            </div>
+        </div>
+
+        <!-- Table -->
+        <div class="row">
+            <div class="col-12">
+                <div class="table-responsive shadow-sm bg-white rounded">
+                    <table class="table table-bordered table-hover mb-0">
+                        <thead class="thead-light">
+                            <tr class="text-center bg-primary text-white">
+                                <th scope="col" class="align-middle" style="width: 5%">STT</th>
+                                <th scope="col" class="align-middle text-left" style="width: 45%">Mô tả thiết bị (Loại,
+                                    nhãn hiệu)</th>
+                                <th scope="col" class="align-middle" style="width: 20%">Công suất</th>
+                                <th scope="col" class="align-middle" style="width: 10%">Số lượng</th>
+                                <th scope="col" class="align-middle" style="width: 20%">Năm sản xuất</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- 1 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">1</td>
+                                <td>Xe cẩu trục</td>
+                                <td class="text-center">3 ton</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center"></td>
+                            </tr>
+                            <!-- 2 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">2</td>
+                                <td>Xe tải - Huyndai</td>
+                                <td class="text-center">1 ton</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">2008</td>
+                            </tr>
+                            <!-- 3 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">3</td>
+                                <td>Xe tải - Huyndai</td>
+                                <td class="text-center">1,25 ton</td>
+                                <td class="text-center">2</td>
+                                <td class="text-center">2006</td>
+                            </tr>
+                            <!-- 4 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">4</td>
+                                <td>Xe tải - Mitsubishi</td>
+                                <td class="text-center">1,9 ton</td>
+                                <td class="text-center">4</td>
+                                <td class="text-center">2007</td>
+                            </tr>
+                            <!-- 5 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">5</td>
+                                <td>Xe tải - Izuzu</td>
+                                <td class="text-center">3,45 ton</td>
+                                <td class="text-center">2</td>
+                                <td class="text-center">2008</td>
+                            </tr>
+                            <!-- 6 -->
+                            <tr>
+                                <td class="text-center font-weight-bold">6</td>
+                                <td>Xe cẩu trục - Izuzu</td>
+                                <td class="text-center">1 ton</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">2008</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+		<!-- Chứng nhận -->
+		<section class="certifications section-sm">
+    <div class="container">
+        <!-- Certification 1: ISO -->
+        <div class="row mb-5 justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h3 class="font-weight-bold text-uppercase mb-3" style="color: #FF5722;">HỆ THỐNG QUẢN LÝ</h3>
+                <p class="mb-4" style="color: #002060; font-size: 1.3rem; font-weight: 600;">Đạt chứng nhận ISO
+                    9001:2015 về Hệ thống quản lý chất lượng.</p>
+                <div class="image-box item-shadow d-inline-block">
+                    <img src="images/company/chungnhan1.png" alt="Giấy chứng nhận ISO 9001:2015"
+                        class="img-fluid rounded" style="max-height: 700px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <hr class="my-5">
+            </div>
+        </div>
+
+        <!-- Certification 2: Quality -->
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0 order-lg-1">
+                <div class="image-box item-shadow text-center">
+                    <img src="images/company/chungnhan2.png" alt="Chứng nhận chất lượng CONINCO"
+                        class="img-fluid rounded" style="max-height: 700px;">
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-2">
+                <div class="content-box pl-lg-4 text-center text-lg-left">
+                    <h3 class="font-weight-bold text-uppercase mb-3" style="color: #FF5722;">TIÊU CHUẨN CHẤT LƯỢNG</h3>
+                    <p class="mb-4" style="color: #002060; font-size: 1.3rem; font-weight: 600;">TIÊU CHUẨN SẢN PHẨM &
+                        KẾT QUẢ THỬ NGHIỆM: <br>Đã được kiểm định bởi CONINCO cho tất cả các độ dày kính</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
 	</div> <!-- End container -->
 </section> <!-- End section -->
-
-
 
 <footer id="footer" class="bg-one">
   <div class="top-footer">

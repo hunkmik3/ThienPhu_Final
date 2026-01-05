@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
 /*=================================================================
   Navigation
 ==================================================================*/
 .navigation {
-  padding-top: 2.5px;
-  padding-bottom: 2.5px;
+  padding: 0;
   height: auto !important;
   min-height: 0 !important;
   transition: .3s all;
@@ -14,10 +14,12 @@
   }
 
   .dropdown-toggle {
+
     &::before,
     &::after {
       display: none;
     }
+
     i {
       font-size: 10px;
       margin-left: 2px;
@@ -31,7 +33,7 @@
         color: $light;
         font-size: 14px;
         line-height: 26px;
-        padding: 20px 15px;
+        padding: 5px 15px;
         text-transform: uppercase;
         letter-spacing: 1px;
         transition: .2s ease-in-out 0s;
@@ -56,11 +58,13 @@
     .nav-link {
       padding: 6px !important;
     }
+
     .navbar-collapse.show {
       overflow-y: auto;
       max-height: calc(100vh - 55px);
     }
   }
+
   .dropdown-submenu .dropdown-menu {
     margin: 0;
     background-color: #131313;
@@ -71,18 +75,20 @@
       left: 100%;
       top: -5px;
     }
+
     .dropleft .dropdown-menu {
       left: auto;
       right: 100%;
       margin: 0;
       top: -5px;
     }
+
     .dropdown-submenu .dropdown-menu {
       background-color: #000;
     }
   }
 
-  .dropdown:hover > .dropdown-menu {
+  .dropdown:hover>.dropdown-menu {
     visibility: visible;
     opacity: 1;
   }
@@ -99,8 +105,13 @@
     background: #000;
     transition: .3s ease;
 
-    li:first-child {margin-top: 12px}
-    li:last-child {margin-bottom: 12px}
+    li:first-child {
+      margin-top: 12px
+    }
+
+    li:last-child {
+      margin-bottom: 12px
+    }
   }
 
   @media (max-width: 991px) {
@@ -117,6 +128,7 @@
     .dropdown-menu.show {
       display: block;
     }
+
     .dropdown-menu {
       float: left;
       width: 100%;
@@ -194,7 +206,7 @@
 }
 
 .navbar-brand img {
-  max-height: 102px;
+  max-height: 80px;
   height: auto;
   width: auto;
 }

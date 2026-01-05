@@ -68,14 +68,14 @@
 <!--
 Fixed Navigation
 ==================================== -->
-<header class="navigation fixed-top">
+<header class="navigation fixed-top sticky-header">
   <div class="container">
     <!-- main nav -->
-    <nav class="navbar navbar-expand-lg navbar-light px-0">
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-between justify-content-lg-center px-0">
       <!-- logo -->
-      <a class="navbar-brand logo" href="index.html">
-        <img loading="lazy" class="logo-default" src="images/logo.png" alt="logo" />
-        <img loading="lazy" class="logo-white" src="images/logo-white.png" alt="logo" />
+      <a class="navbar-brand logo mr-lg-4" href="index.html">
+        <img loading="lazy" class="logo-default" src="images/logo-white.jpg" alt="logo" />
+        <img loading="lazy" class="logo-white" src="images/logo-white.jpg" alt="logo" />
       </a>
       <!-- /logo -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
@@ -83,17 +83,15 @@ Fixed Navigation
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navigation">
-        <ul class="navbar-nav ml-auto text-center">
+      <div class="collapse navbar-collapse flex-grow-0" id="navigation">
+        <ul class="navbar-nav mr-lg-4 text-center">
           <li class="nav-item active">
             <a class="nav-link" href="index.html">Trang Chủ</a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="capabilities.html">Năng Lực & Công Nghệ</a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="laboratory.html">Phòng LAB</a>
-          </li>
+
           <li class="nav-item ">
             <a class="nav-link" href="projects.html">Dự Án</a>
           </li>
@@ -104,9 +102,20 @@ Fixed Navigation
             <a class="nav-link" href="partners.html">Đối Tác</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="contact.html">Liên Hệ</a>
+            <a class="nav-link" href="news.html">Tin Tức</a>
           </li>
         </ul>
+        <div class="d-flex align-items-center justify-content-center mt-2 mt-lg-0 flex-nowrap">
+          <a href="contact.html" class="btn btn-main btn-small-nav mr-2 mr-lg-3 text-nowrap">Liên Hệ</a>
+          <ul class="navbar-nav d-flex flex-row flex-nowrap">
+            <li class="nav-item active">
+              <a class="nav-link px-2" href="#">VI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2" href="en/index.html" style="opacity: 0.6;">EN</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <!-- /main nav -->
@@ -116,29 +125,50 @@ Fixed Navigation
 End Fixed Navigation
 ==================================== -->
 
- <!--
-Welcome Slider
-==================================== -->
- <section class="hero-area">
- 	<div class="container">
- 		<div class="row">
- 			<div class="col-md-12">
- 				<div class="block mt-4">
- 					<h1 class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".3s">F0tech – Đối tác chiến lược trong chuyển đổi số và công nghệ</h1>
- 					<p class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".5s">Chúng tôi cung cấp giải pháp công nghệ, AI và marketing số giúp doanh nghiệp nâng cao hiệu suất và tạo lợi thế cạnh tranh bền vững.</p>
- 					<ul class="list-inline wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".7s">
- 						<li class="list-inline-item">
- 							<a data-scroll href="#services" class="btn btn-main">Explore Us</a>
- 						</li>
- 						<li class="list-inline-item">
- 							<a data-scroll href="#team" class="btn btn-transparent">Learn More</a>
- 						</li>
- 					</ul>
- 				</div>
- 			</div>
- 		</div>
- 	</div>
- </section>
+<div class="hero-slider">
+	<div class="slider-item th-fullpage hero-area" style="background-image: url(images/slider/slider1.jpg);">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">CÔNG TY TNHH THIÊN PHÚ –
+						Chuyên sản xuất kính chất lượng cao</h1>
+					<p data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">Chúng tôi chuyên sản xuất
+						và cung cấp các loại kính cường lực, kính bán cường lực, kính ghép fim, kính hộp IGU và nhiều
+						sản phẩm kính khác với chất lượng đạt tiêu chuẩn quốc tế.</p>
+					<a data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".8" class="btn btn-main"
+						href="products.html">Xem Sản Phẩm</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="slider-item th-fullpage hero-area" style="background-image: url(images/slider/slider2.jpg);">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1>Giải pháp kính toàn diện cho mọi công trình</h1>
+					<p>Với 2 nhà máy hiện đại và đội ngũ chuyên nghiệp, chúng tôi cam kết mang đến sản phẩm kính chất
+						lượng cao, đáp ứng mọi nhu cầu của khách hàng.</p>
+					<a data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".8" class="btn btn-main"
+						href="contact.html">Liên Hệ Ngay</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="slider-item th-fullpage hero-area" style="background-image: url(images/slider/call-to-action-bg.jpg);">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">Đối tác tin cậy trong
+						ngành sản xuất kính</h1>
+					<p data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">Hơn 20 năm kinh nghiệm,
+						chúng tôi tự hào là đối tác của hàng trăm dự án lớn nhỏ trên toàn quốc.</p>
+					<a data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".8" class="btn btn-main"
+						href="about.html">Tìm Hiểu Thêm</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 <!--
 Start About Section

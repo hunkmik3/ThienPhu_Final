@@ -2,7 +2,7 @@
 Start Capabilities & Technology Section
 ==================================== -->
 
-@@include('blocks/production-lines.htm')
+
 
 <section class="capabilities section" id="capabilities">
 	<div class="container">
@@ -11,88 +11,42 @@ Start Capabilities & Technology Section
 			<div class="col-xl-8 col-lg-10">
 				<div class="title text-center">
 					<h2>Tổ Hợp Sản Xuất</h2>
-					<p>Với hệ thống máy móc hiện đại và quy trình sản xuất tiên tiến, chúng tôi đảm bảo chất lượng sản phẩm đạt tiêu chuẩn quốc tế.</p>
+					<p>Với hệ thống máy móc hiện đại và quy trình sản xuất tiên tiến, chúng tôi đảm bảo chất lượng sản
+						phẩm đạt tiêu chuẩn quốc tế.</p>
 					<div class="border"></div>
 				</div>
 			</div>
 			<!-- /section title -->
 		</div>
 
+
 		<!-- Video nhà máy -->
 		<div class="row mb-5">
 			<div class="col-12">
 				<div class="video-wrapper text-center">
 					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID"
+							allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!-- Danh sách máy móc / thiết bị -->
-		<div class="row">
-			<div class="col-lg-4 col-md-6 mb-4">
-				<div class="capability-item text-center p-4">
-					<div class="capability-icon mb-3">
-						<i class="tf-ion-ios-cog" style="font-size: 48px; color: #28ABE3;"></i>
-					</div>
-					<h4>Máy móc hiện đại</h4>
-					<p>Hệ thống máy móc được nhập khẩu từ các nước phát triển, đảm bảo độ chính xác và hiệu quả cao.</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 mb-4">
-				<div class="capability-item text-center p-4">
-					<div class="capability-icon mb-3">
-						<i class="tf-ion-ios-settings" style="font-size: 48px; color: #28ABE3;"></i>
-					</div>
-					<h4>Thiết bị tự động hóa</h4>
-					<p>Công nghệ tự động hóa giúp tối ưu quy trình sản xuất, giảm thiểu sai sót và nâng cao năng suất.</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 mb-4">
-				<div class="capability-item text-center p-4">
-					<div class="capability-icon mb-3">
-						<i class="tf-ion-ios-flask" style="font-size: 48px; color: #28ABE3;"></i>
-					</div>
-					<h4>Hệ thống kiểm tra chất lượng</h4>
-					<p>Quy trình kiểm tra nghiêm ngặt đảm bảo mọi sản phẩm đều đạt tiêu chuẩn chất lượng cao nhất.</p>
-				</div>
-			</div>
-		</div>
 
-		<!-- Quy trình & công nghệ -->
-		<div class="row mt-5">
-			<div class="col-12">
-				<div class="title text-center mb-4">
-					<h2>Quy Trình & Công Nghệ</h2>
-					<div class="border"></div>
-				</div>
-			</div>
-			<div class="col-md-6 mb-4">
-				<div class="process-item">
-					<h4>1. Thiết kế & Lập kế hoạch</h4>
-					<p>Phân tích yêu cầu, thiết kế sản phẩm và lập kế hoạch sản xuất chi tiết.</p>
-				</div>
-			</div>
-			<div class="col-md-6 mb-4">
-				<div class="process-item">
-					<h4>2. Sản xuất</h4>
-					<p>Quy trình sản xuất được kiểm soát chặt chẽ với công nghệ hiện đại.</p>
-				</div>
-			</div>
-			<div class="col-md-6 mb-4">
-				<div class="process-item">
-					<h4>3. Kiểm tra chất lượng</h4>
-					<p>Mọi sản phẩm đều được kiểm tra kỹ lưỡng trước khi xuất xưởng.</p>
-				</div>
-			</div>
-			<div class="col-md-6 mb-4">
-				<div class="process-item">
-					<h4>4. Đóng gói & Giao hàng</h4>
-					<p>Đóng gói an toàn và giao hàng đúng tiến độ đến khách hàng.</p>
-				</div>
-			</div>
-		</div>
+		<!-- Dây chuyền sản xuất -->
+		@@include('blocks/production-lines.htm')
+
+		<!-- Danh sách máy móc -->
+		@@include('blocks/machines-list.htm')
+
+		<!-- Danh sách vận tải -->
+		@@include('blocks/transport-list.htm')
+
+		<!-- Chứng nhận -->
+		@@include('blocks/certifications.htm')
+
+
+
+
 	</div> <!-- End container -->
 </section> <!-- End section -->
-
