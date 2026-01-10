@@ -1,12 +1,160 @@
-
 /*=================================================================
-  Footer section
+  Footer section - New Design
 ==================================================================*/
+
+// Footer Colors
+$footer-bg: #000365;
+$footer-title-color: #d4a853;
+$footer-text-color: #b0b8c9;
+$footer-link-color: #9ca3af;
+$footer-orange: #d4a853;
+
+.footer-new {
+  background: $footer-bg;
+}
+
+.footer-main {
+  padding: 40px 0 30px;
+}
+
+// Footer Brand (Logo + Company Info)
+.footer-brand {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+
+  .footer-logo {
+    max-width: 80px;
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  .footer-company-info {
+    h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: $footer-title-color;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 1.6;
+      color: $footer-text-color;
+      margin-bottom: 5px;
+    }
+
+    .tax-code {
+      font-size: 12px;
+      color: $footer-text-color;
+
+      strong {
+        color: $footer-title-color;
+      }
+    }
+  }
+}
+
+// Footer Widget
+.footer-widget {
+  .footer-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: $footer-title-color;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+    border: none;
+  }
+}
+
+// Footer Links
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin-bottom: 6px;
+
+    a {
+      font-size: 12px;
+      color: $footer-link-color;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+// Footer Info (Address, Phone, etc.)
+.footer-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 1.5;
+
+    .info-label {
+      color: $footer-link-color;
+      display: inline;
+    }
+
+    .info-value {
+      color: $footer-text-color;
+      display: inline;
+      margin-left: 5px;
+
+      a {
+        color: $footer-text-color;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+// Footer Bottom with Orange Line
+.footer-bottom-new {
+  background: $footer-orange;
+  padding: 12px 0;
+  text-align: center;
+  border-top: 3px solid lighten($footer-orange, 10%);
+
+  p {
+    font-size: 12px;
+    color: $footer-bg;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+
+    strong {
+      font-weight: 700;
+    }
+  }
+}
+
+// Keep old styles for backward compatibility
 .top-footer {
-  background-color: #181A20;
+  background-color: $footer-bg;
   border-top: none;
   padding: 40px 0 20px;
-  h3, h4 {
+
+  h3,
+  h4 {
     font-size: 15px;
     line-height: 1.4;
     color: #fff;
@@ -15,7 +163,10 @@
     letter-spacing: 1px;
     margin-bottom: 14px;
   }
-  p, li, li a {
+
+  p,
+  li,
+  li a {
     font-size: 13px;
     line-height: 22px;
     color: #d1d5db;
@@ -24,13 +175,16 @@
     padding-right: 0;
     margin-bottom: 6px;
   }
+
   li a {
     transition: color .3s;
+
     &:hover {
       color: #fff;
       text-decoration: underline;
     }
   }
+
   .widget {
     margin-bottom: 10px;
   }
@@ -41,7 +195,9 @@
   background-color: #111217;
   border-top: none;
   padding: 12px 0 8px 0;
-  h5, h6 {
+
+  h5,
+  h6 {
     font-size: 12px;
     line-height: 1.2;
     color: #bdbdbd;
@@ -50,8 +206,44 @@
     letter-spacing: 1px;
     margin: 0 0 2px 0;
   }
+
   a {
     color: #fff;
     text-decoration: underline;
+  }
+}
+
+// Responsive
+@media (max-width: 991px) {
+  .footer-brand {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+
+    .footer-logo {
+      margin-bottom: 15px;
+    }
+  }
+
+  .footer-widget {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer-main {
+    padding: 30px 0 20px;
+  }
+
+  .footer-widget {
+    .footer-title {
+      font-size: 11px;
+    }
+  }
+
+  .footer-links li a,
+  .footer-info li {
+    font-size: 11px;
   }
 }

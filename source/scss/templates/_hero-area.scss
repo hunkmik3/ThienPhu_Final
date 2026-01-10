@@ -1,7 +1,11 @@
 .hero-area {
   background-image: url('../images/slider/slider-bg-1.jpg');
-  background-size: cover;
-  height: 100vh;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  height: auto;
+  aspect-ratio: 16 / 6;
   position: relative;
   display: flex;
   justify-content: center;
@@ -9,7 +13,7 @@
 
   &:before {
     content: '';
-    background: rgba(0, 0, 0, 0.63);
+    background: transparent;
     position: absolute;
     top: 0;
     right: 0;
@@ -82,23 +86,27 @@
   z-index: -1;
 }
 
-.hero-area h1, .hero-area p {
+.hero-area h1,
+.hero-area p {
   font-family: 'Montserrat', sans-serif;
 }
 
 
 .slider-item {
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
+  min-height: 400px;
+  height: auto;
+  aspect-ratio: 16 / 6;
 
   &::before {
     position: absolute;
     content: "";
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: transparent;
     left: 0;
     top: 0;
   }
@@ -111,7 +119,7 @@
     transform: translateY(-50%);
   }
 
-  h1{
+  h1 {
     color: #fff;
     font-size: 60px;
     line-height: 70px;
@@ -119,10 +127,12 @@
     font-weight: 700;
     margin-bottom: 20px;
     margin-top: 50px;
+
     @include tablet {
       font-size: 48px;
       line-height: 52px;
     }
+
     @include mobile {
       font-size: 38px;
       line-height: 46px;
@@ -137,6 +147,7 @@
 
 .hero-slider {
   overflow-x: hidden;
+  margin-top: 90px; // Space for fixed header
 
   .prevArrow {
     left: -100px;
@@ -145,6 +156,7 @@
   .nextArrow {
     right: -100px;
   }
+
   .prevArrow,
   .nextArrow {
     @include tablet {

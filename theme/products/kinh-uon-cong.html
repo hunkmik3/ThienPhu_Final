@@ -68,14 +68,13 @@
 <!--
 Fixed Navigation
 ==================================== -->
-<header class="navigation fixed-top sticky-header">
-    <div class="container">
+<header class="navigation fixed-top nav-white">
+    <div class="container-fluid px-4">
         <!-- main nav -->
-        <nav class="navbar navbar-expand-lg navbar-light justify-content-between justify-content-lg-center px-0">
+        <nav class="navbar navbar-expand-lg justify-content-between px-0">
             <!-- logo -->
-            <a class="navbar-brand logo mr-lg-4" href="../index.html">
+            <a class="navbar-brand logo" href="../index.html">
                 <img loading="lazy" class="logo-default" src="../images/logo-white.jpg" alt="logo" />
-                <img loading="lazy" class="logo-white" src="../images/logo-white.jpg" alt="logo" />
             </a>
             <!-- /logo -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
@@ -83,38 +82,39 @@ Fixed Navigation
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse flex-grow-0" id="navigation">
-                <ul class="navbar-nav mr-lg-4 text-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Trang Chủ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../capabilities.html">Năng Lực & Công Nghệ</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="../projects.html">Dự Án</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="../products.html">Sản Phẩm</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../partners.html">Đối Tác</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../news.html">Tin Tức</a>
-                    </li>
-                </ul>
-                <div class="d-flex align-items-center justify-content-center mt-2 mt-lg-0 flex-nowrap">
-                    <a href="../contact.html" class="btn btn-main btn-small-nav mr-2 mr-lg-3 text-nowrap">Liên Hệ</a>
-                    <ul class="navbar-nav d-flex flex-row flex-nowrap">
-                        <li class="nav-item active">
-                            <a class="nav-link px-2" href="#">VI</a>
+            <!-- Navy Pill Menu Container -->
+            <div class="nav-pill-container d-flex align-items-center">
+                <div class="collapse navbar-collapse" id="navigation">
+                    <ul class="navbar-nav text-center main-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">TRANG CHỦ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-2" href="../en/index.html" style="opacity: 0.6;">EN</a>
+                            <a class="nav-link" href="../capabilities.html">NĂNG LỰC & CÔNG NGHỆ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../projects.html">DỰ ÁN</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../products.html">SẢN PHẨM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../partners.html">ĐỐI TÁC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../news.html">TIN TỨC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact.html">LIÊN HỆ</a>
                         </li>
                     </ul>
+                </div>
+
+                <!-- Language Switcher -->
+                <div class="lang-switcher d-flex align-items-center">
+                    <span class="lang-separator"></span>
+                    <a href="#" class="lang-btn active">VI</a>
+                    <a href="../en/index.html" class="lang-btn">EN</a>
                 </div>
             </div>
         </nav>

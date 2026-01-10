@@ -1,0 +1,362 @@
+/*=================================================================
+  Featured Projects - New Design with Pagination
+==================================================================*/
+
+// Colors
+$project-orange: #d4a853;
+$project-blue: #000365;
+$project-text: #333;
+$project-bg: #f8f6f3;
+
+.featured-projects-new {
+    padding: 60px 0 80px;
+    position: relative;
+    overflow: hidden;
+
+    // Flipped background using pseudo-element
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('../images/products/background_noibat.png') no-repeat center center;
+        background-size: cover;
+        transform: scaleY(-1);
+        z-index: 0;
+    }
+
+    // Ensure content is above background
+    >* {
+        position: relative;
+        z-index: 1;
+    }
+
+    .container {
+        max-width: 95%; // Increased from 80%
+        margin: 0 auto;
+    }
+}
+
+// Section Title
+.projects-title {
+    font-family: 'Bricolage Grotesque', serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: $project-blue;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.projects-title-line {
+    width: 200px;
+    height: 4px;
+    background: $project-orange;
+    margin-bottom: 50px;
+}
+
+// Projects Carousel Wrapper
+.projects-carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+// Projects Pages Container
+.projects-pages-container {
+    width: 100%;
+    position: relative;
+}
+
+.projects-page {
+    display: none;
+
+    &.active {
+        display: block;
+        animation: fadeIn 0.4s ease-in-out;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+// Navigation Arrows - positioned at sides
+.project-nav {
+    cursor: pointer;
+    padding: 15px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+
+    &.project-nav-prev {
+        left: -50px; // Adjusted for wider container
+    }
+
+    &.project-nav-next {
+        right: -50px; // Adjusted for wider container
+    }
+
+    .nav-chevron {
+        font-size: 48px; // Increased size
+        font-weight: bold;
+        color: $project-orange;
+        letter-spacing: -8px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    &:hover {
+        transform: translateY(-50%) scale(1.15);
+    }
+}
+
+// Projects Carousel
+.projects-carousel {
+    display: flex;
+    gap: 30px; // Increased gap
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+// Project Card with White Wrapper
+.project-card {
+    flex: 1;
+    max-width: 450px; // Increased from 320px
+    min-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-8px);
+    }
+}
+
+// White Wrapper Inner
+.project-card-inner {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.18);
+    }
+}
+
+.project-card-image {
+    position: relative;
+    overflow: hidden;
+    height: 300px; // Increased from 220px
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+    }
+
+    &:hover img {
+        transform: scale(1.05);
+    }
+}
+
+// Project Content - Inside white wrapper
+.project-card-content {
+    padding: 20px 20px 25px;
+    background: #fff;
+}
+
+.project-name {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: $project-orange;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.project-location {
+    font-size: 13px;
+    color: $project-blue;
+    margin-bottom: 10px;
+    font-weight: 500;
+
+    i {
+        color: $project-orange;
+        margin-right: 5px;
+    }
+}
+
+.project-details {
+    list-style: disc;
+    padding-left: 18px;
+    margin: 0;
+
+    li {
+        font-size: 12px;
+        color: $project-text;
+        line-height: 1.6;
+        margin-bottom: 4px;
+    }
+}
+
+// Slider Indicators - Horizontal dashes with active dot
+.projects-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 40px 0;
+    position: relative;
+
+    .indicator {
+        cursor: pointer;
+        transition: all 0.3s ease;
+        z-index: 1;
+        position: relative;
+
+        // Default: horizontal dash
+        width: 30px;
+        height: 4px;
+        border-radius: 2px;
+        background: $project-orange;
+        opacity: 0.5;
+
+        &.active {
+            // Active: circle dot
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: $project-orange;
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    // Add dashes between indicators
+    .indicator:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        right: -12px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 8px;
+        height: 4px;
+        background: $project-orange;
+        opacity: 0.5;
+        border-radius: 2px;
+    }
+
+    .indicator.active::after {
+        display: none;
+    }
+
+    .indicator.active+.indicator::before {
+        display: none;
+    }
+}
+
+// View All Button
+// View All Button
+.btn-view-all {
+    display: inline-block;
+    padding: 15px 50px;
+    background: #F3733D;
+    color: #fff;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(243, 115, 61, 0.3);
+
+    &:hover {
+        background: darken(#F3733D, 10%);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(243, 115, 61, 0.4);
+        color: #fff;
+    }
+}
+
+// Responsive
+@media (max-width: 1200px) {
+    .featured-projects-new .container {
+        max-width: 90%;
+    }
+
+    .project-nav {
+        &.project-nav-prev {
+            left: -50px;
+        }
+
+        &.project-nav-next {
+            right: -50px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .projects-carousel {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .project-nav {
+        display: none;
+    }
+
+    .project-card {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .featured-projects-new .container {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 575px) {
+    .projects-title {
+        font-size: 32px;
+    }
+
+    .projects-title-line {
+        width: 150px;
+    }
+
+    .featured-projects-new {
+        padding: 40px 0 60px;
+    }
+
+    .project-card-image {
+        height: 200px;
+    }
+
+    .projects-indicators::before {
+        width: 200px;
+    }
+}

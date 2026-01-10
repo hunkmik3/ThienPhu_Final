@@ -68,14 +68,13 @@
 <!--
 Fixed Navigation
 ==================================== -->
-<header class="navigation fixed-top sticky-header">
-  <div class="container">
+<header class="navigation fixed-top nav-white">
+  <div class="container-fluid px-4">
     <!-- main nav -->
-    <nav class="navbar navbar-expand-lg navbar-light justify-content-between justify-content-lg-center px-0">
+    <nav class="navbar navbar-expand-lg justify-content-between px-0">
       <!-- logo -->
-      <a class="navbar-brand logo mr-lg-4" href="index.html">
+      <a class="navbar-brand logo" href="index.html">
         <img loading="lazy" class="logo-default" src="images/logo-white.jpg" alt="logo" />
-        <img loading="lazy" class="logo-white" src="images/logo-white.jpg" alt="logo" />
       </a>
       <!-- /logo -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
@@ -83,38 +82,39 @@ Fixed Navigation
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse flex-grow-0" id="navigation">
-        <ul class="navbar-nav mr-lg-4 text-center">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Trang Chủ</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="capabilities.html">Năng Lực & Công Nghệ</a>
-          </li>
-
-          <li class="nav-item ">
-            <a class="nav-link" href="projects.html">Dự Án</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="products.html">Sản Phẩm</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="partners.html">Đối Tác</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="news.html">Tin Tức</a>
-          </li>
-        </ul>
-        <div class="d-flex align-items-center justify-content-center mt-2 mt-lg-0 flex-nowrap">
-          <a href="contact.html" class="btn btn-main btn-small-nav mr-2 mr-lg-3 text-nowrap">Liên Hệ</a>
-          <ul class="navbar-nav d-flex flex-row flex-nowrap">
+      <!-- Navy Pill Menu Container -->
+      <div class="nav-pill-container d-flex align-items-center">
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav text-center main-menu">
             <li class="nav-item active">
-              <a class="nav-link px-2" href="#">VI</a>
+              <a class="nav-link" href="index.html">TRANG CHỦ</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link px-2" href="en/index.html" style="opacity: 0.6;">EN</a>
+            <li class="nav-item ">
+              <a class="nav-link" href="capabilities.html">NĂNG LỰC & CÔNG NGHỆ</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="projects.html">DỰ ÁN</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="products.html">SẢN PHẨM</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="partners.html">ĐỐI TÁC</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="news.html">TIN TỨC</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="contact.html">LIÊN HỆ</a>
             </li>
           </ul>
+        </div>
+
+        <!-- Language Switcher -->
+        <div class="lang-switcher d-flex align-items-center">
+          <span class="lang-separator"></span>
+          <a href="#" class="lang-btn active">VI</a>
+          <a href="en/index.html" class="lang-btn">EN</a>
         </div>
       </div>
     </nav>
@@ -126,608 +126,948 @@ End Fixed Navigation
 ==================================== -->
 
 <div class="hero-slider">
-	<div class="slider-item th-fullpage hero-area" style="background-image: url(images/slider/slider1.jpg);">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<h1 data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">CÔNG TY TNHH THIÊN PHÚ –
-						Chuyên sản xuất kính chất lượng cao</h1>
-					<p data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">Chúng tôi chuyên sản xuất
-						và cung cấp các loại kính cường lực, kính bán cường lực, kính ghép fim, kính hộp IGU và nhiều
-						sản phẩm kính khác với chất lượng đạt tiêu chuẩn quốc tế.</p>
-					<a data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".8" class="btn btn-main"
-						href="products.html">Xem Sản Phẩm</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="slider-item th-fullpage hero-area" style="background-image: url(images/slider/slider2.jpg);">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<h1>Giải pháp kính toàn diện cho mọi công trình</h1>
-					<p>Với 2 nhà máy hiện đại và đội ngũ chuyên nghiệp, chúng tôi cam kết mang đến sản phẩm kính chất
-						lượng cao, đáp ứng mọi nhu cầu của khách hàng.</p>
-					<a data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".8" class="btn btn-main"
-						href="contact.html">Liên Hệ Ngay</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="slider-item th-fullpage hero-area" style="background-image: url(images/slider/call-to-action-bg.jpg);">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<h1 data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">Đối tác tin cậy trong
-						ngành sản xuất kính</h1>
-					<p data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">Hơn 20 năm kinh nghiệm,
-						chúng tôi tự hào là đối tác của hàng trăm dự án lớn nhỏ trên toàn quốc.</p>
-					<a data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".8" class="btn btn-main"
-						href="about.html">Tìm Hiểu Thêm</a>
-				</div>
-			</div>
-		</div>
+	<div class="slider-item th-fullpage hero-area" style="background-image: url(images/slider/slider1.png);">
 	</div>
 </div>
 
 <!--
-Start About Intro Section
+Start Featured Projects Preview Section - New Design
 ==================================== -->
-<section class="about-intro section padding-top-80 padding-bottom-80" id="about-intro">
+<section class="featured-projects-new" id="featured-projects" style="padding-top: 50px;">
+	<div style="width: 100%; margin-bottom: 40px;">
+		<h2
+			style="font-family: 'Times New Roman', serif; font-size: 3rem; color: #00008B; text-transform: uppercase; font-weight: bold; letter-spacing: 2px; margin-bottom: 20px; padding-left: 50px;">
+			Dự Án Tiêu Biểu</h2>
+		<div style="height: 4px; background-color: #F3733D; width: 100%;"></div>
+	</div>
 	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-6 mb-5 mb-lg-0">
-				<div class="about-image-wrapper position-relative text-center text-lg-left">
-					<img loading="lazy" src="images/company/company-image.png" alt="Về Chúng Tôi - Thiên Phú Glass"
-						class="img-fluid rounded shadow-lg main-img" style="border-radius: 10px;">
-					<div class="experience-badge bg-primary text-white text-center p-3 rounded position-absolute d-none d-md-block"
-						style="bottom: -20px; right: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.2);">
-						<span class="d-block font-weight-bold display-4" style="line-height: 1;">20+</span>
-						<span class="text-uppercase small letter-spacing-1">Năm Kinh Nghiệm</span>
+
+
+		<!-- Projects Slider -->
+		<div class="projects-carousel-wrapper">
+			<!-- Navigation Arrow Left -->
+			<div class="project-nav project-nav-prev" onclick="changeProjectPage(-1)">
+				<span class="nav-chevron">&#10094;&#10094;&#10094;</span>
+			</div>
+
+			<!-- Projects Pages Container -->
+			<div class="projects-pages-container">
+				<!-- Page 1: Projects 1-3 -->
+				<div class="projects-page active" data-page="1">
+					<div class="projects-carousel">
+						<!-- Project 1 -->
+						<div class="project-card">
+							<div class="project-card-inner">
+								<div class="project-card-image">
+									<img loading="lazy" src="images/portfolio/portfolio-1.png"
+										alt="Khách Sạn Caravelle">
+								</div>
+								<div class="project-card-content">
+									<h4 class="project-name">KHÁCH SẠN CARAVELLE</h4>
+									<p class="project-location"><i class="tf-ion-ios-location"></i> Bến Nghé, Quận 1,
+										TPHCM</p>
+									<ul class="project-details">
+										<li>335 phòng, 24 tầng</li>
+										<li>Năm thực hiện : 2019</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Project 2 -->
+						<div class="project-card">
+							<div class="project-card-inner">
+								<div class="project-card-image">
+									<img loading="lazy" src="images/portfolio/portfolio-9.png"
+										alt="Trung Tâm Phức Hợp Báo Tuổi Trẻ">
+								</div>
+								<div class="project-card-content">
+									<h4 class="project-name">TRUNG TÂM PHỨC HỢP BÁO TUỔI TRẺ</h4>
+									<p class="project-location"><i class="tf-ion-ios-location"></i> Gò Vấp, TPHCM</p>
+									<ul class="project-details">
+										<li>2 khối công trình, 20,000m²</li>
+										<li>Năm thực hiện : 2024</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Project 3 -->
+						<div class="project-card">
+							<div class="project-card-inner">
+								<div class="project-card-image">
+									<img loading="lazy" src="images/portfolio/portfolio-6.png"
+										alt="Bệnh Viện Nhi Đồng 1">
+								</div>
+								<div class="project-card-content">
+									<h4 class="project-name">BỆNH VIỆN NHI ĐỒNG 1</h4>
+									<p class="project-location"><i class="tf-ion-ios-location"></i> Sư Vạn Hạnh, Quận
+										10, TPHCM</p>
+									<ul class="project-details">
+										<li>3 tòa nhà 60,000m²</li>
+										<li>Năm thực hiện : 2021-2022</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Page 2: Projects 4-6 -->
+				<div class="projects-page" data-page="2">
+					<div class="projects-carousel">
+						<!-- Project 4 -->
+						<div class="project-card">
+							<div class="project-card-inner">
+								<div class="project-card-image">
+									<img loading="lazy" src="images/portfolio/portfolio-2.png"
+										alt="Chung Cư Safira Khang Điền">
+								</div>
+								<div class="project-card-content">
+									<h4 class="project-name">CHUNG CƯ SAFIRA KHANG ĐIỀN</h4>
+									<p class="project-location"><i class="tf-ion-ios-location"></i> Quận 9, TPHCM</p>
+									<ul class="project-details">
+										<li>2.7 ha, 4 tháp - 22 tầng, 1570 căn</li>
+										<li>Năm thực hiện : 2019</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Project 5 -->
+						<div class="project-card">
+							<div class="project-card-inner">
+								<div class="project-card-image">
+									<img loading="lazy" src="images/portfolio/portfolio-3.png"
+										alt="Khu Đô Thị Flora Mizuki">
+								</div>
+								<div class="project-card-content">
+									<h4 class="project-name">KHU ĐÔ THỊ FLORA MIZUKI</h4>
+									<p class="project-location"><i class="tf-ion-ios-location"></i> Bình Chánh, TP HCM
+									</p>
+									<ul class="project-details">
+										<li>5 block, 1 tầng hầm và 20 tầng cao</li>
+										<li>Năm thực hiện : 2019</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Project 6 -->
+						<div class="project-card">
+							<div class="project-card-inner">
+								<div class="project-card-image">
+									<img loading="lazy" src="images/portfolio/portfolio-4.png"
+										alt="Chung Cư H9A Bình Dương">
+								</div>
+								<div class="project-card-content">
+									<h4 class="project-name">CHUNG CƯ H9A BÌNH DƯƠNG</h4>
+									<p class="project-location"><i class="tf-ion-ios-location"></i> Tỉnh Bình Dương</p>
+									<ul class="project-details">
+										<li>16,000m², 4 block 25 tầng, 667 căn</li>
+										<li>Năm thực hiện : 2019</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Page 3: Projects 7-9 -->
+				<div class="projects-page" data-page="3">
+					<div class="projects-carousel">
+						<!-- Project 7 -->
+						<div class="project-card">
+							<div class="project-card-inner">
+								<div class="project-card-image">
+									<img loading="lazy" src="images/portfolio/portfolio-5.png" alt="Tòa Tháp Bitexco">
+								</div>
+								<div class="project-card-content">
+									<h4 class="project-name">TÒA THÁP BITEXCO</h4>
+									<p class="project-location"><i class="tf-ion-ios-location"></i> Hồ Tùng Mậu, Quận 1,
+										TPHCM</p>
+									<ul class="project-details">
+										<li>68 tầng</li>
+										<li>Năm thực hiện : 2011</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Project 8 -->
+						<div class="project-card">
+							<div class="project-card-inner">
+								<div class="project-card-image">
+									<img loading="lazy" src="images/portfolio/portfolio-7.png"
+										alt="Quảng Trường Lâm Viên">
+								</div>
+								<div class="project-card-content">
+									<h4 class="project-name">QUẢNG TRƯỜNG LÂM VIÊN - ĐÀ LẠT</h4>
+									<p class="project-location"><i class="tf-ion-ios-location"></i> Đà Lạt, Lâm Đồng</p>
+									<ul class="project-details">
+										<li>Tổng diện tích hơn 70,000m²</li>
+										<li>Năm thực hiện : 2015</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Project 9 -->
+						<div class="project-card">
+							<div class="project-card-inner">
+								<div class="project-card-image">
+									<img loading="lazy" src="images/portfolio/portfolio-8.png"
+										alt="Trường Quốc Tế Nam Sài Gòn">
+								</div>
+								<div class="project-card-content">
+									<h4 class="project-name">TRƯỜNG QUỐC TẾ NAM SÀI GÒN</h4>
+									<p class="project-location"><i class="tf-ion-ios-location"></i> Phú Mỹ Hưng, Q7,
+										TPHCM</p>
+									<ul class="project-details">
+										<li>2 tòa nhà, 17,700m²</li>
+										<li>Năm thực hiện : 2024</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Page 4: Projects 10-12 -->
+				<div class="projects-page" data-page="4">
+					<div class="projects-carousel">
+						<!-- Project 10 -->
+						<div class="project-card">
+							<div class="project-card-inner">
+								<div class="project-card-image">
+									<img loading="lazy" src="images/portfolio/portfolio-10.png"
+										alt="Khu Đô Thị Celadon">
+								</div>
+								<div class="project-card-content">
+									<h4 class="project-name">KHU ĐÔ THỊ CELADON</h4>
+									<p class="project-location"><i class="tf-ion-ios-location"></i> Tân Phú, TPHCM</p>
+									<ul class="project-details">
+										<li>82.5 hecta</li>
+										<li>Năm thực hiện : 2022</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Project 11 -->
+						<div class="project-card">
+							<div class="project-card-inner">
+								<div class="project-card-image">
+									<img loading="lazy" src="images/portfolio/portfolio-11.png"
+										alt="Resort & Spa Hyatt Đà Nẵng">
+								</div>
+								<div class="project-card-content">
+									<h4 class="project-name">RESORT & SPA HYATT ĐÀ NẴNG</h4>
+									<p class="project-location"><i class="tf-ion-ios-location"></i> Đà Nẵng</p>
+									<ul class="project-details">
+										<li>20 hecta</li>
+										<li>Năm thực hiện : 2011</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Project 12 -->
+						<div class="project-card">
+							<div class="project-card-inner">
+								<div class="project-card-image">
+									<img loading="lazy" src="images/portfolio/portfolio-12.png"
+										alt="Chung Cư West Gate Bình Chánh">
+								</div>
+								<div class="project-card-content">
+									<h4 class="project-name">CHUNG CƯ WEST GATE BÌNH CHÁNH</h4>
+									<p class="project-location"><i class="tf-ion-ios-location"></i> Bình Chánh, TPHCM
+									</p>
+									<ul class="project-details">
+										<li>4 tòa tháp, 20 tầng, 2000+ căn hộ</li>
+										<li>Năm thực hiện : 2022</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="col-lg-6">
-				<div class="about-content pl-lg-5">
-					<div class="title text-left mb-4">
-						<span class="text-primary text-uppercase font-weight-bold letter-spacing-2 mb-2 d-block">Giới
-							Thiệu</span>
-						<h2 class="font-weight-bold mb-3">Về Chúng Tôi</h2>
-						<div class="border ml-0 text-left"></div>
-					</div>
+			<!-- Navigation Arrow Right -->
+			<div class="project-nav project-nav-next" onclick="changeProjectPage(1)">
+				<span class="nav-chevron">&#10095;&#10095;&#10095;</span>
+			</div>
+		</div>
 
-					<p class="lead font-weight-bold text-dark mb-4">Công ty TNHH Thiên Phú, thành lập từ năm 2005, là
-						đơn vị tiên phong & chuyên nghiệp tại Việt Nam trong lĩnh vực gia công kính xây dựng.</p>
+		<!-- Slider Indicators -->
+		<div class="projects-indicators">
+			<span class="indicator active" onclick="goToProjectPage(1)"></span>
+			<span class="indicator" onclick="goToProjectPage(2)"></span>
+			<span class="indicator" onclick="goToProjectPage(3)"></span>
+			<span class="indicator" onclick="goToProjectPage(4)"></span>
+		</div>
 
-					<p class="text-muted mb-4">Với sứ mệnh kiến tạo những công trình bền vững, chúng tôi cung cấp giải
-						pháp toàn diện về kính: <strong>kính cường lực, kính dán an toàn, kính hộp cách âm cách
-							nhiệt...</strong> đáp ứng mọi tiêu chuẩn khắt khe của thị trường.</p>
-
-					<ul class="list-unstyled mb-4">
-						<li class="mb-2 d-flex align-items-center"><i
-								class="tf-ion-android-checkmark-circle text-primary mr-3"></i> <span>Hệ thống máy móc
-								hiện đại nhập khẩu Châu Âu.</span></li>
-						<li class="mb-2 d-flex align-items-center"><i
-								class="tf-ion-android-checkmark-circle text-primary mr-3"></i> <span>Đội ngũ kỹ thuật
-								viên tay nghề cao.</span></li>
-						<li class="mb-2 d-flex align-items-center"><i
-								class="tf-ion-android-checkmark-circle text-primary mr-3"></i> <span>Cam kết chất lượng
-								& tiến độ vượt trội.</span></li>
-					</ul>
-
-					<a href="about.html" class="btn btn-main">Tìm Hiểu Thêm <i
-							class="tf-ion-android-arrow-forward ml-2"></i></a>
-				</div>
+		<!-- View All Button -->
+		<div class="row">
+			<div class="col-12 text-center">
+				<a href="projects.html" class="btn-view-all">XEM TẤT CẢ DỰ ÁN</a>
 			</div>
 		</div>
 	</div>
 </section>
 
-<!--
-Start Featured Projects Preview Section
-==================================== -->
-<section class="featured-projects-preview section" id="featured-projects">
-	<div class="container-fluid px-0">
-		<div class="container">
-			<div class="row justify-content-center">
-				<!-- section title -->
-				<div class="col-xl-8 col-lg-10">
-					<div class="title text-center">
-						<h2>Dự Án Nổi Bật</h2>
-						<p>Những dự án tiêu biểu thể hiện năng lực và kinh nghiệm của chúng tôi trong việc cung cấp giải
-							pháp kính chất lượng cao.</p>
-						<div class="border"></div>
-					</div>
-				</div>
-				<!-- /section title -->
-			</div>
-		</div>
+<!-- JavaScript for Pagination -->
+<script>
+	let currentProjectPage = 1;
+	const totalProjectPages = 4;
 
-		<!-- Projects Slider -->
-		<div class="projects-slider-wrapper">
-			<div class="projects-slider">
-				<!-- Page 1: Projects 1-6 -->
-				<div class="projects-slide">
-					<div class="row">
-						<!-- Row 1: Projects 1-3 -->
-						<div class="col-lg-4 col-md-6 col-12 mb-4">
-							<div class="project-preview-item">
-								<div class="project-image">
-									<img loading="lazy" src="images/portfolio/portfolio-1.png" class="img-fluid"
-										alt="Khách Sạn Caravelle">
-									<div class="project-overlay">
-										<a href="projects.html" class="btn btn-main">Xem Chi Tiết</a>
-									</div>
-								</div>
-								<div class="project-content p-4">
-									<h4><a href="projects.html">KHÁCH SẠN CARAVELLE</a></h4>
-									<p><i class="tf-ion-ios-location"></i> Bến Nghé, Quận 1, TPHCM • 335 phòng, 24 tầng
-										• 2019</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-12 mb-4">
-							<div class="project-preview-item">
-								<div class="project-image">
-									<img loading="lazy" src="images/portfolio/portfolio-2.png" class="img-fluid"
-										alt="Chung Cư Safira Khang Điền">
-									<div class="project-overlay">
-										<a href="projects.html" class="btn btn-main">Xem Chi Tiết</a>
-									</div>
-								</div>
-								<div class="project-content p-4">
-									<h4><a href="projects.html">CHUNG CƯ SAFIRA KHANG ĐIỀN</a></h4>
-									<p><i class="tf-ion-ios-location"></i> Quận 9, TPHCM • 2.7 ha, 4 tháp - 22 tầng,
-										1570 căn • 2019</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-12 mb-4">
-							<div class="project-preview-item">
-								<div class="project-image">
-									<img loading="lazy" src="images/portfolio/portfolio-3.png" class="img-fluid"
-										alt="Khu Đô Thị Flora Mizuki">
-									<div class="project-overlay">
-										<a href="projects.html" class="btn btn-main">Xem Chi Tiết</a>
-									</div>
-								</div>
-								<div class="project-content p-4">
-									<h4><a href="projects.html">KHU ĐÔ THỊ FLORA MIZUKI</a></h4>
-									<p><i class="tf-ion-ios-location"></i> Bình Chánh, TP HCM • 5 block, 1 tầng hầm và
-										20 tầng cao • 2019</p>
-								</div>
-							</div>
-						</div>
-						<!-- Row 2: Projects 4-6 -->
-						<div class="col-lg-4 col-md-6 col-12 mb-4">
-							<div class="project-preview-item">
-								<div class="project-image">
-									<img loading="lazy" src="images/portfolio/portfolio-4.png" class="img-fluid"
-										alt="Chung Cư H9A Bình Dương">
-									<div class="project-overlay">
-										<a href="projects.html" class="btn btn-main">Xem Chi Tiết</a>
-									</div>
-								</div>
-								<div class="project-content p-4">
-									<h4><a href="projects.html">CHUNG CƯ H9A BÌNH DƯƠNG</a></h4>
-									<p><i class="tf-ion-ios-location"></i> Tỉnh Bình Dương • 16,000m², 4 block 25 tầng,
-										667 căn • 2019</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-12 mb-4">
-							<div class="project-preview-item">
-								<div class="project-image">
-									<img loading="lazy" src="images/portfolio/portfolio-5.png" class="img-fluid"
-										alt="Tòa Tháp Bitexco">
-									<div class="project-overlay">
-										<a href="projects.html" class="btn btn-main">Xem Chi Tiết</a>
-									</div>
-								</div>
-								<div class="project-content p-4">
-									<h4><a href="projects.html">TÒA THÁP BITEXCO</a></h4>
-									<p><i class="tf-ion-ios-location"></i> Hồ Tùng Mậu, Quận 1, TPHCM • 68 tầng • 2011
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-12 mb-4">
-							<div class="project-preview-item">
-								<div class="project-image">
-									<img loading="lazy" src="images/portfolio/portfolio-6.png" class="img-fluid"
-										alt="Bệnh Viện Nhi Đồng 1">
-									<div class="project-overlay">
-										<a href="projects.html" class="btn btn-main">Xem Chi Tiết</a>
-									</div>
-								</div>
-								<div class="project-content p-4">
-									<h4><a href="projects.html">BỆNH VIỆN NHI ĐỒNG 1</a></h4>
-									<p><i class="tf-ion-ios-location"></i> Sư Vạn Hạnh, Quận 10, TPHCM • 3 tòa nhà,
-										60,000m² • 2021-2022</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+	function changeProjectPage(direction) {
+		currentProjectPage += direction;
+		if (currentProjectPage < 1) currentProjectPage = totalProjectPages;
+		if (currentProjectPage > totalProjectPages) currentProjectPage = 1;
+		updateProjectPage();
+	}
 
-				<!-- Page 2: Projects 7-12 -->
-				<div class="projects-slide">
-					<div class="row">
-						<!-- Row 1: Projects 7-9 -->
-						<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-							<div class="project-preview-item">
-								<div class="project-image">
-									<img loading="lazy" src="images/portfolio/portfolio-7.png" class="img-fluid"
-										alt="Quảng Trường Lâm Viên - Đà Lạt">
-									<div class="project-overlay">
-										<a href="projects.html" class="btn btn-main">Xem Chi Tiết</a>
-									</div>
-								</div>
-								<div class="project-content p-3">
-									<h4><a href="projects.html">QUẢNG TRƯỜNG LÂM VIÊN - ĐÀ LẠT</a></h4>
-									<p><i class="tf-ion-ios-location"></i> Đà Lạt, Lâm Đồng • Tổng diện tích hơn
-										70,000m² • 2015</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-							<div class="project-preview-item">
-								<div class="project-image">
-									<img loading="lazy" src="images/portfolio/portfolio-8.png" class="img-fluid"
-										alt="Trường Quốc Tế Nam Sài Gòn">
-									<div class="project-overlay">
-										<a href="projects.html" class="btn btn-main">Xem Chi Tiết</a>
-									</div>
-								</div>
-								<div class="project-content p-3">
-									<h4><a href="projects.html">TRƯỜNG QUỐC TẾ NAM SÀI GÒN</a></h4>
-									<p><i class="tf-ion-ios-location"></i> Phú Mỹ Hưng, Q 7, TPHCM • 2 tòa nhà, 17,700m²
-										• 2024</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-							<div class="project-preview-item">
-								<div class="project-image">
-									<img loading="lazy" src="images/portfolio/portfolio-9.png" class="img-fluid"
-										alt="Trung Tâm Phức Hợp Báo Tuổi Trẻ">
-									<div class="project-overlay">
-										<a href="projects.html" class="btn btn-main">Xem Chi Tiết</a>
-									</div>
-								</div>
-								<div class="project-content p-3">
-									<h4><a href="projects.html">TRUNG TÂM PHỨC HỢP BÁO TUỔI TRẺ</a></h4>
-									<p><i class="tf-ion-ios-location"></i> Gò Vấp, TPHCM • 2 khối công trình, 20,000m² •
-										2024</p>
-								</div>
-							</div>
-						</div>
-						<!-- Row 2: Projects 10-12 -->
-						<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-							<div class="project-preview-item">
-								<div class="project-image">
-									<img loading="lazy" src="images/portfolio/portfolio-10.png" class="img-fluid"
-										alt="Khu Đô Thị Celadon">
-									<div class="project-overlay">
-										<a href="projects.html" class="btn btn-main">Xem Chi Tiết</a>
-									</div>
-								</div>
-								<div class="project-content p-3">
-									<h4><a href="projects.html">KHU ĐÔ THỊ CELADON</a></h4>
-									<p><i class="tf-ion-ios-location"></i> Tân Phú, TPHCM • 82.5 hecta • 2022</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-							<div class="project-preview-item">
-								<div class="project-image">
-									<img loading="lazy" src="images/portfolio/portfolio-11.png" class="img-fluid"
-										alt="Resort & Spa Hyatt Đà Nẵng">
-									<div class="project-overlay">
-										<a href="projects.html" class="btn btn-main">Xem Chi Tiết</a>
-									</div>
-								</div>
-								<div class="project-content p-3">
-									<h4><a href="projects.html">RESORT & SPA HYATT ĐÀ NẴNG</a></h4>
-									<p><i class="tf-ion-ios-location"></i> Đà Nẵng • 20 hecta • 2011</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-							<div class="project-preview-item">
-								<div class="project-image">
-									<img loading="lazy" src="images/portfolio/portfolio-12.png" class="img-fluid"
-										alt="Chung Cư West Gate Bình Chánh">
-									<div class="project-overlay">
-										<a href="projects.html" class="btn btn-main">Xem Chi Tiết</a>
-									</div>
-								</div>
-								<div class="project-content p-3">
-									<h4><a href="projects.html">CHUNG CƯ WEST GATE BÌNH CHÁNH</a></h4>
-									<p><i class="tf-ion-ios-location"></i> Bình Chánh, TPHCM • 4 tòa tháp, 20 tầng,
-										2000+ căn hộ, 3.1 hecta • 2022</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+	function goToProjectPage(page) {
+		currentProjectPage = page;
+		updateProjectPage();
+	}
 
-		<div class="container">
-			<div class="row">
-				<div class="col-12 text-center mt-5">
-					<a href="projects.html" class="btn btn-main btn-lg">Xem Tất Cả Dự Án</a>
-				</div>
-			</div>
-		</div>
-	</div> <!-- End container-fluid -->
-</section> <!-- End section -->
+	function updateProjectPage() {
+		// Hide all pages
+		document.querySelectorAll('.projects-page').forEach(page => {
+			page.classList.remove('active');
+		});
+
+		// Show current page
+		document.querySelector(`.projects-page[data-page="${currentProjectPage}"]`).classList.add('active');
+
+		// Update indicators
+		document.querySelectorAll('.projects-indicators .indicator').forEach((indicator, index) => {
+			indicator.classList.remove('active');
+			if (index + 1 === currentProjectPage) {
+				indicator.classList.add('active');
+			}
+		});
+	}
+</script>
+<!-- End Featured Projects Preview Section -->
 
 <!--
-Start Company Overview Section
+Start About Intro Section
 ==================================== -->
-<section class="company-overview section" id="company-overview">
-	<div class="container-fluid px-0">
-		<div class="container">
-			<div class="row justify-content-center">
-				<!-- section title -->
-				<div class="col-xl-8 col-lg-10">
-					<div class="title text-center">
-						<h2>Tổng Quan Công Ty</h2>
-						<div class="border"></div>
-					</div>
-				</div>
-				<!-- /section title -->
-			</div>
-		</div>
-
-		<!-- TẬP THỂ THIÊN PHÚ -->
-		<div class="row no-gutters mb-4">
-			<div class="col-12">
-				<div class="overview-item-full">
-					<div class="container">
-						<div class="row align-items-center">
-							<div class="col-md-5">
-								<h3 class="mb-3">TẬP THỂ THIÊN PHÚ</h3>
-								<div class="overview-content">
-									<p>Dưới sự dẫn dắt của <strong>Giám đốc Hồ Văn Hào</strong>, 162 con người của Thiên Phú đang vận hành hiệu quả tại 2 nhà máy.</p>
-									<p>Sức mạnh cốt lõi của Thiên Phú đến từ chính tập thể này: một đội ngũ quản lý tận tụy, sáng tạo và một lực lượng công nhân có tay nghề kỹ thuật cao.</p>
-									<p>Sự kết hợp đồng bộ này tạo nên một tập thể chuyên nghiệp, luôn chủ động làm chủ công nghệ và tuân thủ nghiêm ngặt mọi quy trình sản xuất, đảm bảo tạo ra những sản phẩm chất lượng và đồng nhất.</p>
-								</div>
-							</div>
-							<div class="col-md-7">
-								<div class="overview-image text-center">
-									<img loading="lazy" src="images/company/team-thienphu.png" class="img-fluid team-image-large" alt="Tập thể Thiên Phú">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Văn Hóa Thiên Phú -->
-		<div class="row no-gutters mb-4">
-			<div class="col-12">
-				<div class="overview-item-full">
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<h3 class="mb-3">VĂN HÓA THIÊN PHÚ</h3>
-								<p class="mb-4" style="font-size: 1rem; color: #666;">Văn hóa Thiên Phú được xây dựng trên 4 tiêu chí cốt lõi</p>
-								<div class="row">
-									<div class="col-md-6 mb-3">
-										<div class="culture-item">
-											<div class="d-flex align-items-start">
-												<span class="culture-number mr-3">01</span>
-												<div>
-													<h4 style="color: #28ABE3; font-size: 1.1rem; margin-bottom: 8px;">CHẤT LƯỢNG TUYỆT ĐỐI</h4>
-													<p style="font-size: 0.95rem; margin: 0;">Chúng tôi cam kết áp dụng nghiêm ngặt các tiêu chuẩn quốc tế. Chất lượng sản phẩm chính là danh dự và trách nhiệm hàng đầu.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-6 mb-3">
-										<div class="culture-item">
-											<div class="d-flex align-items-start">
-												<span class="culture-number mr-3">02</span>
-												<div>
-													<h4 style="color: #28ABE3; font-size: 1.1rem; margin-bottom: 8px;">AN TOÀN BẤT BIẾN</h4>
-													<p style="font-size: 0.95rem; margin: 0;">"An toàn" là nguyên tắc không thỏa hiệp, là ưu tiên số một trong mọi quy trình vận hành.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-6 mb-3">
-										<div class="culture-item">
-											<div class="d-flex align-items-start">
-												<span class="culture-number mr-3">03</span>
-												<div>
-													<h4 style="color: #28ABE3; font-size: 1.1rem; margin-bottom: 8px;">CHUYÊN MÔN HÓA VẬN HÀNH</h4>
-													<p style="font-size: 0.95rem; margin: 0;">Chúng tôi tối ưu hóa mọi khâu (từ nhận đơn, sản xuất đến vận tải) để đảm bảo toàn bộ quy trình vận hành suôn sẻ, chính xác và nhịp nhàng.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-6 mb-3">
-										<div class="culture-item">
-											<div class="d-flex align-items-start">
-												<span class="culture-number mr-3">04</span>
-												<div>
-													<h4 style="color: #28ABE3; font-size: 1.1rem; margin-bottom: 8px;">TỐC ĐỘ CẠNH TRANH</h4>
-													<p style="font-size: 0.95rem; margin: 0;">Nguyên tắc "Nhanh chóng" được thấm nhuần trong tư duy làm việc, đảm bảo tiến độ và đáp ứng kịp thời mọi yêu cầu của khách hàng.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Tại sao chọn Thiên Phú -->
-		<div class="row no-gutters">
-			<div class="col-12">
-				<div class="overview-item-full">
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<h3 class="mb-4">TẠI SAO CHỌN THIÊN PHÚ?</h3>
-								<div class="row">
-									<div class="col-md-6 mb-3">
-										<div class="reason-item">
-											<h4 style="color: #28ABE3; font-size: 1.1rem; margin-bottom: 8px;">1. KINH NGHIỆM 20 NĂM (TỪ 2005)</h4>
-											<p style="font-size: 0.95rem; margin: 0;">Kinh nghiệm và sự hiểu biết sâu sắc về thị trường là nền tảng để chúng tôi mang đến những giải pháp kính tối ưu nhất.</p>
-										</div>
-									</div>
-									<div class="col-md-6 mb-3">
-										<div class="reason-item">
-											<h4 style="color: #28ABE3; font-size: 1.1rem; margin-bottom: 8px;">2. NGUYÊN LIỆU ĐẦU VÀO CAO CẤP</h4>
-											<p style="font-size: 0.95rem; margin: 0;">Thiên Phú cam kết sử dụng phôi kính từ các nhà sản xuất hàng đầu thế giới và Việt Nam như Guardian, AGC, VFG, VIFG... đảm bảo chất lượng kỹ thuật cao nhất.</p>
-										</div>
-									</div>
-									<div class="col-md-6 mb-3">
-										<div class="reason-item">
-											<h4 style="color: #28ABE3; font-size: 1.1rem; margin-bottom: 8px;">3. NĂNG LỰC SẢN XUẤT LỚN</h4>
-											<p style="font-size: 0.95rem; margin: 0;">Hệ thống 2 nhà máy hiện đại giúp chúng tôi đáp ứng các đơn hàng lớn, đảm bảo tiến độ nhanh chóng và liên tục cho mọi dự án.</p>
-										</div>
-									</div>
-									<div class="col-md-6 mb-3">
-										<div class="reason-item">
-											<h4 style="color: #28ABE3; font-size: 1.1rem; margin-bottom: 8px;">4. ĐỘI NGŨ NHÂN SỰ CHUYÊN NGHIỆP</h4>
-											<p style="font-size: 0.95rem; margin: 0;">Đội ngũ quản lý sáng tạo và công nhân có tay nghề cao, làm chủ công nghệ và quy trình sản xuất.</p>
-										</div>
-									</div>
-									<div class="col-md-6 mb-3">
-										<div class="reason-item">
-											<h4 style="color: #28ABE3; font-size: 1.1rem; margin-bottom: 8px;">5. GIẢI PHÁP KÍNH TOÀN DIỆN</h4>
-											<p style="font-size: 0.95rem; margin: 0;">Thiên Phú cung cấp giải pháp kính toàn diện (cường lực, dán, hộp, Low-E...) từ một nguồn duy nhất, giúp khách hàng tiết kiệm tối đa thời gian và chi phí.</p>
-										</div>
-									</div>
-									<div class="col-md-6 mb-3">
-										<div class="reason-item">
-											<h4 style="color: #28ABE3; font-size: 1.1rem; margin-bottom: 8px;">6. "AN TOÀN - NHANH CHÓNG - CHẤT LƯỢNG"</h4>
-											<p style="font-size: 0.95rem; margin: 0;">Thiên Phú vận hành dựa trên 3 nguyên tắc: An toàn tuyệt đối, tiến độ nhanh chóng và tuân thủ nghiêm ngặt các tiêu chuẩn chất lượng quốc tế.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> <!-- End container-fluid -->
-</section> <!-- End section -->
+<section class="about-intro section padding-top-80 padding-bottom-80" id="about-intro">
+	<div class="about-overlay-wrapper">
+		<img src="images/company/logoaboutus.png" alt="Thiên Phú Glass Logo" class="about-logo">
+		<img src="images/about/vechungtoi-Photoroom.png" alt="Về Chúng Tôi" class="about-text-img">
+	</div>
+	<div class="container">
+		<!-- Content removed as per user request to show only background -->
+	</div>
+</section>
 
 
 
 
+
+
+<!--
+Start Empty Background Section
+==================================== -->
+<section class="empty-background-section"
+    style="background: url('images/products/nền 2.png') no-repeat center center; background-size: cover; min-height: 800px; display: flex; flex-direction: column; justify-content: flex-start; padding-top: 50px; padding-bottom: 80px; width: 100%;">
+    <div style="width: 100%;">
+        <h2
+            style="font-family: 'Times New Roman', serif; font-size: 3rem; color: #00008B; text-transform: uppercase; font-weight: bold; letter-spacing: 2px; margin-bottom: 20px; padding-left: 50px;">
+            SẢN PHẨM</h2>
+        <div style="height: 4px; background-color: #F3733D; width: 100%;"></div>
+    </div>
+
+    <!-- Product Carousel Container -->
+    <div
+        style="width: 100%; background-color: #F3733D; padding: 50px 0; margin-top: 50px; position: relative; z-index: 2;">
+        <div class="container">
+            <div class="product-carousel-wrapper" style="position: relative; padding: 0 50px;">
+                <!-- Navigation Left -->
+                <div class="project-nav project-nav-prev" onclick="changeProductPage(-1)">
+                    <span class="nav-chevron" style="color: #fff !important;">&#10094;&#10094;&#10094;</span>
+                </div>
+
+                <!-- Products Pages Container -->
+                <div class="projects-pages-container" id="home-product-pages">
+                    <!-- Page 1 -->
+                    <div class="projects-page active" data-page="1">
+                        <div class="row justify-content-center">
+                            <!-- Product 1 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="home-product-card">
+                                    <div class="home-product-image">
+                                        <img src="images/products/kinhcuongluc.jpg" alt="Kính Cường Lực">
+                                    </div>
+                                    <div class="home-product-content">
+                                        <h4 class="home-product-title">KÍNH CƯỜNG LỰC</h4>
+                                        <p class="home-product-desc">Kính cường lực (Tempered Glass) là loại kính an
+                                            toàn
+                                            được sản
+                                            xuất bằng công nghệ gia nhiệt ở nhiệt độ cao (khoảng 700°C) và làm lạnh đột
+                                            ngột
+                                            bằng
+                                            luồng khí lạnh.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 2 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="home-product-card">
+                                    <div class="home-product-image">
+                                        <img src="images/products/kinh-cuong-luc-2-lop-3.jpg" alt="Kính Dán An Toàn">
+                                    </div>
+                                    <div class="home-product-content">
+                                        <h4 class="home-product-title">KÍNH DÁN AN TOÀN</h4>
+                                        <p class="home-product-desc">Kính dán an toàn 2 lớp được ghép lại với nhau bằng
+                                            lớp
+                                            film
+                                            PVB, giúp giữ lại các mảnh kính khi vỡ, đảm bảo an toàn tuyệt đối cho người
+                                            sử
+                                            dụng.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 3 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="home-product-card">
+                                    <div class="home-product-image">
+                                        <img src="images/products/kinh-hop-an-toan.jpg" alt="Kính Hộp">
+                                    </div>
+                                    <div class="home-product-content">
+                                        <h4 class="home-product-title">KÍNH HỘP</h4>
+                                        <p class="home-product-desc">Kính hộp cách âm cách nhiệt được cấu tạo từ 2 hay
+                                            nhiều
+                                            lớp
+                                            kính, ở giữa là lớp khí trơ giúp giảm tiếng ồn và ngăn truyền nhiệt hiệu
+                                            quả.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Page 2 -->
+                    <div class="projects-page" data-page="2">
+                        <div class="row justify-content-center">
+                            <!-- Product 4: Kính uốn cong -->
+                            <div class="col-md-4 mb-4">
+                                <div class="home-product-card">
+                                    <div class="home-product-image">
+                                        <img src="images/products/kinhuongcong.jpg" alt="Kính Uốn Cong">
+                                    </div>
+                                    <div class="home-product-content">
+                                        <h4 class="home-product-title">KÍNH UỐN CONG</h4>
+                                        <p class="home-product-desc">Kính uốn cong được gia nhiệt và uốn cong theo khuôn
+                                            mẫu, tạo nên vẻ đẹp mềm mại và độc đáo cho các công trình kiến trúc hiện
+                                            đại.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 5: Kính nhúng mờ axit -->
+                            <div class="col-md-4 mb-4">
+                                <div class="home-product-card">
+                                    <div class="home-product-image">
+                                        <img src="images/products/kinhcuongluc.jpg" alt="Kính Nhúng Mờ Axit">
+                                    </div>
+                                    <div class="home-product-content">
+                                        <h4 class="home-product-title">KÍNH NHÚNG MỜ AXIT</h4>
+                                        <p class="home-product-desc">Kính được xử lý bề mặt bằng axit để tạo độ mờ mịn,
+                                            chống bám vân tay và giảm chói, thích hợp cho vách ngăn và cửa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 6: Kính phun cát mờ -->
+                            <div class="col-md-4 mb-4">
+                                <div class="home-product-card">
+                                    <div class="home-product-image">
+                                        <img src="images/products/kinhcuongluc.jpg" alt="Kính Phun Cát Mờ">
+                                    </div>
+                                    <div class="home-product-content">
+                                        <h4 class="home-product-title">KÍNH PHUN CÁT MỜ</h4>
+                                        <p class="home-product-desc">Kính được phun cát áp lực cao lên bề mặt tạo độ
+                                            nhám và
+                                            mờ, thường dùng trang trí hoặc làm vách ngăn cần sự riêng tư.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Page 3 -->
+                    <div class="projects-page" data-page="3">
+                        <div class="row justify-content-center">
+                            <!-- Product 7: Kính in men -->
+                            <div class="col-md-4 mb-4">
+                                <div class="home-product-card">
+                                    <div class="home-product-image">
+                                        <img src="images/products/kinh-in-men.jpg" alt="Kính In Men">
+                                    </div>
+                                    <div class="home-product-content">
+                                        <h4 class="home-product-title">KÍNH IN MEN</h4>
+                                        <p class="home-product-desc">Sử dụng công nghệ in men gốm lên bề mặt kính rồi
+                                            tôi
+                                            luyện ở nhiệt độ cao, giúp màu sắc bền vĩnh cửu theo thời gian.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 8: Kính phủ nano -->
+                            <div class="col-md-4 mb-4">
+                                <div class="home-product-card">
+                                    <div class="home-product-image">
+                                        <img src="images/products/kinh-phu-nano.jpg" alt="Kính Phủ Nano">
+                                    </div>
+                                    <div class="home-product-content">
+                                        <h4 class="home-product-title">KÍNH PHỦ NANO</h4>
+                                        <p class="home-product-desc">Kính được phủ lớp nano giúp bề mặt siêu mịn, chống
+                                            bám
+                                            nước, bụi bẩn và dễ dàng vệ sinh, giữ kính luôn sáng bóng.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 9: Kính hoa văn -->
+                            <div class="col-md-4 mb-4">
+                                <div class="home-product-card">
+                                    <div class="home-product-image">
+                                        <img src="images/products/kinh-in-hoa-van-mo-3.jpg" alt="Kính Hoa Văn">
+                                    </div>
+                                    <div class="home-product-content">
+                                        <h4 class="home-product-title">KÍNH HOA VĂN</h4>
+                                        <p class="home-product-desc">Kính được tạo hoa văn trang trí tinh xảo, mang lại
+                                            tính
+                                            thẩm mỹ cao và sự sang trọng cho không gian nội thất.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Page 4 -->
+                    <div class="projects-page" data-page="4">
+                        <div class="row justify-content-center">
+                            <!-- Product 10: Kính siêu trong -->
+                            <div class="col-md-4 mb-4">
+                                <div class="home-product-card">
+                                    <div class="home-product-image">
+                                        <img src="images/products/kinhcuongluc.jpg" alt="Kính Siêu Trong">
+                                    </div>
+                                    <div class="home-product-content">
+                                        <h4 class="home-product-title">KÍNH SIÊU TRONG</h4>
+                                        <p class="home-product-desc">Loại kính có độ trong suốt vượt trội, loại bỏ ánh
+                                            xanh
+                                            thường thấy ở kính thường, giúp hiển thị màu sắc trung thực nhất.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 11: Kính phản quang -->
+                            <div class="col-md-4 mb-4">
+                                <div class="home-product-card">
+                                    <div class="home-product-image">
+                                        <img src="images/products/kinh-phan-quang.jpg" alt="Kính Phản Quang">
+                                    </div>
+                                    <div class="home-product-content">
+                                        <h4 class="home-product-title">KÍNH PHẢN QUANG</h4>
+                                        <p class="home-product-desc">Kính được phủ lớp phản quang đặc biệt giúp phản xạ
+                                            ánh
+                                            sáng mặt trời, giảm nhiệt lượng truyền vào trong nhà.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 12: Kính Low E -->
+                            <div class="col-md-4 mb-4">
+                                <div class="home-product-card">
+                                    <div class="home-product-image">
+                                        <img src="images/products/kinh-low-e.jpg" alt="Kính Low E">
+                                    </div>
+                                    <div class="home-product-content">
+                                        <h4 class="home-product-title">KÍNH LOW E</h4>
+                                        <p class="home-product-desc">Kính tiết kiệm năng lượng với khả năng giảm thiểu
+                                            sự
+                                            truyền nhiệt, giữ ấm vào mùa đông và mát mẻ vào mùa hè.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Page 5 -->
+                    <div class="projects-page" data-page="5">
+                        <div class="row justify-content-center">
+                            <!-- Product 13: Kính Solar -->
+                            <div class="col-md-4 mb-4">
+                                <div class="home-product-card">
+                                    <div class="home-product-image">
+                                        <img src="images/products/kinh-hop-solar.png" alt="Kính Solar Control">
+                                    </div>
+                                    <div class="home-product-content">
+                                        <h4 class="home-product-title">KÍNH SOLAR CONTROL</h4>
+                                        <p class="home-product-desc">Kính kiểm soát năng lượng mặt trời giúp cản nhiệt
+                                            tối
+                                            ưu mà vẫn đảm bảo độ truyền sáng hợp lý cho không gian.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 14: Kính màu -->
+                            <div class="col-md-4 mb-4">
+                                <div class="home-product-card">
+                                    <div class="home-product-image">
+                                        <img src="images/products/kinhcuongluc.jpg" alt="Kính Màu">
+                                    </div>
+                                    <div class="home-product-content">
+                                        <h4 class="home-product-title">KÍNH MÀU</h4>
+                                        <p class="home-product-desc">Kính ốp bếp, kính trang trí với đa dạng màu sắc,
+                                            mang
+                                            lại vẻ đẹp tươi mới và sinh động cho không gian sống.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 15: Kính gương -->
+                            <div class="col-md-4 mb-4">
+                                <div class="home-product-card">
+                                    <div class="home-product-image">
+                                        <img src="images/products/kinh-guong.jpg" alt="Kính Gương">
+                                    </div>
+                                    <div class="home-product-content">
+                                        <h4 class="home-product-title">KÍNH GƯƠNG</h4>
+                                        <p class="home-product-desc">Các loại gương trang trí, gương phòng tắm chất
+                                            lượng
+                                            cao, hình ảnh sắc nét, chống ố mốc và bền bỉ trong môi trường ẩm.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Page 6 -->
+                    <div class="projects-page" data-page="6">
+                        <div class="row justify-content-center">
+                            <!-- Product 16: Kính điện -->
+                            <div class="col-md-4 mb-4">
+                                <div class="home-product-card">
+                                    <div class="home-product-image">
+                                        <img src="images/products/kinhcuongluc.jpg" alt="Kính Điện">
+                                    </div>
+                                    <div class="home-product-content">
+                                        <h4 class="home-product-title">KÍNH ĐIỆN (SMART FILM)</h4>
+                                        <p class="home-product-desc">Kính thông minh có thể chuyển đổi giữa trong suốt
+                                            và
+                                            đục mờ chỉ bằng một thao tác bấm, mang lại sự riêng tư tức thì.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 17: Kính ghép vải -->
+                            <div class="col-md-4 mb-4">
+                                <div class="home-product-card">
+                                    <div class="home-product-image">
+                                        <img src="images/products/kinh-ghep-vai.jpg" alt="Kính Ghép Vải">
+                                    </div>
+                                    <div class="home-product-content">
+                                        <h4 class="home-product-title">KÍNH GHÉP VẢI</h4>
+                                        <p class="home-product-desc">Sự kết hợp độc đáo giữa kính an toàn và các lớp vải
+                                            nghệ thuật, tạo nên vật liệu trang trí nội thất đẳng cấp.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Navigation Right -->
+                <div class="project-nav project-nav-next" onclick="changeProductPage(1)">
+                    <span class="nav-chevron" style="color: #fff !important;">&#10095;&#10095;&#10095;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4" style="position: relative; z-index: 2;">
+
+        <!-- Indicators -->
+        <div class="projects-indicators" id="home-product-indicators">
+            <span class="indicator active" onclick="goToProductPage(1)"></span>
+            <span class="indicator" onclick="goToProductPage(2)"></span>
+            <span class="indicator" onclick="goToProductPage(3)"></span>
+            <span class="indicator" onclick="goToProductPage(4)"></span>
+            <span class="indicator" onclick="goToProductPage(5)"></span>
+            <span class="indicator" onclick="goToProductPage(6)"></span>
+        </div>
+
+        <!-- View All Button -->
+        <div class="text-center mt-5">
+            <a href="products.html" class="btn-view-all">XEM TẤT CẢ SẢN PHẨM</a>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript for Home Product Pagination -->
+<script>
+    let currentHomeProductPage = 1;
+    const totalHomeProductPages = 6;
+
+    function changeProductPage(direction) {
+        currentHomeProductPage += direction;
+        if (currentHomeProductPage < 1) currentHomeProductPage = totalHomeProductPages;
+        if (currentHomeProductPage > totalHomeProductPages) currentHomeProductPage = 1;
+        updateHomeProductPage();
+    }
+
+    function goToProductPage(page) {
+        currentHomeProductPage = page;
+        updateHomeProductPage();
+    }
+
+    function updateHomeProductPage() {
+        // Hide all pages in this section
+        const container = document.getElementById('home-product-pages');
+        container.querySelectorAll('.projects-page').forEach(page => {
+            page.classList.remove('active');
+        });
+
+        // Show current page
+        container.querySelector(`.projects-page[data-page="${currentHomeProductPage}"]`).classList.add('active');
+
+        // Update indicators
+        const indicatorContainer = document.getElementById('home-product-indicators');
+        indicatorContainer.querySelectorAll('.indicator').forEach((indicator, index) => {
+            indicator.classList.remove('active');
+            if (index + 1 === currentHomeProductPage) {
+                indicator.classList.add('active');
+            }
+        });
+    }
+</script>
+
+<section class="home-news-section section" style="padding: 80px 0;">
+    <div style="width: 100%; margin-bottom: 50px;">
+        <h2
+            style="font-family: 'Times New Roman', serif; font-size: 3rem; color: #00008B; text-transform: uppercase; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px; padding-left: 50px;">
+            TIN TỨC
+        </h2>
+        <div style="height: 4px; background-color: #F3733D; width: 100%;"></div>
+    </div>
+
+    <div class="container">
+        <!-- Section Title (Removed) -->
+
+        <div class="row">
+            <!-- News Item 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="news-card">
+                    <div class="news-card-image"
+                        style="border: 1px solid #ddd; border-radius: 20px; overflow: hidden; height: 250px; margin-bottom: 20px;">
+                        <img src="images/blog/post-1.jpg" alt="News 1"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="news-card-content">
+                        <h4
+                            style="color: #F3733D; font-size: 1.1rem; font-weight: bold; margin-bottom: 15px; line-height: 1.4;">
+                            <a href="single-post.html" style="color: #F3733D; text-decoration: none;">So Sánh Kính Cường
+                                Lực Và Kính Dán An Toàn: Nên Chọn Loại Nào?</a>
+                        </h4>
+                        <div class="news-meta" style="color: #888; font-size: 0.9rem;">
+                            <span>12:19 03/06/2025</span>
+                            <span style="font-weight: bold; color: #00008B; margin-left: 10px;">1.2K lượt xem</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Item 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="news-card">
+                    <div class="news-card-image"
+                        style="border: 1px solid #ddd; border-radius: 20px; overflow: hidden; height: 250px; margin-bottom: 20px;">
+                        <img src="images/blog/post-2.jpg" alt="News 2"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="news-card-content">
+                        <h4
+                            style="color: #F3733D; font-size: 1.1rem; font-weight: bold; margin-bottom: 15px; line-height: 1.4;">
+                            <a href="single-post.html" style="color: #F3733D; text-decoration: none;">Kính Hộp Cách
+                                Nhiệt - Giải Pháp Tiết Kiệm Năng Lượng Cho Nhà Cao Tầng</a>
+                        </h4>
+                        <div class="news-meta" style="color: #888; font-size: 0.9rem;">
+                            <span>14:19 03/01/2026</span>
+                            <span style="font-weight: bold; color: #00008B; margin-left: 10px;">856 lượt xem</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Item 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="news-card">
+                    <div class="news-card-image"
+                        style="border: 1px solid #ddd; border-radius: 20px; overflow: hidden; height: 250px; margin-bottom: 20px;">
+                        <img src="images/blog/post-3.jpg" alt="News 3"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="news-card-content">
+                        <h4
+                            style="color: #F3733D; font-size: 1.1rem; font-weight: bold; margin-bottom: 15px; line-height: 1.4;">
+                            <a href="single-post.html" style="color: #F3733D; text-decoration: none;">Kính Low-E: Công
+                                Nghệ Phản Xạ Nhiệt Thế Hệ Mới</a>
+                        </h4>
+                        <div class="news-meta" style="color: #888; font-size: 0.9rem;">
+                            <span>15:19 02/01/2026</span>
+                            <span style="font-weight: bold; color: #00008B; margin-left: 10px;">723 lượt xem</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- View All Button -->
+        <div class="text-center mt-5">
+            <a href="blog.html" class="btn-news-view-all" style="
+                display: inline-block;
+                padding: 12px 30px;
+                border: 2px solid #00008B;
+                border-radius: 50px;
+                color: #00008B;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                background: white;
+            " onmouseover="this.style.background='#00008B'; this.style.color='white';"
+                onmouseout="this.style.background='white'; this.style.color='#00008B';">
+                XEM THÊM TẤT CẢ TIN TỨC
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="home-library-section section" style="padding: 0; margin-bottom: 50px;">
+    <!-- Title Section -->
+    <div style="width: 100%; margin-bottom: 50px;">
+        <h2
+            style="font-family: 'Times New Roman', serif; font-size: 3rem; color: #F3733D; text-transform: uppercase; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px; padding-left: 50px;">
+            THƯ VIỆN
+        </h2>
+        <div style="height: 4px; background-color: #00008B; width: 100%;"></div>
+    </div>
+
+    <!-- Blue Background Section -->
+    <div style="width: 100%; background-color: #00008B; padding: 60px 0;">
+        <div class="container" style="position: relative;">
+
+            <div class="row justify-content-center">
+                <!-- Card 1: Hồ Sơ Năng Lực -->
+                <div class="col-md-4 mb-4">
+                    <div class="library-card"
+                        style="background: white; border-radius: 30px; overflow: hidden; padding-bottom: 15px; height: 100%;">
+                        <div class="card-image" style="padding: 30px;">
+                            <img src="images/portfolio/Profile company 3.png" alt="Hồ Sơ Năng Lực"
+                                style="width: 100%; height: 350px; object-fit: contain;">
+                        </div>
+                        <h4 class="text-center"
+                            style="color: #00008B; font-weight: bold; text-transform: uppercase; font-size: 1.1rem; margin-top: 15px;">
+                            HỒ SƠ NĂNG LỰC
+                        </h4>
+                    </div>
+                </div>
+
+                <!-- Card 2: Hình Ảnh Sản Phẩm -->
+                <div class="col-md-4 mb-4">
+                    <div class="library-card"
+                        style="background: white; border-radius: 30px; overflow: hidden; padding-bottom: 15px; height: 100%;">
+                        <div class="card-image" style="padding: 30px;">
+                            <img src="images/portfolio/Profile company 1.png" alt="Hình Ảnh Sản Phẩm"
+                                style="width: 100%; height: 350px; object-fit: contain;">
+                        </div>
+                        <h4 class="text-center"
+                            style="color: #00008B; font-weight: bold; text-transform: uppercase; font-size: 1.1rem; margin-top: 15px;">
+                            HÌNH ẢNH SẢN PHẨM
+                        </h4>
+                    </div>
+                </div>
+
+                <!-- Card 3: Hình Ảnh Sự Kiện -->
+                <div class="col-md-4 mb-4">
+                    <div class="library-card"
+                        style="background: white; border-radius: 30px; overflow: hidden; padding-bottom: 15px; height: 100%;">
+                        <div class="card-image" style="padding: 30px;">
+                            <img src="images/portfolio/Profile company 2.png" alt="Hình Ảnh Sự Kiện"
+                                style="width: 100%; height: 350px; object-fit: contain;">
+                        </div>
+                        <h4 class="text-center"
+                            style="color: #00008B; font-weight: bold; text-transform: uppercase; font-size: 1.1rem; margin-top: 15px;">
+                            HÌNH ẢNH SỰ KIỆN
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <div style="position: absolute; top: 50%; left: -60px; transform: translateY(-50%); cursor: pointer;">
+                <span style="color: #fff; font-size: 4rem; font-weight: bold;">&#171;</span>
+            </div>
+            <div style="position: absolute; top: 50%; right: -60px; transform: translateY(-50%); cursor: pointer;">
+                <span style="color: #fff; font-size: 4rem; font-weight: bold;">&#187;</span>
+            </div>
+
+            <!-- Identifiers/Pagination -->
+            <div class="text-center mt-4">
+                <span
+                    style="display: inline-block; width: 40px; height: 4px; background-color: #F3733D; margin: 0 5px;"></span>
+                <span
+                    style="display: inline-block; width: 40px; height: 4px; background-color: #fff; margin: 0 5px;"></span>
+                <span
+                    style="display: inline-block; width: 40px; height: 4px; background-color: #fff; margin: 0 5px;"></span>
+                <span
+                    style="display: inline-block; width: 40px; height: 4px; background-color: #fff; margin: 0 5px;"></span>
+                <span
+                    style="display: inline-block; width: 40px; height: 4px; background-color: #fff; margin: 0 5px;"></span>
+            </div>
+
+        </div>
+    </div>
+
+    <div style="height: 4px; background-color: #00008B; width: 100%;"></div>
+
+    <!-- View Details Button Section -->
+    <div class="container text-center mt-5">
+        <a href="#" class="btn-library-view" style="
+            display: inline-block;
+            padding: 12px 60px;
+            border-radius: 50px;
+            background-color: #4169E1; 
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        ">
+            XEM CHI TIẾT
+        </a>
+    </div>
+</section>
 
 <!--
 Start Partners Preview Section
 ==================================== -->
-<section class="partners-preview section" id="partners-preview">
-	<div class="container">
-		<div class="row justify-content-center">
-			<!-- section title -->
-			<div class="col-xl-8 col-lg-10">
-				<div class="title text-center">
-					<h2>Đối Tác Tiêu Biểu</h2>
-					<p>Chúng tôi tự hào được hợp tác với các đối tác uy tín trên toàn thế giới, mang đến giải pháp công nghệ tiên tiến nhất.</p>
-					<div class="border"></div>
-				</div>
-			</div>
-			<!-- /section title -->
-		</div>
-		<div class="row">
-			<!-- Đối tác 1 -->
-			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-				<div class="partner-logo-item text-center p-3">
-					<img loading="lazy" src="images/client-logo/Screenshot 2025-12-20 143732.png" alt="Đối tác 1" class="img-fluid">
-				</div>
-			</div>
-			<!-- Đối tác 2 -->
-			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-				<div class="partner-logo-item text-center p-3">
-					<img loading="lazy" src="images/client-logo/Screenshot 2025-12-20 143739.png" alt="Đối tác 2" class="img-fluid">
-				</div>
-			</div>
-			<!-- Đối tác 3 -->
-			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-				<div class="partner-logo-item text-center p-3">
-					<img loading="lazy" src="images/client-logo/Screenshot 2025-12-20 143744.png" alt="Đối tác 3" class="img-fluid">
-				</div>
-			</div>
-			<!-- Đối tác 4 -->
-			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-				<div class="partner-logo-item text-center p-3">
-					<img loading="lazy" src="images/client-logo/Screenshot 2025-12-20 143750.png" alt="Đối tác 4" class="img-fluid">
-				</div>
-			</div>
-			<!-- Đối tác 5 -->
-			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-				<div class="partner-logo-item text-center p-3">
-					<img loading="lazy" src="images/client-logo/Screenshot 2025-12-20 143754.png" alt="Đối tác 5" class="img-fluid">
-				</div>
-			</div>
-			<!-- Đối tác 6 -->
-			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-				<div class="partner-logo-item text-center p-3">
-					<img loading="lazy" src="images/client-logo/Screenshot 2025-12-20 143759.png" alt="Đối tác 6" class="img-fluid">
-				</div>
-			</div>
-			<!-- Đối tác 7 -->
-			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-				<div class="partner-logo-item text-center p-3">
-					<img loading="lazy" src="images/client-logo/Screenshot 2025-12-20 143805.png" alt="Đối tác 7" class="img-fluid">
-				</div>
-			</div>
-			<!-- Đối tác 8 -->
-			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-				<div class="partner-logo-item text-center p-3">
-					<img loading="lazy" src="images/client-logo/Screenshot 2025-12-20 143852.png" alt="Đối tác 8" class="img-fluid">
-				</div>
-			</div>
-			<!-- Đối tác 9 -->
-			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-				<div class="partner-logo-item text-center p-3">
-					<img loading="lazy" src="images/client-logo/Screenshot 2025-12-20 143728.png" alt="Đối tác 9" class="img-fluid">
-				</div>
-			</div>
-			<!-- Đối tác 10 -->
-			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-				<div class="partner-logo-item text-center p-3">
-					<img loading="lazy" src="images/client-logo/Screenshot 2025-12-20 143900.png" alt="Đối tác 10" class="img-fluid">
-				</div>
-			</div>
-			<!-- Đối tác 11 -->
-			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-				<div class="partner-logo-item text-center p-3">
-					<img loading="lazy" src="images/client-logo/Screenshot 2025-12-20 143904.png" alt="Đối tác 11" class="img-fluid">
-				</div>
-			</div>
-			<!-- Đối tác 12 -->
-			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-				<div class="partner-logo-item text-center p-3">
-					<img loading="lazy" src="images/client-logo/Screenshot 2025-12-20 143908.png" alt="Đối tác 12" class="img-fluid">
-				</div>
-			</div>
-		</div>
-		<div class="row mt-4">
+<section class="partners-preview section" id="partners-preview"
+	style="background-image: url('images/products/background_noibat.png'); background-repeat: no-repeat; background-size: cover; transform: scaleY(-1); height: 720px;">
+	<div class="container h-100" style="transform: scaleY(-1);">
+		<div class="row align-items-center h-100 justify-content-center">
 			<div class="col-12 text-center">
-				<a href="partners.html" class="btn btn-main">Xem Tất Cả Đối Tác</a>
+				<img src="images/client-logo/doitackhachhang.png" alt="Đối Tác Khách Hàng" class="img-fluid"
+					style="transform: scale(1.2);">
 			</div>
 		</div>
-	</div> <!-- End container -->
-</section> <!-- End section -->
-
-
+	</div>
+</section>
 
 <!--
 Start Glass Suppliers Section
@@ -735,88 +1075,35 @@ Start Glass Suppliers Section
 <section class="glass-suppliers section" id="glass-suppliers">
 	<div class="container">
 		<div class="row justify-content-center">
-			<!-- section title -->
-			<div class="col-xl-8 col-lg-10">
-				<div class="title text-center">
-					<h2>Đối Tác Cung Ứng Phôi Kính</h2>
-					<p>Chúng tôi hợp tác với các nhà cung cấp phôi kính hàng đầu thế giới, đảm bảo chất lượng nguyên liệu đầu vào cao nhất.</p>
-					<div class="border"></div>
-				</div>
-			</div>
-			<!-- /section title -->
-		</div>
-		<div class="row">
-			<!-- Đối tác cung ứng 1 -->
-			<div class="col-lg-4 col-md-4 col-sm-6 mb-4">
-				<div class="partner-logo-item text-center p-3">
-					<img loading="lazy" src="images/client-logo/Screenshot 2025-12-20 144458.png" alt="Đối tác cung ứng phôi kính 1" class="img-fluid">
-				</div>
-			</div>
-			<!-- Đối tác cung ứng 2 -->
-			<div class="col-lg-4 col-md-4 col-sm-6 mb-4">
-				<div class="partner-logo-item text-center p-3">
-					<img loading="lazy" src="images/client-logo/Screenshot 2025-12-20 144501.png" alt="Đối tác cung ứng phôi kính 2" class="img-fluid">
-				</div>
-			</div>
-			<!-- Đối tác cung ứng 3 -->
-			<div class="col-lg-4 col-md-4 col-sm-6 mb-4">
-				<div class="partner-logo-item text-center p-3">
-					<img loading="lazy" src="images/client-logo/Screenshot 2025-12-20 144437.png" alt="Đối tác cung ứng phôi kính 3" class="img-fluid">
-				</div>
-			</div>
-			<!-- Đối tác cung ứng 4 -->
-			<div class="col-lg-4 col-md-4 col-sm-6 mb-4">
-				<div class="partner-logo-item text-center p-3">
-					<img loading="lazy" src="images/client-logo/Screenshot 2025-12-20 144442.png" alt="Đối tác cung ứng phôi kính 4" class="img-fluid">
-				</div>
-			</div>
-			<!-- Đối tác cung ứng 5 -->
-			<div class="col-lg-4 col-md-4 col-sm-6 mb-4">
-				<div class="partner-logo-item text-center p-3">
-					<img loading="lazy" src="images/client-logo/Screenshot 2025-12-20 144447.png" alt="Đối tác cung ứng phôi kính 5" class="img-fluid">
-				</div>
-			</div>
-			<!-- Đối tác cung ứng 6 -->
-			<div class="col-lg-4 col-md-4 col-sm-6 mb-4">
-				<div class="partner-logo-item text-center p-3">
-					<img loading="lazy" src="images/client-logo/Screenshot 2025-12-20 144454.png" alt="Đối tác cung ứng phôi kính 6" class="img-fluid">
-				</div>
+			<div class="col-12 text-center">
+				<img src="images/client-logo/doitaccungung.png" alt="Đối Tác Cung Ứng" class="img-fluid"
+					style="transform: scale(1.2);">
 			</div>
 		</div>
-	</div> <!-- End container -->
-</section> <!-- End section -->
+	</div>
+</section>
 
-
-
-<footer id="footer" class="bg-one">
-  <div class="top-footer">
-    <div class="container-fluid">
+<footer id="footer" class="footer-new">
+  <div class="footer-main">
+    <div class="container-fluid px-4">
       <div class="row">
-        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
-          <div class="widget">
-            <h4>Về Công Ty</h4>
-            <p><strong>CÔNG TY TNHH THIÊN PHÚ</strong><br>(THIEN PHU CO., LTD)</p>
-            <p>Chúng tôi chuyên sản xuất và cung cấp các loại kính chất lượng cao: kính cường lực, kính bán cường lực, kính ghép fim, kính hộp IGU, kính in men UV, kính phun mờ và nhiều sản phẩm khác.</p>
-            <p><strong>Mã số thuế:</strong> 0304116870</p>
+        <!-- Logo & Company Info -->
+        <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+          <div class="footer-brand">
+            <img loading="lazy" src="images/logo-white.jpg" alt="Thiên Phú Glass" class="footer-logo">
+            <div class="footer-company-info">
+              <h4>CÔNG TY TNHH THIÊN PHÚ</h4>
+              <p>Chuyên sản xuất và cung cấp các loại kính chất lượng cao</p>
+              <p class="tax-code">Mã số thuế: <strong>0304116870</strong></p>
+            </div>
           </div>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
-          <div class="widget">
-            <h4>Sản Phẩm</h4>
-            <ul class="link-list">
-              <li>Kính cường lực</li>
-              <li>Kính bán cường lực</li>
-              <li>Kính ghép fim PB, SGP, Dupont</li>
-              <li>Kính hộp IGU</li>
-              <li>Kính in men UV</li>
-              <li>Kính phun mờ</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
-          <div class="widget">
-            <h4>Liên kết nhanh</h4>
-            <ul class="link-list">
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+          <div class="footer-widget">
+            <h5 class="footer-title">LIÊN KẾT NHANH</h5>
+            <ul class="footer-links">
               <li><a href="index.html">Trang chủ</a></li>
               <li><a href="about.html">Giới thiệu</a></li>
               <li><a href="capabilities.html">Năng lực & Công nghệ</a></li>
@@ -826,43 +1113,76 @@ Start Glass Suppliers Section
             </ul>
           </div>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
-          <div class="widget">
-            <h4>Văn Phòng</h4>
-            <ul class="contact-info">
-              <li><strong>Địa chỉ:</strong><br>57 Quang Trung, P. Hiệp Phú, TP. Thủ Đức, Tp. HCM</li>
-              <li><strong>Điện thoại:</strong><br><a href="tel:+84837923996">(+84) 83 792 3996</a></li>
-              <li><strong>Fax:</strong><br>(+84) 83 792 3998</li>
+
+        <!-- Office -->
+        <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+          <div class="footer-widget">
+            <h5 class="footer-title">VĂN PHÒNG</h5>
+            <ul class="footer-info">
+              <li>
+                <span class="info-label">Địa chỉ:</span>
+                <span class="info-value">57 Quang Trung, P. Hiệp Phú, TP. Thủ Đức, Tp. HCM</span>
+              </li>
+              <li>
+                <span class="info-label">Điện thoại:</span>
+                <span class="info-value"><a href="tel:+84837923996">(+84) 83 792 3996</a></span>
+              </li>
+              <li>
+                <span class="info-label">Fax:</span>
+                <span class="info-value">(+84) 83 792 3998</span>
+              </li>
             </ul>
           </div>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
-          <div class="widget">
-            <h4>Nhà Máy 1</h4>
-            <ul class="contact-info">
-              <li><strong>Địa chỉ:</strong><br>Ấp 3, xã Phước Vĩnh An, huyện Củ Chi, Tp. HCM</li>
-              <li><strong>Diện tích:</strong><br>10,000 m²</li>
-              <li><strong>Xưởng:</strong><br>7,500 m²</li>
+
+        <!-- Factory 1 -->
+        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+          <div class="footer-widget">
+            <h5 class="footer-title">NHÀ MÁY 1</h5>
+            <ul class="footer-info">
+              <li>
+                <span class="info-label">Địa chỉ:</span>
+                <span class="info-value">Ấp 3, xã Phước Vĩnh An, huyện Củ Chi, Tp. HCM</span>
+              </li>
+              <li>
+                <span class="info-label">Diện tích:</span>
+                <span class="info-value">10,000 m²</span>
+              </li>
+              <li>
+                <span class="info-label">Xưởng:</span>
+                <span class="info-value">7,500 m²</span>
+              </li>
             </ul>
           </div>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
-          <div class="widget">
-            <h4>Nhà Máy 2</h4>
-            <ul class="contact-info">
-              <li><strong>Địa chỉ:</strong><br>KCN Thái Hòa, Áp Tân Hòa, Xã Đức Lập Hạ, H.Đức Hòa, T.Long An</li>
-              <li><strong>Xưởng:</strong><br>9,700 m²</li>
+
+        <!-- Factory 2 -->
+        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+          <div class="footer-widget">
+            <h5 class="footer-title">NHÀ MÁY 2</h5>
+            <ul class="footer-info">
+              <li>
+                <span class="info-label">Địa chỉ:</span>
+                <span class="info-value">KCN Thái Hòa, Ấp Tân Hòa, Xã Đức Lập Hạ, H.Đức Hòa, TP.Long An</span>
+              </li>
+              <li>
+                <span class="info-label">Xưởng:</span>
+                <span class="info-value">9,700 m²</span>
+              </li>
             </ul>
           </div>
         </div>
       </div>
-    </div> <!-- end container -->
+    </div>
   </div>
-  <div class="footer-bottom">
-    <h5>© 2025 CÔNG TY TNHH THIÊN PHÚ. All rights reserved</h5>
-  </div>
-</footer> <!-- end footer -->
 
+  <!-- Footer Bottom with Orange Line -->
+  <div class="footer-bottom-new">
+    <div class="container-fluid px-4">
+      <p>© 2025 <strong>CÔNG TY TNHH THIÊN PHÚ</strong>. All rights reserved</p>
+    </div>
+  </div>
+</footer>
 
 <!-- end Footer Area
 ========================================== -->

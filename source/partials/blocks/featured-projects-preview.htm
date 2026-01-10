@@ -1,240 +1,323 @@
 <!--
-Start Featured Projects Preview Section
+Start Featured Projects Preview Section - New Design
 ==================================== -->
-<section class="featured-projects-preview section" id="featured-projects">
-	<div class="container-fluid px-0">
-		<div class="container">
-			<div class="row justify-content-center">
-				<!-- section title -->
-				<div class="col-xl-8 col-lg-10">
-					<div class="title text-center">
-						<h2>Dự Án Nổi Bật</h2>
-						<p>Những dự án tiêu biểu thể hiện năng lực và kinh nghiệm của chúng tôi trong việc cung cấp giải
-							pháp kính chất lượng cao.</p>
-						<div class="border"></div>
-					</div>
-				</div>
-				<!-- /section title -->
-			</div>
-		</div>
+<section class="featured-projects-new" id="featured-projects" style="padding-top: 50px;">
+	<div style="width: 100%; margin-bottom: 40px;">
+		<h2
+			style="font-family: 'Times New Roman', serif; font-size: 3rem; color: #00008B; text-transform: uppercase; font-weight: bold; letter-spacing: 2px; margin-bottom: 20px; padding-left: 50px;">
+			Dự Án Tiêu Biểu</h2>
+		<div style="height: 4px; background-color: #F3733D; width: 100%;"></div>
+	</div>
+	<div class="container">
+
 
 		<!-- Projects Slider -->
-		<div class="projects-slider-wrapper">
-			<div class="projects-slider">
-				<!-- Page 1: Projects 1-6 -->
-				<div class="projects-slide">
-					<div class="row">
-						<!-- Row 1: Projects 1-3 -->
-						<div class="col-lg-4 col-md-6 col-12 mb-4">
-							<div class="project-preview-item">
-								<div class="project-image">
-									<img loading="lazy" src="images/portfolio/portfolio-1.png" class="img-fluid"
+		<div class="projects-carousel-wrapper">
+			<!-- Navigation Arrow Left -->
+			<div class="project-nav project-nav-prev" onclick="changeProjectPage(-1)">
+				<span class="nav-chevron">&#10094;&#10094;&#10094;</span>
+			</div>
+
+			<!-- Projects Pages Container -->
+			<div class="projects-pages-container">
+				<!-- Page 1: Projects 1-3 -->
+				<div class="projects-page active" data-page="1">
+					<div class="projects-carousel">
+						<!-- Project 1 -->
+						<div class="project-card">
+							<div class="project-card-inner">
+								<div class="project-card-image">
+									<img loading="lazy" src="images/portfolio/portfolio-1.png"
 										alt="Khách Sạn Caravelle">
-									<div class="project-overlay">
-										<a href="projects.html" class="btn btn-main">Xem Chi Tiết</a>
-									</div>
 								</div>
-								<div class="project-content p-4">
-									<h4><a href="projects.html">KHÁCH SẠN CARAVELLE</a></h4>
-									<p><i class="tf-ion-ios-location"></i> Bến Nghé, Quận 1, TPHCM • 335 phòng, 24 tầng
-										• 2019</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-12 mb-4">
-							<div class="project-preview-item">
-								<div class="project-image">
-									<img loading="lazy" src="images/portfolio/portfolio-2.png" class="img-fluid"
-										alt="Chung Cư Safira Khang Điền">
-									<div class="project-overlay">
-										<a href="projects.html" class="btn btn-main">Xem Chi Tiết</a>
-									</div>
-								</div>
-								<div class="project-content p-4">
-									<h4><a href="projects.html">CHUNG CƯ SAFIRA KHANG ĐIỀN</a></h4>
-									<p><i class="tf-ion-ios-location"></i> Quận 9, TPHCM • 2.7 ha, 4 tháp - 22 tầng,
-										1570 căn • 2019</p>
+								<div class="project-card-content">
+									<h4 class="project-name">KHÁCH SẠN CARAVELLE</h4>
+									<p class="project-location"><i class="tf-ion-ios-location"></i> Bến Nghé, Quận 1,
+										TPHCM</p>
+									<ul class="project-details">
+										<li>335 phòng, 24 tầng</li>
+										<li>Năm thực hiện : 2019</li>
+									</ul>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 col-12 mb-4">
-							<div class="project-preview-item">
-								<div class="project-image">
-									<img loading="lazy" src="images/portfolio/portfolio-3.png" class="img-fluid"
-										alt="Khu Đô Thị Flora Mizuki">
-									<div class="project-overlay">
-										<a href="projects.html" class="btn btn-main">Xem Chi Tiết</a>
-									</div>
-								</div>
-								<div class="project-content p-4">
-									<h4><a href="projects.html">KHU ĐÔ THỊ FLORA MIZUKI</a></h4>
-									<p><i class="tf-ion-ios-location"></i> Bình Chánh, TP HCM • 5 block, 1 tầng hầm và
-										20 tầng cao • 2019</p>
-								</div>
-							</div>
-						</div>
-						<!-- Row 2: Projects 4-6 -->
-						<div class="col-lg-4 col-md-6 col-12 mb-4">
-							<div class="project-preview-item">
-								<div class="project-image">
-									<img loading="lazy" src="images/portfolio/portfolio-4.png" class="img-fluid"
-										alt="Chung Cư H9A Bình Dương">
-									<div class="project-overlay">
-										<a href="projects.html" class="btn btn-main">Xem Chi Tiết</a>
-									</div>
-								</div>
-								<div class="project-content p-4">
-									<h4><a href="projects.html">CHUNG CƯ H9A BÌNH DƯƠNG</a></h4>
-									<p><i class="tf-ion-ios-location"></i> Tỉnh Bình Dương • 16,000m², 4 block 25 tầng,
-										667 căn • 2019</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-12 mb-4">
-							<div class="project-preview-item">
-								<div class="project-image">
-									<img loading="lazy" src="images/portfolio/portfolio-5.png" class="img-fluid"
-										alt="Tòa Tháp Bitexco">
-									<div class="project-overlay">
-										<a href="projects.html" class="btn btn-main">Xem Chi Tiết</a>
-									</div>
-								</div>
-								<div class="project-content p-4">
-									<h4><a href="projects.html">TÒA THÁP BITEXCO</a></h4>
-									<p><i class="tf-ion-ios-location"></i> Hồ Tùng Mậu, Quận 1, TPHCM • 68 tầng • 2011
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-12 mb-4">
-							<div class="project-preview-item">
-								<div class="project-image">
-									<img loading="lazy" src="images/portfolio/portfolio-6.png" class="img-fluid"
-										alt="Bệnh Viện Nhi Đồng 1">
-									<div class="project-overlay">
-										<a href="projects.html" class="btn btn-main">Xem Chi Tiết</a>
-									</div>
-								</div>
-								<div class="project-content p-4">
-									<h4><a href="projects.html">BỆNH VIỆN NHI ĐỒNG 1</a></h4>
-									<p><i class="tf-ion-ios-location"></i> Sư Vạn Hạnh, Quận 10, TPHCM • 3 tòa nhà,
-										60,000m² • 2021-2022</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 
-				<!-- Page 2: Projects 7-12 -->
-				<div class="projects-slide">
-					<div class="row">
-						<!-- Row 1: Projects 7-9 -->
-						<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-							<div class="project-preview-item">
-								<div class="project-image">
-									<img loading="lazy" src="images/portfolio/portfolio-7.png" class="img-fluid"
-										alt="Quảng Trường Lâm Viên - Đà Lạt">
-									<div class="project-overlay">
-										<a href="projects.html" class="btn btn-main">Xem Chi Tiết</a>
-									</div>
-								</div>
-								<div class="project-content p-3">
-									<h4><a href="projects.html">QUẢNG TRƯỜNG LÂM VIÊN - ĐÀ LẠT</a></h4>
-									<p><i class="tf-ion-ios-location"></i> Đà Lạt, Lâm Đồng • Tổng diện tích hơn
-										70,000m² • 2015</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-							<div class="project-preview-item">
-								<div class="project-image">
-									<img loading="lazy" src="images/portfolio/portfolio-8.png" class="img-fluid"
-										alt="Trường Quốc Tế Nam Sài Gòn">
-									<div class="project-overlay">
-										<a href="projects.html" class="btn btn-main">Xem Chi Tiết</a>
-									</div>
-								</div>
-								<div class="project-content p-3">
-									<h4><a href="projects.html">TRƯỜNG QUỐC TẾ NAM SÀI GÒN</a></h4>
-									<p><i class="tf-ion-ios-location"></i> Phú Mỹ Hưng, Q 7, TPHCM • 2 tòa nhà, 17,700m²
-										• 2024</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-							<div class="project-preview-item">
-								<div class="project-image">
-									<img loading="lazy" src="images/portfolio/portfolio-9.png" class="img-fluid"
+						<!-- Project 2 -->
+						<div class="project-card">
+							<div class="project-card-inner">
+								<div class="project-card-image">
+									<img loading="lazy" src="images/portfolio/portfolio-9.png"
 										alt="Trung Tâm Phức Hợp Báo Tuổi Trẻ">
-									<div class="project-overlay">
-										<a href="projects.html" class="btn btn-main">Xem Chi Tiết</a>
-									</div>
 								</div>
-								<div class="project-content p-3">
-									<h4><a href="projects.html">TRUNG TÂM PHỨC HỢP BÁO TUỔI TRẺ</a></h4>
-									<p><i class="tf-ion-ios-location"></i> Gò Vấp, TPHCM • 2 khối công trình, 20,000m² •
-										2024</p>
+								<div class="project-card-content">
+									<h4 class="project-name">TRUNG TÂM PHỨC HỢP BÁO TUỔI TRẺ</h4>
+									<p class="project-location"><i class="tf-ion-ios-location"></i> Gò Vấp, TPHCM</p>
+									<ul class="project-details">
+										<li>2 khối công trình, 20,000m²</li>
+										<li>Năm thực hiện : 2024</li>
+									</ul>
 								</div>
 							</div>
 						</div>
-						<!-- Row 2: Projects 10-12 -->
-						<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-							<div class="project-preview-item">
-								<div class="project-image">
-									<img loading="lazy" src="images/portfolio/portfolio-10.png" class="img-fluid"
+
+						<!-- Project 3 -->
+						<div class="project-card">
+							<div class="project-card-inner">
+								<div class="project-card-image">
+									<img loading="lazy" src="images/portfolio/portfolio-6.png"
+										alt="Bệnh Viện Nhi Đồng 1">
+								</div>
+								<div class="project-card-content">
+									<h4 class="project-name">BỆNH VIỆN NHI ĐỒNG 1</h4>
+									<p class="project-location"><i class="tf-ion-ios-location"></i> Sư Vạn Hạnh, Quận
+										10, TPHCM</p>
+									<ul class="project-details">
+										<li>3 tòa nhà 60,000m²</li>
+										<li>Năm thực hiện : 2021-2022</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Page 2: Projects 4-6 -->
+				<div class="projects-page" data-page="2">
+					<div class="projects-carousel">
+						<!-- Project 4 -->
+						<div class="project-card">
+							<div class="project-card-inner">
+								<div class="project-card-image">
+									<img loading="lazy" src="images/portfolio/portfolio-2.png"
+										alt="Chung Cư Safira Khang Điền">
+								</div>
+								<div class="project-card-content">
+									<h4 class="project-name">CHUNG CƯ SAFIRA KHANG ĐIỀN</h4>
+									<p class="project-location"><i class="tf-ion-ios-location"></i> Quận 9, TPHCM</p>
+									<ul class="project-details">
+										<li>2.7 ha, 4 tháp - 22 tầng, 1570 căn</li>
+										<li>Năm thực hiện : 2019</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Project 5 -->
+						<div class="project-card">
+							<div class="project-card-inner">
+								<div class="project-card-image">
+									<img loading="lazy" src="images/portfolio/portfolio-3.png"
+										alt="Khu Đô Thị Flora Mizuki">
+								</div>
+								<div class="project-card-content">
+									<h4 class="project-name">KHU ĐÔ THỊ FLORA MIZUKI</h4>
+									<p class="project-location"><i class="tf-ion-ios-location"></i> Bình Chánh, TP HCM
+									</p>
+									<ul class="project-details">
+										<li>5 block, 1 tầng hầm và 20 tầng cao</li>
+										<li>Năm thực hiện : 2019</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Project 6 -->
+						<div class="project-card">
+							<div class="project-card-inner">
+								<div class="project-card-image">
+									<img loading="lazy" src="images/portfolio/portfolio-4.png"
+										alt="Chung Cư H9A Bình Dương">
+								</div>
+								<div class="project-card-content">
+									<h4 class="project-name">CHUNG CƯ H9A BÌNH DƯƠNG</h4>
+									<p class="project-location"><i class="tf-ion-ios-location"></i> Tỉnh Bình Dương</p>
+									<ul class="project-details">
+										<li>16,000m², 4 block 25 tầng, 667 căn</li>
+										<li>Năm thực hiện : 2019</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Page 3: Projects 7-9 -->
+				<div class="projects-page" data-page="3">
+					<div class="projects-carousel">
+						<!-- Project 7 -->
+						<div class="project-card">
+							<div class="project-card-inner">
+								<div class="project-card-image">
+									<img loading="lazy" src="images/portfolio/portfolio-5.png" alt="Tòa Tháp Bitexco">
+								</div>
+								<div class="project-card-content">
+									<h4 class="project-name">TÒA THÁP BITEXCO</h4>
+									<p class="project-location"><i class="tf-ion-ios-location"></i> Hồ Tùng Mậu, Quận 1,
+										TPHCM</p>
+									<ul class="project-details">
+										<li>68 tầng</li>
+										<li>Năm thực hiện : 2011</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Project 8 -->
+						<div class="project-card">
+							<div class="project-card-inner">
+								<div class="project-card-image">
+									<img loading="lazy" src="images/portfolio/portfolio-7.png"
+										alt="Quảng Trường Lâm Viên">
+								</div>
+								<div class="project-card-content">
+									<h4 class="project-name">QUẢNG TRƯỜNG LÂM VIÊN - ĐÀ LẠT</h4>
+									<p class="project-location"><i class="tf-ion-ios-location"></i> Đà Lạt, Lâm Đồng</p>
+									<ul class="project-details">
+										<li>Tổng diện tích hơn 70,000m²</li>
+										<li>Năm thực hiện : 2015</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Project 9 -->
+						<div class="project-card">
+							<div class="project-card-inner">
+								<div class="project-card-image">
+									<img loading="lazy" src="images/portfolio/portfolio-8.png"
+										alt="Trường Quốc Tế Nam Sài Gòn">
+								</div>
+								<div class="project-card-content">
+									<h4 class="project-name">TRƯỜNG QUỐC TẾ NAM SÀI GÒN</h4>
+									<p class="project-location"><i class="tf-ion-ios-location"></i> Phú Mỹ Hưng, Q7,
+										TPHCM</p>
+									<ul class="project-details">
+										<li>2 tòa nhà, 17,700m²</li>
+										<li>Năm thực hiện : 2024</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Page 4: Projects 10-12 -->
+				<div class="projects-page" data-page="4">
+					<div class="projects-carousel">
+						<!-- Project 10 -->
+						<div class="project-card">
+							<div class="project-card-inner">
+								<div class="project-card-image">
+									<img loading="lazy" src="images/portfolio/portfolio-10.png"
 										alt="Khu Đô Thị Celadon">
-									<div class="project-overlay">
-										<a href="projects.html" class="btn btn-main">Xem Chi Tiết</a>
-									</div>
 								</div>
-								<div class="project-content p-3">
-									<h4><a href="projects.html">KHU ĐÔ THỊ CELADON</a></h4>
-									<p><i class="tf-ion-ios-location"></i> Tân Phú, TPHCM • 82.5 hecta • 2022</p>
+								<div class="project-card-content">
+									<h4 class="project-name">KHU ĐÔ THỊ CELADON</h4>
+									<p class="project-location"><i class="tf-ion-ios-location"></i> Tân Phú, TPHCM</p>
+									<ul class="project-details">
+										<li>82.5 hecta</li>
+										<li>Năm thực hiện : 2022</li>
+									</ul>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-							<div class="project-preview-item">
-								<div class="project-image">
-									<img loading="lazy" src="images/portfolio/portfolio-11.png" class="img-fluid"
+
+						<!-- Project 11 -->
+						<div class="project-card">
+							<div class="project-card-inner">
+								<div class="project-card-image">
+									<img loading="lazy" src="images/portfolio/portfolio-11.png"
 										alt="Resort & Spa Hyatt Đà Nẵng">
-									<div class="project-overlay">
-										<a href="projects.html" class="btn btn-main">Xem Chi Tiết</a>
-									</div>
 								</div>
-								<div class="project-content p-3">
-									<h4><a href="projects.html">RESORT & SPA HYATT ĐÀ NẴNG</a></h4>
-									<p><i class="tf-ion-ios-location"></i> Đà Nẵng • 20 hecta • 2011</p>
+								<div class="project-card-content">
+									<h4 class="project-name">RESORT & SPA HYATT ĐÀ NẴNG</h4>
+									<p class="project-location"><i class="tf-ion-ios-location"></i> Đà Nẵng</p>
+									<ul class="project-details">
+										<li>20 hecta</li>
+										<li>Năm thực hiện : 2011</li>
+									</ul>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-							<div class="project-preview-item">
-								<div class="project-image">
-									<img loading="lazy" src="images/portfolio/portfolio-12.png" class="img-fluid"
+
+						<!-- Project 12 -->
+						<div class="project-card">
+							<div class="project-card-inner">
+								<div class="project-card-image">
+									<img loading="lazy" src="images/portfolio/portfolio-12.png"
 										alt="Chung Cư West Gate Bình Chánh">
-									<div class="project-overlay">
-										<a href="projects.html" class="btn btn-main">Xem Chi Tiết</a>
-									</div>
 								</div>
-								<div class="project-content p-3">
-									<h4><a href="projects.html">CHUNG CƯ WEST GATE BÌNH CHÁNH</a></h4>
-									<p><i class="tf-ion-ios-location"></i> Bình Chánh, TPHCM • 4 tòa tháp, 20 tầng,
-										2000+ căn hộ, 3.1 hecta • 2022</p>
+								<div class="project-card-content">
+									<h4 class="project-name">CHUNG CƯ WEST GATE BÌNH CHÁNH</h4>
+									<p class="project-location"><i class="tf-ion-ios-location"></i> Bình Chánh, TPHCM
+									</p>
+									<ul class="project-details">
+										<li>4 tòa tháp, 20 tầng, 2000+ căn hộ</li>
+										<li>Năm thực hiện : 2022</li>
+									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="container">
-			<div class="row">
-				<div class="col-12 text-center mt-5">
-					<a href="projects.html" class="btn btn-main btn-lg">Xem Tất Cả Dự Án</a>
-				</div>
+			<!-- Navigation Arrow Right -->
+			<div class="project-nav project-nav-next" onclick="changeProjectPage(1)">
+				<span class="nav-chevron">&#10095;&#10095;&#10095;</span>
 			</div>
 		</div>
-	</div> <!-- End container-fluid -->
-</section> <!-- End section -->
+
+		<!-- Slider Indicators -->
+		<div class="projects-indicators">
+			<span class="indicator active" onclick="goToProjectPage(1)"></span>
+			<span class="indicator" onclick="goToProjectPage(2)"></span>
+			<span class="indicator" onclick="goToProjectPage(3)"></span>
+			<span class="indicator" onclick="goToProjectPage(4)"></span>
+		</div>
+
+		<!-- View All Button -->
+		<div class="row">
+			<div class="col-12 text-center">
+				<a href="projects.html" class="btn-view-all">XEM TẤT CẢ DỰ ÁN</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- JavaScript for Pagination -->
+<script>
+	let currentProjectPage = 1;
+	const totalProjectPages = 4;
+
+	function changeProjectPage(direction) {
+		currentProjectPage += direction;
+		if (currentProjectPage < 1) currentProjectPage = totalProjectPages;
+		if (currentProjectPage > totalProjectPages) currentProjectPage = 1;
+		updateProjectPage();
+	}
+
+	function goToProjectPage(page) {
+		currentProjectPage = page;
+		updateProjectPage();
+	}
+
+	function updateProjectPage() {
+		// Hide all pages
+		document.querySelectorAll('.projects-page').forEach(page => {
+			page.classList.remove('active');
+		});
+
+		// Show current page
+		document.querySelector(`.projects-page[data-page="${currentProjectPage}"]`).classList.add('active');
+
+		// Update indicators
+		document.querySelectorAll('.projects-indicators .indicator').forEach((indicator, index) => {
+			indicator.classList.remove('active');
+			if (index + 1 === currentProjectPage) {
+				indicator.classList.add('active');
+			}
+		});
+	}
+</script>
+<!-- End Featured Projects Preview Section -->

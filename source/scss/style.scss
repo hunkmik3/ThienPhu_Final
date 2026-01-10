@@ -20,6 +20,7 @@
 @import "templates/footer.scss";
 @import "templates/products.scss";
 @import "templates/404.scss";
+@import "templates/featured-projects-new.scss";
 @import "responsive.scss";
 
 
@@ -595,8 +596,35 @@ body {
 }
 
 .about-intro {
-  padding: 80px 0;
-  background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%);
+  padding: 500px 0;
+  background: url('../images/products/Nền gương(ko nền).png') no-repeat center center;
+  background-size: cover;
+  position: relative;
+
+  .about-overlay-wrapper {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    z-index: 5;
+
+    .about-logo {
+      max-width: 425px; // Reduced by 15% from 500px
+      width: 100%;
+      height: auto;
+      margin-bottom: -50px; // Pull image closer
+    }
+
+    .about-text-img {
+      max-width: 830px; // Increased by another 20%
+      width: 100%;
+      height: auto;
+    }
+  }
 
   .title {
     h2 {
@@ -662,6 +690,138 @@ body {
         transform: translateY(-2px);
         box-shadow: 0 6px 20px rgba(40, 171, 227, 0.4);
       }
+    }
+  }
+}
+
+.partners-preview {
+  padding: 80px 0;
+}
+
+// Home Product Carousel Styles
+.home-product-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  }
+
+  .home-product-image {
+    height: 350px; // Image height increased
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px 20px 0 0; // Rounded top explicitly
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.1);
+    }
+  }
+
+  .home-product-content {
+    padding: 30px; // Increased padding
+    text-align: left;
+
+    .home-product-title {
+      font-family: 'Times New Roman', serif;
+      color: #F3733D !important; // Orange color
+      font-weight: 800; // Extra bold
+      text-transform: uppercase;
+      font-size: 1.5rem; // Larger title
+      margin-bottom: 15px;
+    }
+
+    .home-product-desc {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 0;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      line-clamp: 4; // Standard property
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+}
+
+.product-carousel-wrapper {
+  position: relative;
+  padding: 0 50px; // Space for arrows
+}
+
+.product-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: #F3733D;
+
+    span {
+      color: #fff;
+    }
+  }
+
+  &.product-nav-prev {
+    left: 0;
+  }
+
+  &.product-nav-next {
+    right: 0;
+  }
+
+  .nav-chevron {
+    font-size: 30px;
+    color: #F3733D;
+    line-height: 1;
+    margin-top: -4px;
+    font-weight: bold;
+  }
+}
+
+.product-indicators {
+  .p-indicator {
+    display: inline-block;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    margin: 0 5px;
+    border-radius: 2px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &.active {
+      background: #F3733D; // Orange active
+      opacity: 1;
+      width: 40px;
+    }
+
+    &:hover {
+      opacity: 0.8;
     }
   }
 }
