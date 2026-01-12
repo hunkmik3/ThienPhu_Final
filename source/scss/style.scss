@@ -613,7 +613,7 @@ body {
     z-index: 5;
 
     .about-logo {
-      max-width: 425px; // Reduced by 15% from 500px
+      max-width: 744px; // Scaled 1.75x from 425px
       width: 100%;
       height: auto;
       margin-bottom: -50px; // Pull image closer
@@ -703,54 +703,57 @@ body {
   background: #fff;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.12);
   height: 100%;
   transition: all 0.3s ease;
+  max-width: 450px; // Match project card max-width
+  min-width: 300px;
 
   &:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.18);
   }
 
   .home-product-image {
-    height: 350px; // Image height increased
+    height: 300px; // Match project card image height
     overflow: hidden;
     position: relative;
-    border-radius: 20px 20px 0 0; // Rounded top explicitly
+    border-radius: 20px 20px 0 0;
 
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 0.5s ease;
+      transition: transform 0.4s ease;
     }
 
     &:hover img {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
   }
 
   .home-product-content {
-    padding: 30px; // Increased padding
+    padding: 20px 20px 25px; // Match project card content padding
     text-align: left;
 
     .home-product-title {
-      font-family: 'Times New Roman', serif;
-      color: #F3733D !important; // Orange color
-      font-weight: 800; // Extra bold
+      font-family: 'Bricolage Grotesque', sans-serif;
+      color: #F3733D !important;
+      font-weight: 700;
       text-transform: uppercase;
-      font-size: 1.5rem; // Larger title
-      margin-bottom: 15px;
+      font-size: 15px; // Match project name size
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
     }
 
     .home-product-desc {
-      font-size: 0.9rem;
-      color: #555;
+      font-size: 12px; // Match project details size
+      color: #333;
       line-height: 1.6;
       margin-bottom: 0;
       display: -webkit-box;
       -webkit-line-clamp: 4;
-      line-clamp: 4; // Standard property
+      line-clamp: 4;
       -webkit-box-orient: vertical;
       overflow: hidden;
     }

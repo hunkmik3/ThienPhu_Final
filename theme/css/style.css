@@ -3422,7 +3422,7 @@ body {
   z-index: 5;
 }
 .about-intro .about-overlay-wrapper .about-logo {
-  max-width: 425px;
+  max-width: 744px;
   width: 100%;
   height: auto;
   margin-bottom: -50px;
@@ -3497,16 +3497,18 @@ body {
   background: #fff;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.12);
   height: 100%;
   transition: all 0.3s ease;
+  max-width: 450px;
+  min-width: 300px;
 }
 .home-product-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.18);
 }
 .home-product-card .home-product-image {
-  height: 350px;
+  height: 300px;
   overflow: hidden;
   position: relative;
   border-radius: 20px 20px 0 0;
@@ -3516,26 +3518,27 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: transform 0.5s ease;
+  transition: transform 0.4s ease;
 }
 .home-product-card .home-product-image:hover img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .home-product-card .home-product-content {
-  padding: 30px;
+  padding: 20px 20px 25px;
   text-align: left;
 }
 .home-product-card .home-product-content .home-product-title {
-  font-family: "Times New Roman", serif;
+  font-family: "Bricolage Grotesque", sans-serif;
   color: #F3733D !important;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
-  font-size: 1.5rem;
-  margin-bottom: 15px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
 }
 .home-product-card .home-product-content .home-product-desc {
-  font-size: 0.9rem;
-  color: #555;
+  font-size: 12px;
+  color: #333;
   line-height: 1.6;
   margin-bottom: 0;
   display: -webkit-box;

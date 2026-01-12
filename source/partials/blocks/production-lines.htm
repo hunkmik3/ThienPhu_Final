@@ -1,93 +1,178 @@
-<div class="production-lines mt-5">
-    <!-- Item 1: Cutting (First step in process usually) -->
-    <div class="row align-items-center mb-5">
-        <div class="col-lg-6 order-lg-1">
-            <div class="image-box item-shadow">
-                <img src="images/production/napcatkinhtudong.png" alt="Dây chuyền nạp kính & cắt kính tự động"
-                    class="img-fluid rounded">
-            </div>
-        </div>
-        <div class="col-lg-6 order-lg-2">
-            <div class="content-box pl-lg-4">
-                <h3 class="font-weight-bold text-uppercase mb-3 mt-3 mt-lg-0" style="color: #FF5722;">Dây chuyền nạp
-                    kính & cắt kính tự động</h3>
-                <p style="color: #002060;">Đây là khâu khởi đầu quan trọng, quyết định độ chính xác tuyệt đối cho mọi
-                    sản phẩm của Thiên Phú.
-                </p>
-                <p style="color: #002060;">Quy trình tự động hóa hoàn toàn việc nạp các tấm phôi kính khổ lớn và cắt
-                    theo bản vẽ lập trình CNC.
-                    Dây chuyền đảm bảo các đường cắt chính xác tuyệt đối, tối ưu hóa vật tư và giảm thiểu sai sót, sẵn
-                    sàng cho các công đoạn gia công tiếp theo.</p>
-            </div>
-        </div>
-    </div>
+<style>
+    .production-lines-wrapper {
+        position: relative;
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
 
-    <!-- Item 2: Tempered -->
-    <div class="row align-items-center mb-5">
-        <div class="col-lg-6 order-lg-2">
-            <div class="image-box item-shadow">
-                <img src="images/production/tempered-glass-line.png" alt="Dây chuyền sản xuất kính cường lực"
-                    class="img-fluid rounded">
-            </div>
-        </div>
-        <div class="col-lg-6 order-lg-1">
-            <div class="content-box pr-lg-4">
-                <h3 class="font-weight-bold text-uppercase mb-3 mt-3 mt-lg-0" style="color: #FF5722;">Dây chuyền sản
-                    xuất kính cường lực</h3>
-                <p style="color: #002060;">Vận hành quy trình tôi luyện nhiệt tự động, dây chuyền của Thiên Phú tạo ra
-                    các sản phẩm kính an toàn
-                    với khả năng chịu lực, chống va đập và chịu sốc nhiệt cao.</p>
-                <p style="color: #002060;">Quy trình này đảm bảo cơ chế vỡ an toàn (vỡ hạt lựu) tuyệt đối cho người sử
-                    dụng. Với độ trong suốt
-                    tối ưu và khả năng truyền sáng, đây là vật liệu lý tưởng cho các ứng dụng đòi hỏi sự sang trọng và
-                    bền bỉ.</p>
-            </div>
-        </div>
-    </div>
+    .production-lines-wrapper::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background-image: url('images/production/Nền đầu Dây chuyền .png');
+        background-size: cover;
+        background-position: top center;
+        z-index: 0;
+    }
 
-    <!-- Item 3: Laminated -->
-    <div class="row align-items-center mb-5">
-        <div class="col-lg-6 order-lg-1">
-            <div class="image-box item-shadow">
-                <img src="images/production/daychuyenkinhghepfilm.png" alt="Dây chuyền sản xuất kính ghép film"
-                    class="img-fluid rounded">
-            </div>
-        </div>
-        <div class="col-lg-6 order-lg-2">
-            <div class="content-box pl-lg-4">
-                <h3 class="font-weight-bold text-uppercase mb-3 mt-3 mt-lg-0" style="color: #FF5722;">Dây chuyền sản
-                    xuất kính ghép film</h3>
-                <p style="color: #002060;">Dây chuyền của Thiên Phú sản xuất dòng kính ghép film (kính dán an toàn) —
-                    giải pháp an toàn và chống
-                    đột nhập vượt trội cho các công trình.</p>
-                <p style="color: #002060;">Quy trình tự động hóa việc kết dính hai hay nhiều lớp kính bằng các lớp màng
-                    film (PVB/EVA) đặc biệt,
-                    thông qua xử lý nhiệt và áp suất cao. Sản phẩm đầu ra có khả năng chống đâm xuyên; ngay cả khi vỡ,
-                    các mảnh kính vẫn bám chặt vào lớp film, đảm bảo an toàn tuyệt đối.</p>
-            </div>
-        </div>
-    </div>
+    .production-lines-wrapper::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background-image: url('images/production/Nền cuối Dây chuyền .png');
+        background-size: cover;
+        background-position: bottom center;
+        z-index: 0;
+    }
 
-    <!-- Item 4: Insulated -->
-    <div class="row align-items-center mb-5">
-        <div class="col-lg-6 order-lg-2">
-            <div class="image-box item-shadow">
-                <img src="images/production/daychuyenkinhhop.png" alt="Dây chuyền sản xuất kính hộp"
-                    class="img-fluid rounded">
+    .production-lines-wrapper .row {
+        position: relative;
+        z-index: 1;
+    }
+
+    .btn-contact-production {
+        border: 2px solid #00008B;
+        color: #00008B;
+        background: #fff;
+        border-radius: 50px;
+        padding: 10px 50px;
+        font-weight: 700;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-contact-production:hover {
+        background: #00008B;
+        color: #fff;
+        transform: translateY(-2px);
+    }
+
+    /* Scroll Animation Styles */
+    .slide-from-left {
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    .slide-from-right {
+        opacity: 0;
+        transform: translateX(100px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    .slide-from-left.visible,
+    .slide-from-right.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.2
+        };
+
+        const observer = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all slide elements
+        document.querySelectorAll('.slide-from-left, .slide-from-right').forEach(el => {
+            observer.observe(el);
+        });
+    });
+</script>
+<div class="production-lines-wrapper mt-5">
+    <div class="container">
+        <!-- Item 1: Cutting (First step in process usually) -->
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-7 order-lg-1">
+                <div class="image-box item-shadow slide-from-left" style="position: relative; z-index: 1;">
+                    <img src="images/production/napcatkinhtudong.png" alt="Dây chuyền nạp kính & cắt kính tự động"
+                        class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-lg-5 order-lg-2">
+                <div class="content-box slide-from-right"
+                    style="position: relative; z-index: 2; margin-left: -45%; margin-top: 20px;">
+                    <img src="images/production/DÂY CHUYỀN CẮT KÍNH TỰ ĐỘNG.png"
+                        alt="Thông số dây chuyền nạp cắt kính" class="img-fluid drop-shadow">
+                </div>
             </div>
         </div>
-        <div class="col-lg-6 order-lg-1">
-            <div class="content-box pr-lg-4">
-                <h3 class="font-weight-bold text-uppercase mb-3 mt-3 mt-lg-0" style="color: #FF5722;">Dây chuyền sản
-                    xuất kính hộp</h3>
-                <p style="color: #002060;">Thiên Phú sản xuất dòng kính cách âm, cách nhiệt (kính hộp) — giải pháp tối
-                    ưu cho các công trình đòi
-                    hỏi hiệu suất năng lượng cao và sự yên tĩnh.</p>
-                <p style="color: #002060;">Quy trình tự động hóa việc ghép các lớp kính, niêm phong kín một lớp khí trơ
-                    ở giữa bằng keo chuyên
-                    dụng và thanh cữ nhôm. Sản phẩm đầu ra ngăn chặn hiệu quả sự truyền nhiệt và tiếng ồn, mang lại sự
-                    yên tĩnh và thoải mái vượt trội.</p>
+
+        <!-- Item 2: Tempered -->
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-5 order-lg-1">
+                <div class="content-box text-right slide-from-left"
+                    style="position: relative; z-index: 2; margin-right: -45%; margin-top: 20px;">
+                    <img src="images/production/Dây chuyền sản xuất kính cường lực.png"
+                        alt="Thông số dây chuyền kính cường lực" class="img-fluid drop-shadow">
+                </div>
             </div>
+            <div class="col-lg-7 order-lg-2">
+                <div class="image-box item-shadow slide-from-right" style="position: relative; z-index: 1;">
+                    <img src="images/production/tempered-glass-line.png" alt="Dây chuyền sản xuất kính cường lực"
+                        class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 3: Laminated -->
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-7 order-lg-1">
+                <div class="image-box item-shadow slide-from-left" style="position: relative; z-index: 1;">
+                    <img src="images/production/daychuyenkinhghepfilm.png" alt="Dây chuyền sản xuất kính ghép film"
+                        class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-lg-5 order-lg-2">
+                <div class="content-box slide-from-right"
+                    style="position: relative; z-index: 2; margin-left: -45%; margin-top: 20px;">
+                    <img src="images/production/Dây chuyền sản xuất kính ghép film.png"
+                        alt="Thông số dây chuyền kính ghép film" class="img-fluid drop-shadow">
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 4: Insulated -->
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-5 order-lg-1">
+                <div class="content-box text-right slide-from-left"
+                    style="position: relative; z-index: 2; margin-right: -45%; margin-top: 20px;">
+                    <img src="images/production/Dây chuyền sản xuất kính hộp.png"
+                        alt="Thông số dây chuyền kính hộp" class="img-fluid drop-shadow">
+                </div>
+            </div>
+            <div class="col-lg-7 order-lg-2">
+                <div class="image-box item-shadow slide-from-right" style="position: relative; z-index: 1;">
+                    <img src="images/production/daychuyenkinhhop.png" alt="Dây chuyền sản xuất kính hộp"
+                        class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Button -->
+        <div class="text-center mt-5 mb-4" style="position: relative; z-index: 2;">
+            <a href="contact.html" class="btn-contact-production">LIÊN HỆ NGAY</a>
         </div>
     </div>
+</div>
 </div>
