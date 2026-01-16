@@ -187,12 +187,18 @@ $header-bg: #fff;
     right: 10px;
     border-radius: 15px;
     flex-direction: column;
-    padding: 15px;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
     display: none;
     margin-top: 10px;
 
     .navbar-collapse {
       width: 100%;
+      background: $nav-bg-color;
+      border-radius: 15px;
+      padding: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 
       &.show {
         display: block;
@@ -229,13 +235,12 @@ $header-bg: #fff;
 
   .navigation.nav-white .nav-pill-container {
     display: flex;
+    background: transparent;
+    box-shadow: none;
   }
 
   // Show pill container when navbar is expanded
-  .navbar-collapse.show+.lang-switcher,
-  .navbar-collapse.collapsing+.lang-switcher {
-    display: flex !important;
-  }
+  // .navbar-collapse.show+.lang-switcher rule removed as lang-switcher is now inside collapse
 }
 
 @media (min-width: 992px) {

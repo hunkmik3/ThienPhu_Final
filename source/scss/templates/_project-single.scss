@@ -1,0 +1,184 @@
+/*=================================================================
+  Project Single Detail Page
+==================================================================*/
+
+.project-single.section {
+    padding: 60px 0 80px;
+    background: #fff;
+
+    // Breadcrumbs
+    .project-breadcrumb-full {
+        width: 100%;
+        margin-bottom: 30px;
+
+        .breadcrumb {
+            background: transparent;
+            padding: 0;
+            margin-bottom: 15px;
+
+            .breadcrumb-item {
+                font-family: 'Bricolage Grotesque', sans-serif;
+                font-stretch: 75%;
+                font-size: 1.1rem;
+                font-weight: 700;
+                text-transform: uppercase;
+
+                a {
+                    color: #1a4b8c;
+
+                    &:hover {
+                        color: #F3733D;
+                        text-decoration: none;
+                    }
+                }
+
+                &.active {
+                    color: #F3733D;
+                }
+
+                &+.breadcrumb-item::before {
+                    content: ">";
+                    color: #1a4b8c;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .breadcrumb-underline {
+            width: 100%;
+            height: 2px;
+            background: #1a4b8c;
+        }
+    }
+
+    .project-single-content {
+        .project-title {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-stretch: 75%;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #F3733D;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            line-height: 1.1;
+
+            @media (max-width: 768px) {
+                font-size: 2.2rem;
+            }
+        }
+
+        .project-info-sections {
+            margin-bottom: 30px;
+
+            .info-block {
+                margin-bottom: 25px;
+
+                h3 {
+                    font-family: 'Bricolage Grotesque', sans-serif;
+                    font-stretch: 75%;
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                    color: #1a4b8c;
+                    margin-bottom: 15px;
+                }
+
+                .info-list {
+                    list-style: none;
+                    padding-left: 20px;
+                    margin: 0;
+
+                    li {
+                        font-family: 'Bricolage Grotesque', sans-serif;
+                        font-stretch: 75%;
+                        font-size: 1.1rem;
+                        font-weight: 600;
+                        color: #1a4b8c;
+                        margin-bottom: 8px;
+                        position: relative;
+
+                        &::before {
+                            content: "•";
+                            position: absolute;
+                            left: -20px;
+                            font-size: 1.5rem;
+                            line-height: 1.2;
+                        }
+
+                        .highlight {
+                            color: #F3733D;
+                        }
+                    }
+
+                    &.blue-bullets li::before {
+                        color: #1a4b8c;
+                    }
+
+                    &.orange-bullets li::before {
+                        color: #F3733D;
+                    }
+                }
+            }
+        }
+
+        .project-description {
+            margin-bottom: 40px;
+
+            p {
+                font-family: 'Bricolage Grotesque', sans-serif;
+                font-stretch: 75%;
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: #1a4b8c;
+                line-height: 1.4;
+                margin-bottom: 10px;
+
+                .highlight {
+                    color: #F3733D;
+                }
+            }
+        }
+
+        .project-main-image {
+            img {
+                width: 100%;
+                border-radius: 0; // The design shows flat corners or very slight rounded?
+                // Actually the image in design looks like it might have a slight container/padding
+            }
+        }
+
+        .project-contact-callout {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 30px;
+
+            .contact-box {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                font-family: 'Bricolage Grotesque', sans-serif;
+                font-stretch: 75%;
+                font-size: 1.1rem;
+                font-weight: 600;
+
+                .orange-arrow {
+                    color: #F3733D;
+                    font-size: 1.4rem;
+                    margin-right: -8px;
+                }
+
+                span {
+                    color: #333;
+                }
+
+                .phone {
+                    margin-left: 10px;
+
+                    .number {
+                        color: #F3733D;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}

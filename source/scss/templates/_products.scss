@@ -1,169 +1,285 @@
-.product-card {
-    background: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    margin-bottom: 30px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    border: 1px solid rgba(0, 0, 0, 0.03);
+// Product Page Styles - Redesigned
 
-    &:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 15px 30px rgba(40, 171, 227, 0.15);
-        border-color: rgba(40, 171, 227, 0.2);
+// --- Banner Content Overrides ---
+// The banner image is handled in HTML/CSS common, but we likely need specific text styles for "Sản Phẩm"
+.projects-banner {
+    .banner-title-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        z-index: 2;
 
-        .product-card-image {
-            img {
-                transform: scale(1.08);
-            }
-
-            .overlay {
-                opacity: 1;
-            }
+        h1 {
+            font-family: 'Bricolage Grotesque', serif; // Assuming font family
+            font-size: 3.5rem;
+            color: #fff;
+            text-transform: capitalize; // Or uppercase based on design
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); // Subtle shadow
+            margin-bottom: 30px;
+            font-weight: 500;
         }
 
-        .product-card-content {
-            h4 a {
-                color: #28ABE3; // Main theme color
+        .btn-banner-contact {
+            display: inline-block;
+            background: #000365; // Deep Blue
+            color: #fff;
+            padding: 12px 35px;
+            border-radius: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+            &:hover {
+                background: darken(#000365, 5%);
+                transform: translateY(-2px);
+            }
+        }
+    }
+}
+
+// --- Breadcrumbs ---
+.product-breadcrumbs {
+    padding: 15px 0;
+
+    .breadcrumb-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+
+        li {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            a {
+                color: #000365; // Blue
+                text-decoration: none;
+            }
+
+            &.active {
+                color: #F3733D; // Orange
+            }
+
+            &+li::before {
+                content: '>';
+                margin: 0 10px;
+                color: #F3733D;
+                font-weight: bold;
             }
         }
     }
 
-    .product-card-image {
+    border-bottom: 2px solid #000365; // Blue line under breadcrumbs
+    margin-bottom: 30px;
+}
+
+// --- Product Intro Section ---
+.product-intro {
+    margin-bottom: 40px;
+
+    .intro-title {
+        color: #F3733D; // Orange
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        letter-spacing: 0.5px;
+    }
+
+    .intro-text {
+        color: #555;
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 0;
+        max-width: 900px;
+    }
+}
+
+// --- Product Card (New Design) ---
+.product-card-new {
+    margin-bottom: 30px;
+    background: #fff;
+    // No full border or shadow by default in the new design snippet, looks clean
+    // The image seems to have rounded corners
+
+    .card-image {
         position: relative;
-        height: 260px; // Fixed height for consistency
+        border-radius: 12px; // Rounded corners for image
         overflow: hidden;
-        background-color: #f4f7f6; // Placeholder color
+        margin-bottom: 10px;
+        background: #f4f4f4; // Placeholder
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); // Subtle shadow for depth
+        height: 260px; // Fixed height for uniformity
 
         img {
             width: 100%;
-            height: 100%;
-            object-fit: cover; // Ensures image covers the area without distortion
-            transition: transform 0.6s ease;
+            height: 100%; // Force fill
+            object-fit: cover; // Crop to fit
             display: block;
+            transition: transform 0.5s ease;
         }
 
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(40, 171, 227, 0.7); // Blue overlay
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: all 0.3s ease;
+        // Hover effect on image (optional zoom)
+        &:hover img {
+            transform: scale(1.05);
+        }
+    }
 
-            .btn-view {
-                padding: 10px 25px;
-                background: #fff;
-                color: #28ABE3;
-                border-radius: 30px;
-                font-weight: 600;
-                text-transform: uppercase;
-                font-size: 0.85rem;
-                letter-spacing: 1px;
-                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-                transform: translateY(20px);
-                transition: all 0.3s ease;
+    .card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #000365; // Blue underline
+        position: relative;
+
+        .card-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #000365; // Blue text
+            margin: 0;
+            text-decoration: none;
+
+            a {
+                color: inherit;
                 text-decoration: none;
+            }
+        }
 
-                &:hover {
-                    background: #2c3e50;
-                    color: #fff;
+        .card-icon {
+            width: 30px;
+            height: auto;
+            display: block; // Or flex if inserting svg/img
+
+            // Assuming icon is an image or font icon
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+}
+
+// --- Product Detail Page Styles ---
+.product-single {
+    .product-detail-image {
+        img {
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-height: 500px;
+            width: auto;
+            max-width: 100%;
+        }
+    }
+
+    .product-detail-content {
+        .product-title {
+            color: #000365;
+            font-weight: 800;
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            position: relative;
+            margin-bottom: 30px;
+
+            // Optionally add an underline if needed later
+        }
+
+        .product-description {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+
+            .intro-description {
+                color: #F3733D; // Orange
+                font-weight: 700;
+                font-size: 1.1rem;
+                margin-bottom: 30px;
+            }
+
+            .section-heading {
+                color: #000365;
+                font-weight: 800;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+
+            ul {
+                list-style: none;
+                padding-left: 20px;
+                margin-bottom: 20px;
+
+                li {
+                    position: relative;
+                    margin-bottom: 10px;
+                    padding-left: 20px;
+
+                    &::before {
+                        content: '\2022'; // Bullet
+                        color: #000365; // Blue bullet
+                        font-weight: bold;
+                        font-size: 20px;
+                        position: absolute;
+                        left: -5px;
+                        top: -5px;
+                    }
                 }
             }
         }
 
-        // Animate button on hover
-        &:hover .overlay .btn-view {
-            transform: translateY(0);
-        }
-    }
+        .contact-callout {
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+            margin-top: 40px;
+            display: flex;
+            justify-content: flex-end;
 
-    .product-card-content {
-        padding: 20px 15px;
-        text-align: center;
-        background: #fff;
-        position: relative;
-        z-index: 2;
+            .callout-content {
+                text-align: right;
 
-        h4 {
-            margin: 0;
-            font-size: 1.15rem;
-            font-weight: 700;
-            line-height: 1.4;
+                .callout-logo {
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-bottom: 10px;
+                }
 
-            a {
-                color: #333;
-                text-decoration: none;
-                transition: color 0.3s ease;
-                display: block;
+                p {
+                    margin: 0;
+                    color: #777;
+                    font-size: 14px;
+                    font-style: italic;
+                }
 
-                // Ellipsis for long titles
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
+                .callout-phone {
+                    font-style: normal;
+                    font-size: 16px;
+
+                    strong {
+                        color: #F3733D;
+                        font-size: 18px;
+                        font-weight: 800;
+                    }
+                }
             }
         }
     }
 }
 
-// Layout adjustments if needed
-.products.section {
-    padding-bottom: 60px;
-}
-
-// Search Box Styling
-.search-box {
-    position: relative;
-    background: #fff;
-    border-radius: 60px;
-    padding: 3px 3px 3px 20px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    border: 1px solid #eee;
-    display: flex;
-    align-items: center;
-    max-width: 650px;
-    margin: 0 auto;
-
-    input#product-search-input.form-control {
-        border: none;
-        background: transparent;
-        box-shadow: none;
-        height: 44px;
-        padding: 0;
-        font-size: 15px;
-        color: #333;
-        flex-grow: 1;
-        margin-right: 15px;
-
-        &::placeholder {
-            color: #999;
-            font-weight: 300;
-        }
+// --- Responsive overrides ---
+@media (max-width: 768px) {
+    .projects-banner .banner-title-content h1 {
+        font-size: 2.2rem;
     }
 
-    button#product-search-btn.btn-main {
-        border-radius: 50px;
-        height: 44px;
-        padding: 0 25px;
-        margin: 0;
-        box-shadow: 0 4px 15px rgba(40, 171, 227, 0.3);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 600;
-        min-width: fit-content;
-        font-size: 13px;
-        white-space: nowrap;
-
-        &:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(40, 171, 227, 0.4);
-        }
+    .product-single .product-title {
+        font-size: 1.8rem;
     }
 }

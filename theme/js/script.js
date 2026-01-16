@@ -253,4 +253,126 @@
     $('.scroll-reveal').addClass('visible');
   }
 
+  /* ========================================================================= */
+  /*	Projects Pagination - 6 projects per page (2 rows x 3 columns)
+  /* ========================================================================= */
+  // Delay pagination initialization to run AFTER Filterizr (which has 500ms delay)
+  setTimeout(function initProjectsPagination() {
+    var $container = $('.filtr-container');
+    var $pagination = $('.projects-pagination');
+
+    if ($container.length === 0 || $pagination.length === 0) {
+      return;
+    }
+
+    var $allProjects = $container.find('.filtr-item');
+    var totalProjects = $allProjects.length;
+    var projectsPerPage = 6; // 2 rows x 3 columns
+    var totalPages = Math.ceil(totalProjects / projectsPerPage);
+    var currentPage = 1;
+
+    // Function to show projects for current page
+    function showPage(page) {
+      currentPage = page;
+      var startIndex = (page - 1) * projectsPerPage;
+      var endIndex = startIndex + projectsPerPage;
+
+      $allProjects.each(function (index) {
+        if (index >= startIndex && index < endIndex) {
+          $(this).removeClass('pagination-hidden');
+          $(this).css('display', ''); // Remove inline display to let CSS control
+        } else {
+          $(this).addClass('pagination-hidden');
+        }
+      });
+
+      // Scroll to projects section
+      if (page !== 1 || window.location.hash === '#projects-section') {
+        $('html, body').animate({
+          scrollTop: $('#projects-section').offset().top - 100
+        }, 300);
+      }
+
+      updatePaginationUI();
+    }
+
+    // Function to update pagination UI
+    function updatePaginationUI() {
+      var $paginationList = $pagination.find('.pagination-list');
+      $paginationList.empty();
+
+      // Previous button
+      if (currentPage > 1) {
+        $paginationList.append('<li class="prev"><a href="#" data-page="' + (currentPage - 1) + '">&lt;</a></li>');
+      }
+
+      // Page numbers logic
+      var startPage = 1;
+      var endPage = totalPages;
+      var showDots = false;
+
+      if (totalPages <= 5) {
+        // Show all pages if 5 or less
+        startPage = 1;
+        endPage = totalPages;
+      } else {
+        // Show first page, last page, current page, and neighbors
+        if (currentPage <= 3) {
+          startPage = 1;
+          endPage = 4;
+          showDots = true;
+        } else if (currentPage >= totalPages - 2) {
+          startPage = totalPages - 3;
+          endPage = totalPages;
+          showDots = true;
+        } else {
+          startPage = currentPage - 1;
+          endPage = currentPage + 1;
+          showDots = true;
+        }
+      }
+
+      // First page
+      if (startPage > 1) {
+        $paginationList.append('<li' + (1 === currentPage ? ' class="active"' : '') + '><a href="#" data-page="1">1</a></li>');
+        if (startPage > 2) {
+          $paginationList.append('<li class="dots"><span>...</span></li>');
+        }
+      }
+
+      // Middle pages
+      for (var i = startPage; i <= endPage; i++) {
+        var activeClass = (i === currentPage) ? ' class="active"' : '';
+        $paginationList.append('<li' + activeClass + '><a href="#" data-page="' + i + '">' + i + '</a></li>');
+      }
+
+      // Last page
+      if (endPage < totalPages) {
+        if (endPage < totalPages - 1) {
+          $paginationList.append('<li class="dots"><span>...</span></li>');
+        }
+        $paginationList.append('<li' + (totalPages === currentPage ? ' class="active"' : '') + '><a href="#" data-page="' + totalPages + '">' + totalPages + '</a></li>');
+      }
+
+      // Next button
+      if (currentPage < totalPages) {
+        $paginationList.append('<li class="next"><a href="#" data-page="' + (currentPage + 1) + '">&gt;</a></li>');
+      }
+    }
+
+    // Event delegation for pagination clicks
+    $pagination.on('click', '.pagination-list a', function (e) {
+      e.preventDefault();
+      var page = parseInt($(this).data('page'), 10);
+      if (page && page !== currentPage) {
+        showPage(page);
+      }
+    });
+
+    // Initialize first page
+    if (totalProjects > 0) {
+      showPage(1);
+    }
+  }, 800); // 800ms delay to run after Filterizr (500ms)
+
 })(jQuery);

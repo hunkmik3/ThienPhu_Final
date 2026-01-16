@@ -124,15 +124,35 @@ function addAutoComplete() {
 function addSearchBarToProjects() {
     const searchInput = document.getElementById('project-search-input');
     const searchBtn = document.getElementById('project-search-btn');
+    const bannerSearchInput = document.getElementById('banner-search-input');
+    const bannerSearchBtn = document.getElementById('banner-search-btn');
 
+    // Handle project search input
     if (searchInput && searchBtn) {
         searchBtn.addEventListener('click', searchProjects);
         searchInput.addEventListener('keypress', function (e) {
             if (e.key === 'Enter') {
                 searchProjects();
-                // Hide autocomplete
                 const autocomplete = document.getElementById('project-autocomplete');
                 if (autocomplete) autocomplete.style.display = 'none';
+            }
+        });
+    }
+
+    // Handle banner search input (if on projects page)
+    if (bannerSearchInput && bannerSearchBtn) {
+        bannerSearchBtn.addEventListener('click', function () {
+            if (searchInput) {
+                searchInput.value = bannerSearchInput.value;
+                searchProjects();
+            }
+        });
+        bannerSearchInput.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                if (searchInput) {
+                    searchInput.value = bannerSearchInput.value;
+                    searchProjects();
+                }
             }
         });
     }
@@ -142,11 +162,32 @@ function addSearchBarToProjects() {
 function addSearchBarToProducts() {
     const searchInput = document.getElementById('product-search-input');
     const searchBtn = document.getElementById('product-search-btn');
+    const bannerSearchInput = document.getElementById('banner-search-input');
+    const bannerSearchBtn = document.getElementById('banner-search-btn');
 
+    // Handle inline search
     if (searchInput && searchBtn) {
         searchBtn.addEventListener('click', searchProducts);
         searchInput.addEventListener('keypress', function (e) {
             if (e.key === 'Enter') {
+                searchProducts();
+            }
+        });
+    }
+
+    // Handle banner search
+    if (bannerSearchInput && bannerSearchBtn) {
+        bannerSearchBtn.addEventListener('click', function () {
+            if (searchInput) {
+                searchInput.value = bannerSearchInput.value;
+            }
+            searchProducts();
+        });
+        bannerSearchInput.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                if (searchInput) {
+                    searchInput.value = bannerSearchInput.value;
+                }
                 searchProducts();
             }
         });
@@ -160,6 +201,9 @@ function searchProjects() {
     const filtrContainer = document.querySelector('.filtr-container');
     const portfolioFilter = document.querySelector('.portfolio-filter');
     const projectsSection = document.getElementById('projects-section');
+    const paginationDiv = document.querySelector('.projects-pagination');
+
+    const mainTitle = document.querySelector('.projects-title-fullwidth');
 
     if (!filtrContainer) return;
 
@@ -172,19 +216,19 @@ function searchProjects() {
         return;
     }
 
-    // Hide the original project grid and filter buttons
-    filtrContainer.classList.add('search-active');
+    // Hide main title and filter buttons during search
+    if (mainTitle) {
+        mainTitle.style.display = 'none';
+    }
     if (portfolioFilter) {
         portfolioFilter.style.display = 'none';
     }
     if (projectsSection) {
         projectsSection.classList.add('search-active-mode');
     }
-
-    // Hide the row containing the project grid
-    const parentRow = filtrContainer.closest('.row');
-    if (parentRow) {
-        parentRow.classList.add('search-active-row');
+    // Hide pagination during search
+    if (paginationDiv) {
+        paginationDiv.style.display = 'none';
     }
 
     // Find matching projects by name or description
@@ -222,30 +266,24 @@ function searchProjects() {
     // Show message if no results
     if (foundProjects.length === 0) {
         resultsDiv.innerHTML = `
-            <div class="alert alert-info mt-3">
-                <strong>Không tìm thấy dự án nào.</strong>
-                <button type="button" class="btn btn-sm btn-outline-primary ml-3" onclick="clearProjectSearch()">
-                    <i class="tf-ion-android-refresh"></i> Xem tất cả dự án
-                </button>
+            <div class="search-results-section">
+                <h2 class="search-section-title">Dự Án Tìm Kiếm</h2>
+                <div class="search-no-results">
+                    <p>Không tìm thấy dự án nào phù hợp với từ khóa "<strong>${searchTerm}</strong>"</p>
+                    <button type="button" class="btn-clear-search" onclick="clearProjectSearch()">
+                        <i class="tf-ion-android-refresh"></i> Xem tất cả dự án
+                    </button>
+                </div>
             </div>
         `;
-        // Hide products section
-        const productsSectionEl = document.getElementById('project-products-section');
-        if (productsSectionEl) {
-            productsSectionEl.innerHTML = '';
-        }
+        // Hide project cards
+        filtrContainer.style.display = 'none';
     } else {
-        // Show clear search button in results
-        resultsDiv.innerHTML = `
-            <div class="search-result-header">
-                <span class="search-result-text">Tìm thấy <strong>${foundProjects.length}</strong> dự án</span>
-                <button type="button" class="btn btn-sm btn-outline-secondary" onclick="clearProjectSearch()">
-                    <i class="tf-ion-android-close"></i> Xóa tìm kiếm
-                </button>
-            </div>
-        `;
-        // Display enhanced results showing products used in each project
-        displayEnhancedProjectResults(foundProjects);
+        // Display search results section with bullet list
+        displaySearchResultsList(foundProjects, searchTerm);
+
+        // Show matching project cards
+        showMatchingProjectCards(projectIdsToShow);
     }
 }
 
@@ -256,18 +294,23 @@ function resetSearchView() {
     const projectsSection = document.getElementById('projects-section');
     const productsSection = document.getElementById('project-products-section');
     const resultsDiv = document.getElementById('search-results');
+    const paginationDiv = document.querySelector('.projects-pagination');
+    const mainTitle = document.querySelector('.projects-title-fullwidth');
 
-    // Show filter container
+    // Show main title
+    if (mainTitle) {
+        mainTitle.style.display = '';
+    }
+
+    // Show filter container and all items
     if (filtrContainer) {
+        filtrContainer.style.display = '';
         filtrContainer.classList.remove('search-active');
         const allItems = filtrContainer.querySelectorAll('.filtr-item');
         allItems.forEach(item => {
             item.style.display = '';
+            item.classList.remove('pagination-hidden');
         });
-        const parentRow = filtrContainer.closest('.row');
-        if (parentRow) {
-            parentRow.classList.remove('search-active-row');
-        }
     }
 
     // Show portfolio filter buttons
@@ -280,6 +323,11 @@ function resetSearchView() {
         projectsSection.classList.remove('search-active-mode');
     }
 
+    // Show pagination
+    if (paginationDiv) {
+        paginationDiv.style.display = '';
+    }
+
     // Clear products section
     if (productsSection) {
         productsSection.innerHTML = '';
@@ -289,6 +337,11 @@ function resetSearchView() {
     if (resultsDiv) {
         resultsDiv.innerHTML = '';
     }
+
+    // Re-initialize pagination if available
+    if (typeof initPagination === 'function') {
+        initPagination();
+    }
 }
 
 // Clear project search function (called by button)
@@ -297,7 +350,73 @@ function clearProjectSearch() {
     if (searchInput) {
         searchInput.value = '';
     }
+    const bannerSearchInput = document.getElementById('banner-search-input');
+    if (bannerSearchInput) {
+        bannerSearchInput.value = '';
+    }
     resetSearchView();
+}
+
+// Display search results as a bullet list (matching design)
+function displaySearchResultsList(projects, searchTerm) {
+    const resultsDiv = document.getElementById('search-results');
+    if (!resultsDiv) return;
+
+    let html = `
+        <div class="search-results-section">
+            <h2 class="search-section-title">Dự Án Tìm Kiếm</h2>
+            <div class="search-results-info">
+                <span class="search-found-text">Tìm thấy <strong>${projects.length}</strong> dự án</span>
+                <button type="button" class="btn-clear-search" onclick="clearProjectSearch()">
+                    <i class="tf-ion-android-close"></i> Xóa tìm kiếm
+                </button>
+            </div>
+            <ul class="search-results-list">
+    `;
+
+    projects.forEach(project => {
+        const projectLink = basePath + (project.link || `projects/${project.id}.html`);
+        html += `
+            <li>
+                <a href="${projectLink}">${project.name}</a>
+            </li>
+        `;
+    });
+
+    html += `
+            </ul>
+        </div>
+        <!-- Re-add main title for the cards section below results -->
+        <div class="projects-title-fullwidth mt-5">
+            <div class="container">
+                <h2>Dự Án Tiêu Biểu</h2>
+            </div>
+            <div class="title-underline"></div>
+        </div>
+    `;
+
+    resultsDiv.innerHTML = html;
+}
+
+// Show matching project cards in the grid
+function showMatchingProjectCards(projectIdsToShow) {
+    const filtrContainer = document.querySelector('.filtr-container');
+    if (!filtrContainer) return;
+
+    // Show the container
+    filtrContainer.style.display = '';
+
+    // Show/hide items based on search
+    const allItems = filtrContainer.querySelectorAll('.filtr-item');
+    allItems.forEach(item => {
+        const projectId = item.getAttribute('data-project-id');
+        if (projectId && projectIdsToShow.has(projectId)) {
+            item.style.display = '';
+            item.classList.remove('pagination-hidden');
+        } else {
+            item.style.display = 'none';
+        }
+    });
 }
 
 // Enhanced display: Show each project with its glass types
@@ -452,11 +571,22 @@ function displayEnhancedProjectResults(projects) {
 
 // Search products and filter projects on products page
 function searchProducts() {
-    const searchTerm = document.getElementById('product-search-input').value.toLowerCase().trim();
+    const bannerInp = document.getElementById('banner-search-input');
+    const prodInp = document.getElementById('product-search-input');
+
+    let searchTerm = "";
+    if (prodInp) {
+        searchTerm = prodInp.value.toLowerCase().trim();
+    } else if (bannerInp) {
+        searchTerm = bannerInp.value.toLowerCase().trim();
+    }
+
     const resultsDiv = document.getElementById('product-search-results');
 
     // Clear previous search results message
-    resultsDiv.innerHTML = '';
+    if (resultsDiv) {
+        resultsDiv.innerHTML = '';
+    }
 
     if (!searchTerm) {
         return;
