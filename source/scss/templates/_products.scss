@@ -136,12 +136,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 5px;
+        padding: 5px 10px; // Added padding
+        background: #fff; // Force white background
         border-bottom: 2px solid #000365; // Blue underline
         position: relative;
 
         .card-title {
-            font-size: 16px;
+            font-size: 22px;
             font-weight: 700;
             color: #000365; // Blue text
             margin: 0;

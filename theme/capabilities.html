@@ -73,18 +73,21 @@ Fixed Navigation
     <!-- main nav -->
     <nav class="navbar navbar-expand-lg justify-content-between px-0">
       <!-- logo -->
-      <a class="navbar-brand logo" href="index.html">
+      <a class="navbar-brand logo d-flex align-items-center" href="index.html">
         <img loading="lazy" class="logo-default" src="images/logo-white.jpg" alt="logo" />
+        <span class="mobile-brand-text">THIEN PHU GLASS</span>
       </a>
       <!-- /logo -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" id="mobileMenuToggle" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <!-- Navy Pill Menu Container -->
-      <div class="nav-pill-container d-flex align-items-center">
-        <div class="collapse navbar-collapse" id="navigation">
+      <div class="nav-pill-container d-flex align-items-center" id="navPillContainer">
+        <!-- Close button for mobile -->
+        <div class="mobile-menu-close" id="mobileMenuClose">&times;</div>
+
+        <div class="navbar-collapse" id="navigation">
           <ul class="navbar-nav text-center main-menu">
             <li class="nav-item ">
               <a class="nav-link" href="index.html">TRANG CHỦ</a>
@@ -121,6 +124,91 @@ Fixed Navigation
     <!-- /main nav -->
   </div>
 </header>
+
+<style>
+  /* Mobile Brand Text */
+  .mobile-brand-text {
+    display: none;
+  }
+
+  @media (max-width: 991px) {
+    .mobile-brand-text {
+      display: inline-block;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #000;
+      margin-left: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  /* Mobile Menu Fullscreen Styles */
+  .mobile-menu-close {
+    display: none;
+  }
+
+  @media (max-width: 991px) {
+    .mobile-menu-close {
+      position: fixed;
+      top: 20px;
+      right: 25px;
+      background: transparent !important;
+      border: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+      font-size: 50px;
+      font-weight: 300;
+      color: #fff;
+      cursor: pointer;
+      z-index: 100000;
+      line-height: 1;
+      padding: 10px;
+      display: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .nav-pill-container.show-mobile-menu .mobile-menu-close {
+      display: block !important;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var menuToggle = document.getElementById('mobileMenuToggle');
+    var menuClose = document.getElementById('mobileMenuClose');
+    var navPill = document.getElementById('navPillContainer');
+
+    if (menuToggle && navPill) {
+      menuToggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        navPill.classList.add('show-mobile-menu');
+        document.body.style.overflow = 'hidden';
+      });
+    }
+
+    if (menuClose && navPill) {
+      menuClose.addEventListener('click', function (e) {
+        e.preventDefault();
+        navPill.classList.remove('show-mobile-menu');
+        document.body.style.overflow = '';
+      });
+    }
+
+    // Close menu when clicking on nav links
+    var navLinks = document.querySelectorAll('#navPillContainer .nav-link');
+    navLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        if (window.innerWidth <= 991 && navPill) {
+          navPill.classList.remove('show-mobile-menu');
+          document.body.style.overflow = '';
+        }
+      });
+    });
+  });
+</script>
 <!--
 End Fixed Navigation
 ==================================== -->
@@ -128,7 +216,7 @@ End Fixed Navigation
 <!-- Page Banner -->
 <section class="page-banner" style="margin-top: 80px; padding-bottom: 100px;">
 	<div class="container-fluid p-0" style="position: relative;">
-		<img src="images/production/Hình đầu trang công nghệ.png" alt="Năng lực & Công nghệ" class="img-fluid w-100">
+		<img src="images/production/hinh-dau-trang-cong-nghe.png" alt="Năng lực & Công nghệ" class="img-fluid w-100">
 		<a href="contact.html"
 			style="position: absolute; bottom: 20%; left: 50%; transform: translateX(-50%); width: 22%; height: 13%; display: block; z-index: 10;"
 			title="Liên Hệ Ngay"></a>
@@ -209,7 +297,7 @@ Start Capabilities & Technology Section
         left: 0;
         width: 100%;
         height: 50%;
-        background-image: url('images/production/Nền đầu Dây chuyền .png');
+        background-image: url('images/production/nen-dau-day-chuyen.png');
         background-size: cover;
         background-position: top center;
         z-index: 0;
@@ -222,7 +310,7 @@ Start Capabilities & Technology Section
         left: 0;
         width: 100%;
         height: 50%;
-        background-image: url('images/production/Nền cuối Dây chuyền .png');
+        background-image: url('images/production/nen-cuoi-day-chuyen.png');
         background-size: cover;
         background-position: bottom center;
         z-index: 0;
@@ -309,8 +397,8 @@ Start Capabilities & Technology Section
             <div class="col-lg-5 order-lg-2">
                 <div class="content-box slide-from-right"
                     style="position: relative; z-index: 2; margin-left: -45%; margin-top: 20px;">
-                    <img src="images/production/DÂY CHUYỀN CẮT KÍNH TỰ ĐỘNG.png"
-                        alt="Thông số dây chuyền nạp cắt kính" class="img-fluid drop-shadow">
+                    <img src="images/production/day-chuyen-cat-kinh-tu-dong.png" alt="Thông số dây chuyền nạp cắt kính"
+                        class="img-fluid drop-shadow">
                 </div>
             </div>
         </div>
@@ -320,7 +408,7 @@ Start Capabilities & Technology Section
             <div class="col-lg-5 order-lg-1">
                 <div class="content-box text-right slide-from-left"
                     style="position: relative; z-index: 2; margin-right: -45%; margin-top: 20px;">
-                    <img src="images/production/Dây chuyền sản xuất kính cường lực.png"
+                    <img src="images/production/day-chuyen-san-xuat-kinh-cuong-luc.png"
                         alt="Thông số dây chuyền kính cường lực" class="img-fluid drop-shadow">
                 </div>
             </div>
@@ -343,7 +431,7 @@ Start Capabilities & Technology Section
             <div class="col-lg-5 order-lg-2">
                 <div class="content-box slide-from-right"
                     style="position: relative; z-index: 2; margin-left: -45%; margin-top: 20px;">
-                    <img src="images/production/Dây chuyền sản xuất kính ghép film.png"
+                    <img src="images/production/day-chuyen-san-xuat-kinh-ep-film.png"
                         alt="Thông số dây chuyền kính ghép film" class="img-fluid drop-shadow">
                 </div>
             </div>
@@ -354,8 +442,8 @@ Start Capabilities & Technology Section
             <div class="col-lg-5 order-lg-1">
                 <div class="content-box text-right slide-from-left"
                     style="position: relative; z-index: 2; margin-right: -45%; margin-top: 20px;">
-                    <img src="images/production/Dây chuyền sản xuất kính hộp.png"
-                        alt="Thông số dây chuyền kính hộp" class="img-fluid drop-shadow">
+                    <img src="images/production/daychuyen-san-xuat-kinh-ep-film.png" alt="Thông số dây chuyền kính hộp"
+                        class="img-fluid drop-shadow">
                 </div>
             </div>
             <div class="col-lg-7 order-lg-2">
@@ -390,7 +478,7 @@ Start Capabilities & Technology Section
         left: 0;
         width: 100%;
         height: 50%;
-        background-image: url('images/production/Nền phòng thí nghiệm chất lượng.png');
+        background-image: url('images/production/nen-phong-thi-nghiem-chat-luong.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: bottom center;
@@ -503,7 +591,7 @@ Start Capabilities & Technology Section
         <div class="row justify-content-center">
             <div class="col-12">
                 <div class="quality-image-wrapper">
-                    <img src="images/production/Hình hệ thống quản lý chất lượng.png"
+                    <img src="images/production/hinh-he-thong-quan-ly-chat-luong.png"
                         alt="Phòng thí nghiệm kiểm soát chất lượng" class="img-fluid w-100">
                     <!-- Overlay Indicators -->
                     <div class="slider-indicators-mock">
@@ -532,7 +620,7 @@ Start Capabilities & Technology Section
         <!-- Table Image -->
         <div class="row justify-content-center mb-5">
             <div class="col-12 text-center">
-                <img src="images/production/Bảng thí nghiệm chất lượng.png" alt="Bảng kiểm định chất lượng"
+                <img src="images/production/bang-thi-nghiem-chat-luong.png" alt="Bảng kiểm định chất lượng"
                     class="img-fluid">
             </div>
         </div>
@@ -562,7 +650,7 @@ Start Capabilities & Technology Section
         left: 0;
         width: 100%;
         height: 50%;
-        background-image: url('images/production/Nền cuối Dây chuyền .png');
+        background-image: url('images/production/nen-cuoi-day-chuyen.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: bottom center;
@@ -663,7 +751,7 @@ Start Capabilities & Technology Section
         <div class="row justify-content-center">
             <div class="col-12">
                 <div class="transport-image-wrapper">
-                    <img src="images/production/Vận tải.png" alt="Năng lực vận tải Thiên Phú Glass"
+                    <img src="images/production/van-tai.png" alt="Năng lực vận tải Thiên Phú Glass"
                         class="img-fluid w-100">
 
                 </div>
@@ -709,7 +797,7 @@ Start Capabilities & Technology Section
         left: 0;
         width: 100%;
         height: 50%;
-        background-image: url('images/production/Nền quản lý chất lượng.png');
+        background-image: url('images/production/nen-quan-ly-chat-luong.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: bottom center;
@@ -800,7 +888,7 @@ Start Capabilities & Technology Section
         <!-- Logo & Company Info -->
         <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
           <div class="footer-brand">
-            <img loading="lazy" src="images/about/Logo trên nền xanh đen.png" alt="Thiên Phú Glass" class="footer-logo">
+            <img loading="lazy" src="images/about/logo-tren-nen-xanh-den.png" alt="Thiên Phú Glass" class="footer-logo">
             <div class="footer-company-info">
               <h4>CÔNG TY TNHH THIÊN PHÚ</h4>
               <p>Chuyên sản xuất và cung cấp các loại kính chất lượng cao</p>

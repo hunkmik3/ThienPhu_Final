@@ -517,43 +517,67 @@ a:focus, a:hover {
   .navigation {
     padding: 10px 0;
   }
+  .navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 8px;
+  }
+  .navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
   .nav-pill-container {
-    position: absolute;
-    top: 100%;
-    left: 10px;
-    right: 10px;
-    border-radius: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
     flex-direction: column;
     padding: 0;
-    background: transparent;
+    background: rgba(0, 3, 101, 0.98);
     box-shadow: none;
     display: none;
-    margin-top: 10px;
+    margin-top: 0;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
   }
   .nav-pill-container .navbar-collapse {
     width: 100%;
-    background: #000365;
-    border-radius: 15px;
-    padding: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    background: transparent;
+    border-radius: 0;
+    padding: 80px 30px 30px;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .nav-pill-container .navbar-collapse.show {
-    display: block;
+    display: flex;
   }
   .nav-pill-container .main-menu {
     flex-direction: column;
     width: 100%;
+    align-items: center;
   }
   .nav-pill-container .main-menu .nav-item {
     width: 100%;
     text-align: center;
+    margin-bottom: 10px;
   }
   .nav-pill-container .main-menu .nav-item .nav-link {
-    padding: 10px 15px;
+    padding: 15px 20px;
+    font-size: 18px;
   }
   .nav-pill-container .lang-switcher {
     margin-left: 0;
-    margin-top: 15px;
+    margin-top: 30px;
     padding-right: 0;
     justify-content: center;
     width: 100%;
@@ -562,10 +586,16 @@ a:focus, a:hover {
   .nav-pill-container .lang-switcher .lang-separator {
     display: none;
   }
+  .nav-pill-container.show-mobile-menu {
+    display: flex !important;
+  }
   .navigation.nav-white .nav-pill-container {
-    display: flex;
-    background: transparent;
+    display: none !important;
+    background: rgba(0, 3, 101, 0.98);
     box-shadow: none;
+  }
+  .navigation.nav-white .nav-pill-container.show-mobile-menu {
+    display: flex !important;
   }
 }
 @media (min-width: 992px) {
@@ -2506,12 +2536,13 @@ a:focus, a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 5px;
+  padding: 5px 10px;
+  background: #fff;
   border-bottom: 2px solid #000365;
   position: relative;
 }
 .product-card-new .card-footer .card-title {
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 700;
   color: #000365;
   margin: 0;
@@ -3403,10 +3434,16 @@ a:focus, a:hover {
     left: 0 !important;
     transform: none !important;
     width: 100% !important;
-    padding: 0 15px;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
   .about-intro .about-overlay-wrapper .about-logo {
     margin-bottom: 20px !important;
+    max-width: 95% !important;
+    width: 95% !important;
+    height: auto !important;
   }
   /* Partners Preview Mobile Fix */
   #partners-preview,
@@ -3425,10 +3462,12 @@ a:focus, a:hover {
   }
   .hero-area,
   .slider-item {
-    min-height: 14vw !important;
-    height: 40vw !important;
     min-height: auto !important;
-    aspect-ratio: 16/6 !important;
+    height: auto !important;
+    aspect-ratio: 9/16 !important;
+    background-image: url("../images/slider/z7437386858834_0cba1419f268bf658b291bc53c527472.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
   }
   /* Capabilities Breadcrumb Mobile Fix */
   .capabilities-breadcrumb {
@@ -3440,6 +3479,20 @@ a:focus, a:hover {
     font-size: 17px !important;
     margin-right: 5px !important;
     line-height: normal !important;
+  }
+  /* Home Product Cards Mobile Center Fix */
+  .empty-background-section .projects-page .row {
+    justify-content: center !important;
+  }
+  .empty-background-section .projects-page .col-md-4 {
+    display: flex;
+    justify-content: center;
+  }
+  .empty-background-section .home-product-card {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 350px;
+    width: 100%;
   }
   /* Production Lines Mobile Fix */
   .production-lines-wrapper {
@@ -3969,7 +4022,7 @@ body {
 
 .about-intro {
   padding: 500px 0;
-  background: url("../images/products/Nền gương(ko nền).png") no-repeat center center;
+  background: url("../images/products/nen-guong-ko-nen.png") no-repeat center center;
   background-size: cover;
   position: relative;
 }

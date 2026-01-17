@@ -4,8 +4,41 @@ Start About Intro Section
 <section class="about-intro section padding-top-80 padding-bottom-80" id="about-intro">
 	<div class="about-overlay-wrapper">
 		<img src="images/about/aboutus.png" alt="Thiên Phú Glass Logo" class="about-logo">
+		<!-- Invisible button overlay for "TÌM HIỂU THÊM" -->
+		<a href="contact.html" class="about-intro-btn-overlay" title="Tìm hiểu thêm"></a>
 	</div>
 	<div class="container">
 		<!-- Content removed as per user request to show only background -->
 	</div>
 </section>
+
+<style>
+	/* Invisible button overlay for About Intro section */
+	.about-overlay-wrapper {
+		position: relative;
+	}
+
+	.about-intro-btn-overlay {
+		position: absolute;
+		/* Position for "TÌM HIỂU THÊM" button in the image */
+		bottom: 31%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 35%;
+		height: 6%;
+		/* Make it invisible but clickable */
+		background: transparent;
+		z-index: 10;
+		cursor: pointer;
+		display: block;
+	}
+
+	/* Responsive adjustments */
+	@media (max-width: 767px) {
+		.about-intro-btn-overlay {
+			bottom: 36%;
+			width: 40%;
+			height: 5%;
+		}
+	}
+</style>

@@ -180,48 +180,75 @@ $header-bg: #fff;
     padding: 10px 0;
   }
 
+  // Remove border from hamburger button
+  .navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 8px;
+
+    &:focus {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+
   .nav-pill-container {
-    position: absolute;
-    top: 100%;
-    left: 10px;
-    right: 10px;
-    border-radius: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
     flex-direction: column;
     padding: 0;
-    background: transparent;
+    background: rgba(0, 3, 101, 0.98);
     box-shadow: none;
     display: none;
-    margin-top: 10px;
+    margin-top: 0;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
 
     .navbar-collapse {
       width: 100%;
-      background: $nav-bg-color;
-      border-radius: 15px;
-      padding: 15px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      height: 100%;
+      background: transparent;
+      border-radius: 0;
+      padding: 80px 30px 30px;
+      box-shadow: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
       &.show {
-        display: block;
+        display: flex;
       }
     }
 
     .main-menu {
       flex-direction: column;
       width: 100%;
+      align-items: center;
 
       .nav-item {
         width: 100%;
         text-align: center;
+        margin-bottom: 10px;
 
         .nav-link {
-          padding: 10px 15px;
+          padding: 15px 20px;
+          font-size: 18px;
         }
       }
     }
 
     .lang-switcher {
       margin-left: 0;
-      margin-top: 15px;
+      margin-top: 30px;
       padding-right: 0;
       justify-content: center;
       width: 100%;
@@ -231,12 +258,22 @@ $header-bg: #fff;
         display: none;
       }
     }
+
+    // Show menu only when class is added
+    &.show-mobile-menu {
+      display: flex !important;
+    }
   }
 
+  // Hide by default
   .navigation.nav-white .nav-pill-container {
-    display: flex;
-    background: transparent;
+    display: none !important;
+    background: rgba(0, 3, 101, 0.98);
     box-shadow: none;
+
+    &.show-mobile-menu {
+      display: flex !important;
+    }
   }
 
   // Show pill container when navbar is expanded

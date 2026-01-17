@@ -73,18 +73,21 @@ Fixed Navigation
     <!-- main nav -->
     <nav class="navbar navbar-expand-lg justify-content-between px-0">
       <!-- logo -->
-      <a class="navbar-brand logo" href="index.html">
+      <a class="navbar-brand logo d-flex align-items-center" href="index.html">
         <img loading="lazy" class="logo-default" src="images/logo-white.jpg" alt="logo" />
+        <span class="mobile-brand-text">THIEN PHU GLASS</span>
       </a>
       <!-- /logo -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" id="mobileMenuToggle" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <!-- Navy Pill Menu Container -->
-      <div class="nav-pill-container d-flex align-items-center">
-        <div class="collapse navbar-collapse" id="navigation">
+      <div class="nav-pill-container d-flex align-items-center" id="navPillContainer">
+        <!-- Close button for mobile -->
+        <div class="mobile-menu-close" id="mobileMenuClose">&times;</div>
+
+        <div class="navbar-collapse" id="navigation">
           <ul class="navbar-nav text-center main-menu">
             <li class="nav-item active">
               <a class="nav-link" href="index.html">TRANG CHỦ</a>
@@ -121,6 +124,91 @@ Fixed Navigation
     <!-- /main nav -->
   </div>
 </header>
+
+<style>
+  /* Mobile Brand Text */
+  .mobile-brand-text {
+    display: none;
+  }
+
+  @media (max-width: 991px) {
+    .mobile-brand-text {
+      display: inline-block;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #000;
+      margin-left: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  /* Mobile Menu Fullscreen Styles */
+  .mobile-menu-close {
+    display: none;
+  }
+
+  @media (max-width: 991px) {
+    .mobile-menu-close {
+      position: fixed;
+      top: 20px;
+      right: 25px;
+      background: transparent !important;
+      border: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+      font-size: 50px;
+      font-weight: 300;
+      color: #fff;
+      cursor: pointer;
+      z-index: 100000;
+      line-height: 1;
+      padding: 10px;
+      display: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .nav-pill-container.show-mobile-menu .mobile-menu-close {
+      display: block !important;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var menuToggle = document.getElementById('mobileMenuToggle');
+    var menuClose = document.getElementById('mobileMenuClose');
+    var navPill = document.getElementById('navPillContainer');
+
+    if (menuToggle && navPill) {
+      menuToggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        navPill.classList.add('show-mobile-menu');
+        document.body.style.overflow = 'hidden';
+      });
+    }
+
+    if (menuClose && navPill) {
+      menuClose.addEventListener('click', function (e) {
+        e.preventDefault();
+        navPill.classList.remove('show-mobile-menu');
+        document.body.style.overflow = '';
+      });
+    }
+
+    // Close menu when clicking on nav links
+    var navLinks = document.querySelectorAll('#navPillContainer .nav-link');
+    navLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        if (window.innerWidth <= 991 && navPill) {
+          navPill.classList.remove('show-mobile-menu');
+          document.body.style.overflow = '';
+        }
+      });
+    });
+  });
+</script>
 <!--
 End Fixed Navigation
 ==================================== -->
@@ -451,7 +539,7 @@ Start Blog Section
         <!-- Logo & Company Info -->
         <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
           <div class="footer-brand">
-            <img loading="lazy" src="images/about/Logo trên nền xanh đen.png" alt="Thiên Phú Glass" class="footer-logo">
+            <img loading="lazy" src="images/about/logo-tren-nen-xanh-den.png" alt="Thiên Phú Glass" class="footer-logo">
             <div class="footer-company-info">
               <h4>CÔNG TY TNHH THIÊN PHÚ</h4>
               <p>Chuyên sản xuất và cung cấp các loại kính chất lượng cao</p>
