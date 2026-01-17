@@ -126,6 +126,8 @@ Fixed Navigation
 </header>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&display=swap');
+
   /* Mobile Brand Text */
   .mobile-brand-text {
     display: none;
@@ -135,8 +137,10 @@ Fixed Navigation
     .mobile-brand-text {
       display: inline-block;
       font-family: 'Bricolage Grotesque', sans-serif;
+      font-variation-settings: "wdth" 75;
+      /* Condensed */
       font-size: 1.8rem;
-      font-weight: 700;
+      font-weight: 800;
       color: #000;
       margin-left: 10px;
       text-transform: uppercase;
@@ -547,7 +551,9 @@ Start About Intro Section
 ==================================== -->
 <section class="about-intro section padding-top-80 padding-bottom-80" id="about-intro">
 	<div class="about-overlay-wrapper">
-		<img src="images/about/aboutus.png" alt="Thiên Phú Glass Logo" class="about-logo">
+		<img src="images/about/aboutus.png" alt="Thiên Phú Glass Logo" class="about-logo d-none d-md-block">
+		<img src="images/about/aboutusmobile.png" alt="Thiên Phú Glass Logo" class="about-logo-mobile d-block d-md-none"
+			style="width: 100%;">
 		<!-- Invisible button overlay for "TÌM HIỂU THÊM" -->
 		<a href="contact.html" class="about-intro-btn-overlay" title="Tìm hiểu thêm"></a>
 	</div>
@@ -580,9 +586,23 @@ Start About Intro Section
 	/* Responsive adjustments */
 	@media (max-width: 767px) {
 		.about-intro-btn-overlay {
-			bottom: 36%;
-			width: 40%;
-			height: 5%;
+			bottom: 1%;
+			width: 50%;
+			height: 6%;
+		}
+
+		/* Remove scale since we use specific mobile image */
+		.about-overlay-wrapper {
+			width: 100% !important;
+			transform: none;
+			margin-top: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+		}
+
+		/* Prevent horizontal scroll */
+		.about-intro {
+			overflow: hidden;
 		}
 	}
 </style>
